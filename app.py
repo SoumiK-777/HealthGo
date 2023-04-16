@@ -1,16 +1,20 @@
 from flask import Flask,render_template, url_for, request, redirect, flash
 import numpy as np
 import pickle
+import os
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 
-cred = credentials.Certificate("./serviceAccountKey.json")
+load_dotenv()
+
+cred = credentials.Certificate(os.getenv('serviceAccountKey'))
 firebase_admin.initialize_app(cred)
 db=firestore.client()
 
