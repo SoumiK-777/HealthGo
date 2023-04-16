@@ -2,3 +2,4 @@ firebase_admin
 Flask
 numpy
 scikit_learn
+gunicorn
