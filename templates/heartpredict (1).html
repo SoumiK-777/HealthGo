@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>HealthGO | Heart Predictor</title>
+    <link rel="shortcut icon" href="/images/icon.jpeg" type="image/x-icon">
+</head>
+<body>
+
+
+    <!-- navigation bars -->
+    <div id="main">
+    
+        <!-- navbar -->
+        <div id="navbar">
+    
+            <div class="div1">
+                <div class="logo">
+                    <a href="{{url_for('index')}}"><img src="{{url_for('static',filename='images/healthgologo2.png')}}"
+                            alt="logo"></a>
+                </div>
+            </div>
+    
+            <div class="div2">
+                <ul class="list">
+                    <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}"
+                            class="l1img1"><a href="{{url_for('index')}}" target="_blank" class="lia1">Home</a></li>
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a
+                            href="#" target="_blank" class="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia4">Patient Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}"
+                            class="l6img6"><a href="{{url_for('index')}}" target="_blank" class="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
+                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions"
+                            target="_blank" class="lia7">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <div class="div3">
+                <a href="#"><img src="{{url_for('static',filename='images/menu.png')}}" alt="menu" class="menu" id="menuid"
+                        onclick="toggleMenu()"></a>
+            </div>
+    
+        </div>
+    
+        <div id="nav2">
+    
+            <div class="search">
+                <form action="https://www.google.com/search?q" class="form" target="_blank">
+                    <input name="q" type="text" placeholder="Search for Medicines and Health Products" class="search-bar">
+                    <button type="submit" class="submit-button"><img
+                            src="{{url_for('static',filename='images/search.png')}}" alt="search-icon"
+                            class="submit-image"></button>
+                </form>
+            </div>
+    
+            <div class="app-show">
+                <div class="appbox">
+                    <div class="donwload">
+                        OUR APP
+                    </div>
+                    <div class="cardapp">
+                        <div class="phone">
+                            <div class="downloadapp" id="phone"></div>
+                            <div class="downloadapp" id="textapp">
+    
+    
+                                <div class="Downloadnow"><a
+                                        href="https://drive.google.com/file/d/1gMbbXA8NvhdBVeU7-hg1IFk95nb6x6IP/view?usp=drivesdk">Download
+                                        Now</a></div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="login-signup">
+                <a href="{{url_for('login')}}" target="_blank"><button type="login" class="login-button">Login</button></a>
+                <a href="{{url_for('login')}}" target="_blank"><button type="signup" class="signup-button">Sign
+                        Up</button></a>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    <!-- ************************************************************************************* -->
+    <div class="container3">
+        <div class="box img">
+
+        </div>
+        <div class="box img2">
+            <div class="head">
+                <!-- <div class="form sub"><h1>Form</h1></div>
+                <div class="form"><h1>Submitted Form</h1></div> -->
+
+            </div>
+            <div class="fromfill">
+                <div class="formbox">
+                   <h1><center><u>HEART PRIDICTOR</u></center></h1>
+                   <div class="finalresult">
+                    <!-- Age:<br>
+                    sex:<br>
+                    chest pain:<br>
+                    MaxHr:<br>
+                    EXericseAngina:<br>
+                    OLdpeak:<br>
+                    ST-slope:<br>
+                    Flat:<br><br><br> 
+                     finalresult=......<br>
+                    <button>previ</button> -->
+                    <!-- <center><h3>"Life Isn't Measured in <br>minutes,but in heartbeats"</h3></center>
+                    <center><img src="img/heart-sticker.gif" style="height:200px"alt="" srcset="">
+                    </center> <h2>Your chances for heart problem is...</h2>
+             -->
+             <div class="form">
+                <form action="">
+
+                    <div class="age">
+                        <h3>Age : </h3>
+                        <input type="number" id="number" name="number" value="number" min="5" max="122">
+                    </div>
+                    <div class="gender">
+                        <h3>Gender : </h3>
+                        <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other"><label for="other">Other</label>
+                    </div>
+                    <div class="gender chestPain">
+                        <h3>ChestPain : </h3>
+                        <input type="checkbox" id="male" name="gender" value="male"><label for="male">TA(Typical Angina)</label>
+                        <input type="checkbox" id="female" name="gender" value="female"><label for="female">ATA(Atypical Angina)</label>
+                        <input type="checkbox" id="other" name="gender" value="other"><label for="other">NAP(Non-Anginal Pain)</label>
+                        <input type="checkbox" id="other" name="gender" value="other"><label for="other">ASY(Asymptomatic)</label>
+                    </div>
+
+
+                    <div class="hypertension glucoseLevel">
+                        <h3>Hypertension status : </h3>
+                        <input type="number" id="number" name="number" value="number" min="60" max="202" >
+                    
+
+                        <!-- <input type="radio" id="yes" name="hypertensionStatus" value="1"><label for="yes">Yes</label>
+                        <input type="radio" id="no" name="hypertensionStatus" value="0"><label for="yes">No</label> -->
+                    </div>
+
+                    <div class="heartDisease">
+                        <h3>ExericseAngina : </h3>
+                        <input type="radio" id="yes" name="hypertensionStatus" value="1"><label for="yes">Yes</label>
+                        <input type="radio" id="no" name="hypertensionStatus" value="0"><label for="yes">No</label>
+                    </div>
+
+                    
+                    <div class="glucoseLevel">
+                        <h3>Oldpeak : </h3>
+                        <input type="number" id="number" name="number" value="number" min="0" >
+                    </div>
+                    <div class="maritalStatus">
+                        <h3>ST_Slope : </h3>
+                        <input type="radio" id="yes" name="hypertensionStatus" value="1"><label for="yes">Upsloping</label>
+                        <input type="radio" id="yes" name="hypertensionStatus" value="2"><label for="yes">flat</label>
+                        <input type="radio" id="no" name="hypertensionStatus" value="0"><label for="yes">Downsloping</label>
+                    </div>
+
+                    <div class="button">
+                        <button class="submit">
+                            <img src="img/upload.png" alt="submit">
+                           <a href="index.html"> Submit</a>
+                        </button>
+                        <button class="back">
+                            <img src="img/refresh.png" alt="back">
+                           <a href="from.html">Refesh</a>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+
+                   </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    
+        <!-- footer -->
+
+        <!-- <div class="footer">
+            <div class="footerbox">
+                <div class="footerad">
+                    <div class="ad ad1"><img class="location" src="img/pin.png" srcset="">
+                        <div class="address">Corporate HQ
+                            33rd Floor, Aspect Towers,
+                            Business Bay, Dubai, UAE</div>
+                    </div>
+                    <div class="ad ad2"><img class="location" src="img/mail.png" srcset="">
+                        <div class="address">chq@asterdmhealthcare.com</div>
+                    </div>
+                    <div class="ad ad3"><img class="location" src="img/telephone.png" srcset="">
+                        <div class="address">+91 256548952/5555
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="footerinfo">
+                <div class="infobox about1">
+                    <div class="about">
+    
+                        About Us<br>
+    
+                        Our Journey<br>
+                        Our Services<br>
+                        Corporate Governance<br>
+                        Leadership<br>
+                        Board of Directors<br>
+                        Quality Policy<br>
+                        Data Privacy and Cookie Policy
+    
+    
+    
+                    </div>
+                    <div class="about">
+    
+    
+                        Global Network<br>
+                        Investors<br>
+                        Aster Volunteers<br>
+                        Newsroom<br>
+    
+                        Health Library<br>
+                        Resources<br>
+                        Videos<br>
+    
+    
+    
+                    </div>
+                    <div class="about">
+                        <h1><u>HealthGO</u></h1>
+    
+                    </div>
+    
+                </div>
+                <div class="infobox thought">
+                    “Time and health are two precious assets that we don't recognize and appreciate until they have been
+                    depleted."
+                    <div class="tag">
+                        <h3><b><u>HealthGO</u></b></h3>
+                    </div>
+                    <h6>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</h6>
+                </div>
+                <div class="infobox">
+                    Subscribe to our Newsletter<br>
+                    <div class="emailsearch">
+                        <input type="text" class="inputtext" value="" placeholder="Enter your email here">
+                        <img src="img/SendIcon.svg" class="inputimg" alt="" srcset="">
+    
+                    </div>
+                    <div class="name">
+    
+                        Stay informed<br>
+                        <h1><u>HealthGO</u></h1>
+                    </div>
+    
+                    <div class="icon">
+                        <img class="face" src="img/facebook.png" alt="" srcset="">
+                        <img class="face" src="img/twitter2.png" alt="" srcset="">
+                        <img class="face" src="img/instagram.png" alt="" srcset="">
+                        <img class="face" src="img/linkedin.png" alt="" srcset="">
+                        <img class="face" src="img/youtube.png" alt="" srcset="">
+    
+                    </div>
+                    <div class="last">
+                        © 2023 HealthGO DM Healthcare. All rights reserved.<br>
+                        Designed and Developed by HealthGO-service
+    
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    
+        
+
+<!-- javascript -->
+<script src="/demo.js"></script>
+
+</body>
+</html>
