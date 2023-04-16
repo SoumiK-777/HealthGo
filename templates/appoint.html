@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGO | Appointment</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/appoint.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='images/icon.jpeg')}}">
+</head>
+<body>
+    
+    <!-- navigation bars -->
+    <div id="main">
+    
+        <!-- navbar -->
+        <div id="navbar">
+    
+            <div class="div1">
+                <div class="logo">
+                    <a href="{{url_for('index')}}"><img src="{{url_for('static',filename='images/healthgologo2.png')}}"
+                            alt="logo"></a>
+                </div>
+            </div>
+    
+            <div class="div2">
+                <ul class="list">
+                    <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}"
+                            class="l1img1"><a href="{{url_for('index')}}" target="_blank" class="lia1">Home</a></li>
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a
+                            href="#" target="_blank" class="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia4">Patient Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}"
+                            class="l6img6"><a href="{{url_for('index')}}" target="_blank" class="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
+                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions"
+                            target="_blank" class="lia7">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <div class="div3">
+                <a href="#"><img src="{{url_for('static',filename='images/menu.png')}}" alt="menu" class="menu" id="menuid"
+                        onclick="toggleMenu()"></a>
+            </div>
+    
+        </div>
+    
+        <div id="nav2">
+    
+            <div class="search">
+                <form action="https://www.google.com/search?q" class="form" target="_blank">
+                    <input name="q" type="text" placeholder="Search for Medicines and Health Products" class="search-bar">
+                    <button type="submit" class="submit-button"><img
+                            src="{{url_for('static',filename='images/search.png')}}" alt="search-icon"
+                            class="submit-image"></button>
+                </form>
+            </div>
+    
+            <div class="login-signup">
+                <a href="{{url_for('login')}}" target="_blank"><button type="login" class="login-button">Login</button></a>
+                <a href="{{url_for('login')}}" target="_blank"><button type="signup" class="signup-button">Sign
+                        Up</button></a>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    <!-- ************************************************************************************* -->
+
+    <!-- appointment -->
+
+    <div id="appointment">
+
+        <div class="main-image">
+            <img src="{{url_for('static',filename='images/pexels-rodnae-productions-6129507.jpg')}}" alt="">
+        </div>
+
+        <div class="main-head">
+            <h1>Appoint a Docter as per your Preferences</h1>
+        </div>
+
+        <div class="dropdown">
+            <label for="docter-type">Doctor Speciality</label>
+                            <select name="doctor-speciality" id="doctor-speciality" required>
+                                <option value="select doctor">Select Specialist</option>
+                                <option value="diabetologist">DIABETOLOGIST</option>
+                                <option value="eye-specialist">EYE SPECIALIST</option>
+                                <option value="cardiologist">CARDIOLOGIST</option>
+                                <option value="dermatologist">DERMATOLOGIST (SKIN)</option>
+                                <option value="dentist">DENTIST</option>
+                                <option value="ent">ENT</option>
+                            </select>
+        </div>
+
+        <div class="speciality">
+
+            <div class="diabetologist">
+
+                <div class="diabetologist-head">
+                    <h1>DIABETOLOGIST</h1>
+                </div>
+
+                <div class="group1"> 
+
+                    <div class="box1">
+
+                        <div class="start1">
+
+                            <div class="img1">
+                                <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                            </div>
+
+                            <div class="name1">
+                                <h3>Dr. Angshuman Bhattacharjee</h3>
+                                <p><i>Diabetologist, Physician</i></p>
+                            </div>
+
+                        </div>
+
+                        <div class="end1">
+                            <button type="button">Book</button>
+                            <button type="button">WhatsApp Me</button>
+                        </div>
+
+                    </div>
+
+                   
+
+                <div class="box2">
+
+                    <div class="start2">
+
+                        <div class="img2">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name2">
+                            <h3>Dr. Mridul Das</h3>
+                            <p><i>M.B.B.S, M.D., C.M.D.(Apollo Chennai)Diabetes Consultant</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end2">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+
+                <div class="box3">
+
+                    <div class="start3">
+
+                        <div class="img3">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name3">
+                            <h3>Dr. Basab Ghosh</h3>
+                            <p><i>MBBS(Ghy), MDRC(Chennai)
+                                Dip Diab(Annamali)
+                                Prof. MV Gold Medalist</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end3">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+                
+            </div> 
+
+            <hr>
+            
+            <!-- eye specialist -->
+
+            <div class="eye-specialist">
+
+                <div class="eye-specialist-head">
+                    <h1>EYE-SPECIALIST</h1>
+                </div>
+
+                <div class="group1"> 
+
+                    <div class="box1">
+
+                        <div class="start1">
+
+                            <div class="img1">
+                                <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                            </div>
+
+                            <div class="name1">
+                                <h3>Dr. A.K. CHAKMA</h3>
+                                <p><i>MBBS, MS, M.Ch.(Opthal), FICS(USA)
+                                    Phaco & Cornea Consultant</i></p>
+                            </div>
+
+                        </div>
+
+                        <div class="end1">
+                            <button type="button">Book</button>
+                            <button type="button">WhatsApp Me</button>
+                        </div>
+
+                    </div>
+
+                   
+
+                <div class="box2">
+
+                    <div class="start2">
+
+                        <div class="img2">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name2">
+                            <h3>Dr. Ramkrishna Paul</h3>
+                            <p><i>MBBS, DOMS, DNB (New Delhi)
+                                Phaco Surgeon</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end2">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+
+                <div class="box3">
+
+                    <div class="start3">
+
+                        <div class="img3">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name3">
+                            <h3>Dr. Phani Sarkar</h3>
+                            <p><i>Associate Professor
+                                Department Of Ophthalmology (EYE)</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end3">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <hr>
+
+            <!-- cardiologist -->
+
+            <div class="eye-specialist">
+
+                <div class="eye-specialist-head">
+                    <h1>CARDIOLOGIST</h1>
+                </div>
+
+                <div class="group1"> 
+
+                    <div class="box1">
+
+                        <div class="start1">
+
+                            <div class="img1">
+                                <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                            </div>
+
+                            <div class="name1">
+                                <h3>Dr. A.K. CHAKMA</h3>
+                                <p><i>MBBS, MS, M.Ch.(Opthal), FICS(USA)
+                                    Phaco & Cornea Consultant</i></p>
+                            </div>
+
+                        </div>
+
+                        <div class="end1">
+                            <button type="button">Book</button>
+                            <button type="button">WhatsApp Me</button>
+                        </div>
+
+                    </div>
+
+                   
+
+                <div class="box2">
+
+                    <div class="start2">
+
+                        <div class="img2">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name2">
+                            <h3>Dr. Ramkrishna Paul</h3>
+                            <p><i>MBBS, DOMS, DNB (New Delhi)
+                                Phaco Surgeon</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end2">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+
+                <div class="box3">
+
+                    <div class="start3">
+
+                        <div class="img3">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name3">
+                            <h3>Dr. Phani Sarkar</h3>
+                            <p><i>Associate Professor
+                                Department Of Ophthalmology (EYE)</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end3">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <hr>
+
+            <!-- DENTIST -->
+
+            <div class="eye-specialist">
+
+                <div class="eye-specialist-head">
+                    <h1>EYE-SPECIALIST</h1>
+                </div>
+
+                <div class="group1"> 
+
+                    <div class="box1">
+
+                        <div class="start1">
+
+                            <div class="img1">
+                                <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                            </div>
+
+                            <div class="name1">
+                                <h3>Dr. A.K. CHAKMA</h3>
+                                <p><i>MBBS, MS, M.Ch.(Opthal), FICS(USA)
+                                    Phaco & Cornea Consultant</i></p>
+                            </div>
+
+                        </div>
+
+                        <div class="end1">
+                            <button type="button">Book</button>
+                            <button type="button">WhatsApp Me</button>
+                        </div>
+
+                    </div>
+
+                   
+
+                <div class="box2">
+
+                    <div class="start2">
+
+                        <div class="img2">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name2">
+                            <h3>Dr. Ramkrishna Paul</h3>
+                            <p><i>MBBS, DOMS, DNB (New Delhi)
+                                Phaco Surgeon</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end2">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+
+                <div class="box3">
+
+                    <div class="start3">
+
+                        <div class="img3">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name3">
+                            <h3>Dr. Phani Sarkar</h3>
+                            <p><i>Associate Professor
+                                Department Of Ophthalmology (EYE)</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end3">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <hr>
+
+            <!-- ENT -->
+
+            <div class="eye-specialist">
+
+                <div class="eye-specialist-head">
+                    <h1>EYE-SPECIALIST</h1>
+                </div>
+
+                <div class="group1"> 
+
+                    <div class="box1">
+
+                        <div class="start1">
+
+                            <div class="img1">
+                                <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                            </div>
+
+                            <div class="name1">
+                                <h3>Dr. A.K. CHAKMA</h3>
+                                <p><i>MBBS, MS, M.Ch.(Opthal), FICS(USA)
+                                    Phaco & Cornea Consultant</i></p>
+                            </div>
+
+                        </div>
+
+                        <div class="end1">
+                            <button type="button">Book</button>
+                            <button type="button">WhatsApp Me</button>
+                        </div>
+
+                    </div>
+
+                   
+
+                <div class="box2">
+
+                    <div class="start2">
+
+                        <div class="img2">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name2">
+                            <h3>Dr. Ramkrishna Paul</h3>
+                            <p><i>MBBS, DOMS, DNB (New Delhi)
+                                Phaco Surgeon</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end2">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+
+                <div class="box3">
+
+                    <div class="start3">
+
+                        <div class="img3">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name3">
+                            <h3>Dr. Phani Sarkar</h3>
+                            <p><i>Associate Professor
+                                Department Of Ophthalmology (EYE)</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end3">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <hr>
+
+            <!-- DERMATOLOGIST -->
+
+            <div class="eye-specialist">
+
+                <div class="eye-specialist-head">
+                    <h1>EYE-SPECIALIST</h1>
+                </div>
+
+                <div class="group1"> 
+
+                    <div class="box1">
+
+                        <div class="start1">
+
+                            <div class="img1">
+                                <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                            </div>
+
+                            <div class="name1">
+                                <h3>Dr. A.K. CHAKMA</h3>
+                                <p><i>MBBS, MS, M.Ch.(Opthal), FICS(USA)
+                                    Phaco & Cornea Consultant</i></p>
+                            </div>
+
+                        </div>
+
+                        <div class="end1">
+                            <button type="button">Book</button>
+                            <button type="button">WhatsApp Me</button>
+                        </div>
+
+                    </div>
+
+                   
+
+                <div class="box2">
+
+                    <div class="start2">
+
+                        <div class="img2">
+                            <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        </div>
+
+                        <div class="name2">
+                            <h3>Dr. Ramkrishna Paul</h3>
+                            <p><i>MBBS, DOMS, DNB (New Delhi)
+                                Phaco Surgeon</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end2">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+
+                <div class="box3">
+
+                    <div class="start3">
+                        
+                        <img src="{{url_for('static',filename='images/pexels-justin-shaifer-1222271 (1).jpg')}}" alt="">
+                        <div class="img3">
+                        </div>
+
+                        <div class="name3">
+                            <h3>Dr. Phani Sarkar</h3>
+                            <p><i>Associate Professor
+                                Department Of Ophthalmology (EYE)</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="end3">
+                        <button type="button">Book</button>
+                        <button type="button">WhatsApp Me</button>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+        <!-- footer -->
+        
+        <div class="footer">
+            <div class="footerbox">
+                <div class="footerad">
+                    <div class="ad ad1"><img class="location" src="{{url_for('static',filename='images/pin.png')}}" srcset="">
+                        <div class="address">Corporate HQ
+                            33rd Floor, Aspect Towers,
+                            Business Bay, Dubai, UAE</div>
+                    </div>
+                    <div class="ad ad2"><img class="location" src="{{url_for('static',filename='images/mail.png')}}" srcset="">
+                        <div class="address">chq@asterdmhealthcare.com</div>
+                    </div>
+                    <div class="ad ad3"><img class="location" src="{{url_for('static',filename='images/telephone.png')}}"
+                            srcset="">
+                        <div class="address">+91 256548952/5555
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="footerinfo">
+                <div class="infobox about1">
+                    <div class="about">
+        
+                        About Us<br>
+        
+                        Our Journey<br>
+                        Our Services<br>
+                        Corporate Governance<br>
+                        Leadership<br>
+                        Board of Directors<br>
+                        Quality Policy<br>
+                        Data Privacy and Cookie Policy
+        
+        
+        
+                    </div>
+                    <div class="about">
+        
+        
+                        Global Network<br>
+                        Investors<br>
+                        Aster Volunteers<br>
+                        Newsroom<br>
+        
+                        Health Library<br>
+                        Resources<br>
+                        Videos<br>
+        
+        
+        
+                    </div>
+                    <div class="about">
+                        <h1><u>HealthGO</u></h1>
+        
+                    </div>
+        
+                </div>
+                <div class="infobox thought">
+                    “Time and health are two precious assets that we don't recognize and appreciate until they have been
+                    depleted."
+                    <div class="tag">
+                        <h3><b><u>HealthGO</u></b></h3>
+                    </div>
+                    <h6>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</h6>
+                </div>
+                <div class="infobox">
+                    Subscribe to our Newsletter<br>
+                    <div class="emailsearch">
+                        <input type="text" class="inputtext" value="" placeholder="Enter your email here">
+                        <img src="{{url_for('static',filename='images/SendIcon.svg')}}" class="inputimg" alt="" srcset="">
+        
+                    </div>
+                    <div class="name">
+        
+                        Stay informed<br>
+                        <h1><u>HealthGO</u></h1>
+                    </div>
+        
+                    <div class="icon">
+                        <img class="face" src="{{url_for('static',filename='images/facebook.png')}}" alt="" srcset="">
+                        <img class="face" src="{{url_for('static',filename='images/twitter2.png')}}" alt="" srcset="">
+                        <img class="face" src="{{url_for('static',filename='images/instagram.png')}}" alt="" srcset="">
+                        <img class="face" src="{{url_for('static',filename='images/linkedin.png')}}" alt="" srcset="">
+                        <img class="face" src="{{url_for('static',filename='images/youtube.png')}}" alt="" srcset="">
+        
+                    </div>
+                    <div class="last">
+                        © 2023 HealthGO DM Healthcare. All rights reserved.<br>
+                        Designed and Developed by HealthGO-service
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <script src="{{url_for('static',filename='js/demo.js')}}"></script>
+        </body>
+        
+        </html>

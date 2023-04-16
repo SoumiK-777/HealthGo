@@ -1,0 +1,425 @@
+@font-face {
+    font-family: exo;
+    src: url("./fonts/Exo2-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: jost;
+    src: url("./fonts/Jost-VariableFont_wght.ttf");
+}
+
+body {
+    padding: 0px;
+    margin: 10px;
+    background-color: #EACACB;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+}
+
+.div1 {
+    width: 40%;
+    height: 100vh;
+    margin: 5px 20px;
+    transition: all 0.5s ease;
+    /* border: 1px solid red; */
+}
+
+.div1 img {
+    position: fixed;
+    height: 95%;
+    width: 35%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px #4e4e4e;
+}
+
+.div2 {
+    width: 60%;
+    height: 100%;
+    padding: 0px 20px;
+    border-radius: 10px;
+    margin: 5px 20px;
+    border: 1px solid darkgray;
+    -webkit-box-shadow: 0 0 10px #4e4e4e;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    font-family: exo;
+}
+
+.sub-heading p {
+    font-size: 20px;
+    font-family: jost;
+}
+
+.button {
+    /* border: 1px solid red; */
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.submit,
+.back {
+    font-family: jost;
+    height: 30px;
+    width: 80px;
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+
+.submit img {
+    height: 10px;
+}
+
+.back img {
+    height: 10px;
+}
+
+.new {
+    border-top: 5px solid black;
+}
+
+/* footer */
+
+.footer {
+    background-color: #007bff;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footerbox {
+    /* background-color: #007bff; */
+    height: 25vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+
+
+}
+
+.footerad {
+    /* background-color: rgb(43, 226, 80); */
+    height: 15vh;
+    width: 90%;
+    margin: 50px;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+}
+
+.ad {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.footerinfo {
+    height: 50%;
+    width: 90%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 0.7fr;
+}
+
+.infobox {
+    /* border: 1px solid green; */
+    padding: 20px;
+    color: wheat;
+    /* margin: 5px; */
+}
+
+.inputtext {
+    height: 30px;
+    width: 250px;
+    /* border:1px solid blueviolet; */
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 15px;
+}
+
+.location {
+    height: 20px;
+    width: 20px;
+    padding: 20px;
+    border-radius: 100%;
+    border: 2px solid #20c997;
+}
+
+.address {
+    margin: 20px;
+}
+
+.location:hover {
+    background-color: #20c997;
+    cursor: pointer;
+}
+
+
+.inputimg {
+    border-radius: 0px 20px 20px 0px;
+    height: 30px;
+    width: 9%;
+    position: relative;
+    left: -2px;
+    top: 1px;
+    background-color: white;
+    /* border: 1px red solid; */
+}
+
+.emailsearch {
+    display: flex;
+    margin: 0px 20px 20px 0px;
+}
+
+.icon {
+    height: 50px;
+    width: 300px;
+    /* border:1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin: 20px;
+
+}
+
+.face {
+    height: 10%;
+    background-color: #20c997;
+    border-radius: 100%;
+
+    margin-left: -20px;
+}
+
+.face:hover {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.name {
+    margin: 0px 20px 20px 0px;
+}
+
+.name h1 {
+    margin: 20px 20px 20px 0px;
+
+}
+
+.tag {
+    margin: 20px;
+}
+
+.thought {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    /* padding-left: -20px; */
+    font-style: italic;
+    font-weight: bold;
+}
+
+.about1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    /* font: 100; */
+
+
+
+
+}
+
+@media(max-width:748px) {
+    .container {
+        justify-content: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardbox {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer,
+    .footerbox,
+    .footerad,
+    .footerinfo,
+    .contantbox {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 50px;
+        /* margin: ; */
+    }
+
+    .face {
+        margin: 10px;
+    }
+
+
+}
+
+/* ********************** */
+
+
+#well {
+    background-image: url("../images/doctor2.jpg");
+    background-size: cover;
+}
+
+.welltext {
+    position: relative;
+    left: -120px;
+    font-style: italic;
+    margin: 15px 15px 0px 15px;
+    color: #20c997;
+}
+
+#trust {
+    background-image: url("../images/healthcare.jpg");
+    background-size: cover;
+
+}
+
+#box21 {
+    flex-direction: column;
+    justify-content: left;
+    background-color: white;
+
+
+
+}
+
+.number {
+    background-color: #20c997;
+    color: white;
+    display: flex;
+    height: 120px;
+    width: 250px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    font-size: X-large;
+    font-weight: bolder;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    /* margin: 25px; */
+
+}
+
+#left {
+    /* flex-direction: column; */
+    align-items: normal;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+}
+
+#line2 {
+    border: 3px solid rgb(8, 115, 246);
+    /* height: 1px; */
+    width: 90px;
+    position: relative;
+    left: -50px;
+    top: -20px;
+}
+
+.text2 {
+    position: relative;
+    left: -30px;
+}
+
+#center h1 {
+    margin: 25px;
+    position: relative;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+
+#trust1 {
+    /* border: #007bff 1px solid; */
+}
+
+#world h1 {
+    position: relative;
+    right: -65px;
+    margin-bottom: 5px;
+}
+
+.mytext {
+    margin: 25px;
+    position: relative;
+    right: -30px;
+}
+
+#well1 {
+    background-image: url("../images/last1.jpg");
+    background-size: cover;
+
+}
+
+.linebox {
+    border: 3px solid rgb(8, 115, 246);
+    /* height: 1px; */
+    width: 90px;
+    position: relative;
+    left: -210px;
+    /* margin: 15px; */
+
+}

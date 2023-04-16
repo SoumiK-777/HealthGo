@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <title>HealthGO</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='images/icon.jpeg')}}">
+</head>
+
+<body>
+
+    <!-- navigation bars -->
+    <div id="main">
+    
+        <!-- navbar -->
+        <div id="navbar">
+    
+            <div class="div1">
+                <div class="logo">
+                    <a href="{{url_for('index')}}"><img src="{{url_for('static',filename='images/healthgologo2.png')}}" alt="logo"></a>
+                </div>
+            </div>
+    
+            <div class="div2">
+                <ul class="list">
+                    <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}" class="l1img1"><a href="{{url_for('index')}}" target="_blank" class="lia1">Home</a></li>
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a href="#" target="_blank" class="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a href="{{url_for('index')}}" target="_blank" class="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a href="{{url_for('index')}}" target="_blank" class="lia4">Patient Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a href="{{url_for('index')}}" target="_blank" class="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a href="{{url_for('index')}}" target="_blank" class="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions" target="_blank" class="lia7">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <div class="div3">
+                <a href="#"><img src="{{url_for('static',filename='images/menu.png')}}" alt="menu" class="menu" id="menuid" onclick="toggleMenu()"></a>
+            </div>
+    
+        </div>
+    
+        <div id="nav2">
+    
+            <div class="search">
+                <form action="https://www.google.com/search?q" class="form" target="_blank">
+                    <input name="q" type="text" placeholder="Search for Medicines and Health Products" class="search-bar">
+                    <button type="submit" class="submit-button"><img src="{{url_for('static',filename='images/search.png')}}" alt="search-icon" class="submit-image"></button>
+                </form>
+            </div>
+
+            <div class="app-show">
+                <div class="appbox">
+                    <div class="donwload">
+                        OUR APP
+                    </div>
+                    <div class="cardapp">
+                        <div class="phone">
+                            <div class="downloadapp" id="phone"></div>
+                            <div class="downloadapp" id="textapp">
+                              
+                
+                                <div class="Downloadnow"><a href="https://drive.google.com/file/d/1gMbbXA8NvhdBVeU7-hg1IFk95nb6x6IP/view?usp=drivesdk">Download Now</a></div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="login-signup">
+                <a href="{{url_for('login')}}" target="_blank"><button type="login" class="login-button">Login</button></a>
+                <a href="{{url_for('login')}}" target="_blank"><button type="signup" class="signup-button">Sign Up</button></a>
+            </div>
+    
+        </div>
+    
+    </div>
+
+<!-- ************************************************************************************* -->
+
+
+    <!-- <div class="wave"></div> -->
+    <div class="sliderbox">
+        <!-- <div class="aditya"> -->
+        <div class="slider" id="sliderone">
+            <div class="slide"><img name="slide" src="{{url_for('static',filename='images/hospital.jpg')}}" alt="" srcset=""></div>
+            <div class="slide"><img name="slide" src="{{url_for('static',filename='images/medicine.jpg')}}" alt="" srcset=""></div>
+            <div class="slide"><img name="slide" src="{{url_for('static',filename='images/fitness.jpg')}}" alt="" srcset=""></div>
+            <div class="slide"><img name="slide" src="{{url_for('static',filename='images/i1.jpg')}}" alt="" srcset=""></div>
+            <!-- <div class="next" id="next"></div>
+                <div class="previous" id="previous"></div> -->
+        </div>
+        <!-- <div class="indicator">
+            <span id="btn1" class=""></span>
+            <span id="btn2" class=""></span>
+            <span id="btn3" class="btn1"></span>
+            <span id="btn4" class="btn1"></span>
+
+
+        </div> -->
+    </div>
+
+
+
+
+
+    <!-- information box -->
+    <div class="info" id="info">
+        <div class="itmes itme1" id="itme1">
+            <div class="nametext">
+                <h1>Book Your Bed</h1>
+            </div>
+            <div class="card">
+
+                <a href="{{url_for('bookbed')}}" target="_blank">
+                <div class="innercard">
+
+                    <div class="titlebox">
+                        <h1>Book Your Bed</h1>
+                    </div>
+                    <div class="contantbox1">
+                        <i>Emergency need for a bed !!!<br><br>Book your bed with just one fingertip</i>
+                    </div>
+
+
+                    <div class="bookit">
+                        BOOK NOW
+
+
+                    </div>
+
+
+
+                </div>
+                </a>
+                
+            </div>
+        </div>
+
+
+        <a href="{{url_for('strokepredict')}}" target="_blank">
+        <div class="itmes itme2" id="itme2">
+            <div class="nametext">
+                <h1>Stroke Predictor</h1>
+            </div>
+            <div class="card">
+                <div class="innercard">
+
+                    <div class="titlebox">
+                        <h1>Stroke Predictor</h1>
+                    </div>
+                    <div class="contantbox1">
+                        <i>According to the World Health Organization (WHO) stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths.<br><br>Predict your probability of Stroke now</i>
+                    </div>
+
+
+                    <div class="bookit">
+                        Predict Now
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        </a>
+
+
+        <a href="{{url_for('heartpredict')}}" target="_blank">
+        <div class="itmes itme3" id="itme3">
+            <div class="nametext">
+                <h1>Heart Failure Predictor</h1>
+            </div>
+            <div class="card">
+                <div class="innercard">
+
+                    <div class="titlebox">
+                        <h1>Heart Predictor</h1>
+                    </div>
+                    <div class="contantbox1">
+                        <i>Four out of 5CVD deaths are due to heart attacks and strokes, and one-third of these deaths occur prematurely in people under 70 years of age.<br><br>Reduce the chances of getting heart stroke by predicting it.</i>
+                    </div>
+
+
+                    <div class="bookit">
+                        Predict Now
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        </a>
+
+        <a href="{{url_for('appoint')}}" target="_blank">
+        <div class="itmes itme4" id="itme4">
+            <div class="nametext">
+                <h1>Doctor And Appointment</h1>
+            </div>
+            <div class="card">
+                <div class="innercard">
+
+                    <div class="titlebox">
+                        <h1>Doctor And Appointment</h1>
+                    </div>
+                    <div class="contantbox1">
+                        <i>Suffering from any kind of ailment.<br><br>No worries, book an appointment with just one click.</i>
+                    </div>
+
+
+                    <div class="bookit">
+                        Take Appointment
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        </a>
+
+
+
+        <a href="{{url_for('medicine')}}" target="_blank">
+            <div class="itmes itme5" id="itme5">
+                <div class="nametext">
+                    <h1>Medicine</h1>
+                </div>
+                <div class="card">
+                    <div class="innercard">
+
+                        <div class="titlebox">
+                            <h1>Medicine</h1>
+                        </div>
+                        <div class="contantbox1">
+                            <i>Know over here the best match of medications over here.</i>
+                        </div>
+
+
+                        <div class="bookit">
+                            Take Medicine
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </a>
+        <!-- **************************** -->
+        <a href="{{url_for('disease')}}" target="_blank">
+        <div class="itmes itme6" id="itme6">
+            <div class="nametext">
+                <h1>Common Disease</h1>
+            </div>
+            <div class="card">
+                <div class="innercard">
+
+                    <div class="titlebox">
+                        <h1>Common Disease</h1>
+                    </div>
+                    <div class="contantbox1">
+                        <i>Suffering from periodic diseases?<br><br>Know the root cause and proper medication regarding this over here.</i>
+                    </div>
+
+
+                    <div class="bookit">
+                        Disease
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div></a>
+
+    </div>
+    <!-- content area -->
+    
+    <div class="contantbox">
+        <div class="contant1 box1  " id="box21" >
+            <div class="welltext">
+            <h1>We'll Treat You Well</h1></div>
+            <div class="linebox"></div>
+            <div class="mytext">
+            This promise to patients, employees and society at large is ingrained in the heart of each Asterian, and is what inspires us to serve, innovate and grow.
+            </div>
+            <div class="grid">
+                <div class="number">HOSPITALS<br>321</div>
+                <div class="number">CLINICS<br>534</div>
+                <div class="number">PHARMACIES<br>545+</div>
+                <div class="number">ASTERIANS<br>2563+</div>
+            </div>
+
+        </div>
+        <div class="contant2 box1   " id = "well">
+        </div>
+
+
+    </div>
+    <div class="contantbox">
+        <div class="contant1 box1" id ="trust"></div>
+        <div class="contant2 box1 " id="left" >
+           
+            <div class="center">
+                <div class="welltext" id="center">
+                    <h1>The Complete Circle of Care</h1></div>
+                        <div class="linebox2" id="line2"></div>
+<div class="text2">
+
+    HealthGO has a unique portfolio of specialised brands to serve the needs of patients<br> in Primary, Secondary, Tertiary and Quaternary Care, Healthcare Retailing,<br> Diagnostic Labs, Digital Health and Medical Education.
+</div>
+            </div>
+
+            
+            
+
+        </div>
+
+    </div>
+
+    <div class="contantbox">
+        <div class="contant1 box1  " id="box21" >
+            <div class="welltext" id="world">
+            <h1>Making the World a Little
+                Better</h1></div>
+            <div class="linebox"></div>
+            <div class="mytext">
+                Uniting people from all walks of life to help the underserved sections of society, HealthGO Volunteers has made a positive impact on the lives of over a million people.
+            </div>
+            <div class="grid">
+                <div class="number">Live Impacted<br>321562+</div>
+                <div class="number"> Community Connect<br>545+</div>
+                <div class="number">Medical Services<br>2563+</div>
+                <div class="number">Happiness<br>534454+</div>
+            </div>
+
+        </div>
+        <div class="contant2 box1   " id = "well1">
+        </div>
+
+
+    </div>
+
+
+  </div>
+
+        <!-- footer -->
+        
+    <div class="footer">
+        <div class="footerbox">
+            <div class="footerad">
+                <div class="ad ad1"><img class="location" src="{{url_for('static',filename='images/pin.png')}}" srcset="">
+                    <div class="address">Corporate HQ
+                        33rd Floor, Aspect Towers,
+                        Business Bay, Dubai, UAE</div>
+                </div>
+                <div class="ad ad2"><img class="location" src="{{url_for('static',filename='images/mail.png')}}" srcset="">
+                    <div class="address">chq@asterdmhealthcare.com</div>
+                </div>
+                <div class="ad ad3"><img class="location" src="{{url_for('static',filename='images/telephone.png')}}" srcset="">
+                    <div class="address">+91 256548952/5555
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footerinfo">
+            <div class="infobox about1">
+                <div class="about">
+
+                    About Us<br>
+
+                    Our Journey<br>
+                    Our Services<br>
+                    Corporate Governance<br>
+                    Leadership<br>
+                    Board of Directors<br>
+                    Quality Policy<br>
+                    Data Privacy and Cookie Policy
+
+
+
+                </div>
+                <div class="about">
+
+
+                    Global Network<br>
+                    Investors<br>
+                    Aster Volunteers<br>
+                    Newsroom<br>
+
+                    Health Library<br>
+                    Resources<br>
+                    Videos<br>
+
+
+
+                </div>
+                <div class="about">
+                    <h1><u>HealthGO</u></h1>
+
+                </div>
+
+            </div>
+            <div class="infobox thought">
+                “Time and health are two precious assets that we don't recognize and appreciate until they have been
+                depleted."
+                <div class="tag">
+                    <h3><b><u>HealthGO</u></b></h3>
+                </div>
+                <h6>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</h6>
+            </div>
+            <div class="infobox">
+                Subscribe to our Newsletter<br>
+                <div class="emailsearch">
+                    <input type="text" class="inputtext" value="" placeholder="Enter your email here">
+                    <img src="{{url_for('static',filename='images/SendIcon.svg')}}" class="inputimg" alt="" srcset="">
+
+                </div>
+                <div class="name">
+
+                    Stay informed<br>
+                    <h1><u>HealthGO</u></h1>
+                </div>
+
+                <div class="icon">
+                    <img class="face" src="{{url_for('static',filename='images/facebook.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/twitter2.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/instagram.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/linkedin.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/youtube.png')}}" alt="" srcset="">
+
+                </div>
+                <div class="last">
+                    © 2023 HealthGO DM Healthcare. All rights reserved.<br>
+                    Designed and Developed by HealthGO-service
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+
+</html>

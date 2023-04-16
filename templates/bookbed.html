@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGO | Bed book</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bookbed.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='images/icon.jpeg')}}">
+</head>
+<body>
+    
+    <div id="main">
+    
+        <!-- navbar -->
+        <div id="navbar">
+    
+            <div class="div1">
+                <div class="logo">
+                    <a href="{{url_for('index')}}"><img src="{{url_for('static',filename='images/healthgologo2.png')}}" alt="logo"></a>
+                </div>
+            </div>
+    
+            <div class="div2">
+                <ul class="list">
+                    <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}" class="l1img1"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia1">Home</a></li>
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a href="#"
+                            target="_blank" class="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia4">Patient Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
+                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions" target="_blank"
+                            class="lia7">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <div class="div3">
+                <a href="#"><img src="{{url_for('static',filename='images/menu.png')}}" alt="menu" class="menu" id="menuid" onclick="toggleMenu()"></a>
+            </div>
+    
+        </div>
+    
+        <div id="nav2">
+    
+            <div class="search">
+                <form action="https://www.google.com/search?q" class="form" target="_blank">
+                    <input name="q" type="text" placeholder="Search for Medicines and Health Products" class="search-bar">
+                    <button type="submit" class="submit-button"><img src="{{url_for('static',filename='images/search.png')}}" alt="search-icon" class="submit-image"></button>
+                    <!-- <button type="reset" class="reset-button"><img src="/images/close.png" alt="close-icon" class="reset-image"></button> -->
+                </form>
+            </div>
+    
+            <div class="login-signup">
+                <button type="login" class="login-button">Login</button>
+                <button type="signup" class="signup-button">Sign Up</button>
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <!-- bed booking  -->
+    <div class="bed-book-main">
+
+        <div class="left">
+
+            <div class="bed-book">
+
+                <div class="bed-book-head">
+                    <h1>Book Your Bed</h1>
+                </div>
+
+                <div class="personal-information">
+
+                    <div class="personal-info-head">
+                        <h2>Personal information</h2>
+                    </div>
+                    <form action="{{url_for('bookbed')}}" method="POST">
+                        <div class="first-name">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                        </div>
+
+                        <div class="last-name">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                        </div>
+
+                        <div class="age">
+                            <label for="age">Age</label>
+                            <input type="number" id="number" name="age" value="number" min="5" max="122" required>
+                        </div>
+
+                    </div>
+
+                    <div class="general-information">
+
+                        <div class="general-information-head">
+                            <h2>General Information</h2>
+                        </div>
+
+                        <div class="hospital-name">
+                            <label for="hospital-name">Hospital Name</label>
+                                <select name="hospital-name-select" id="hospital-name-select" required>
+                                    <option value="Medanta-The-Medicity">Medanta The Medicity</option>
+                                    <option value="Fortis-Memorial-Research-Institute">Fortis Memorial Research Institute</option>
+                                    <option value="Artemis-Hospital">Artemis Hospital</option>
+                                    <option value="Apollo-Hospitals">Apollo Hospitals</option>
+                                    <option value="Manipal-Hospitals">Manipal Hospitals</option>
+                                </select>
+                        </div>
+
+                        <div class="problem">
+                            <label for="problem">Problem</label>
+                            <input type="text" id="problem" name="problem" placeholder="Mention your problem" required>
+                        </div>
+
+                        <div class="call-ambulance">
+                            <label for="call-ambulance">Call an Ambulance</label>
+                            <input type="radio" id="call-ambulance" name="call-ambulance" value="YES" required><label for="yes">Yes</label>
+                            <input type="radio" id="call-ambulance" name="call-ambulance" value="NO" required><label for="no">No</label>
+                        </div>
+
+                    </div>
+
+                    <div class="communication-details">
+
+                        <div class="communication-details-head">
+                            <h2>Communication details</h2>
+                        </div>
+
+                        <div class="mob-number">
+                            <label for="mob-number">Mobile Number</label>
+                            <input type="tel" id="mob-number" name="mob-number" value="+91" required>
+                        </div>
+
+                        <div class="address">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="4" cols="50"></textarea>
+                        </div>
+
+                        <div class="feedback">
+                            <label for="feedback">Feedback(if any)</label>
+                            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="all-bttns">
+
+                        <div class="submit">
+                            <button type="submit">Submit</button>
+                        </div>
+
+                        <div class="reset">
+                            <button type="reset">Reset</button>
+                        </div>
+
+                        <div class="back">
+                            <button type="back">Back</button>
+                        </div>
+                    </form>
+                </div>    
+
+            </div>
+
+        </div>
+        
+        <div class="right">
+
+            <div class="image">
+                <img src="{{url_for('static',filename='images/30.png')}}" alt="img">
+            </div>
+            
+        </div>
+
+    </div>  
+    
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="footerbox">
+            <div class="footerad">
+                <div class="ad ad1"><img class="location" src="{{url_for('static',filename='images/pin.png')}}" srcset="">
+                    <div class="address">Corporate HQ
+                        33rd Floor, Aspect Towers,
+                        Business Bay, Dubai, UAE</div>
+                </div>
+                <div class="ad ad2"><img class="location" src="{{url_for('static',filename='images/mail.png')}}" srcset="">
+                    <div class="address">chq@asterdmhealthcare.com</div>
+                </div>
+                <div class="ad ad3"><img class="location" src="{{url_for('static',filename='images/telephone.png')}}" srcset="">
+                    <div class="address">+91 256548952/5555
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footerinfo">
+            <div class="infobox about1">
+                <div class="about">
+
+                    About Us<br>
+
+                    Our Journey<br>
+                    Our Services<br>
+                    Corporate Governance<br>
+                    Leadership<br>
+                    Board of Directors<br>
+                    Quality Policy<br>
+                    Data Privacy and Cookie Policy
+
+
+
+                </div>
+                <div class="about">
+
+
+                    Global Network<br>
+                    Investors<br>
+                    Aster Volunteers<br>
+                    Newsroom<br>
+
+                    Health Library<br>
+                    Resources<br>
+                    Videos<br>
+
+
+
+                </div>
+                <div class="about">
+                    <h1><u>HealthGO</u></h1>
+
+                </div>
+
+            </div>
+            <div class="infobox thought">
+                “Time and health are two precious assets that we don't recognize and appreciate until they have been
+                depleted."
+                <div class="tag">
+                    <h3><b><u>HealthGO</u></b></h3>
+                </div>
+                <h6>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</h6>
+            </div>
+            <div class="infobox">
+                Subscribe to our Newsletter<br>
+                <div class="emailsearch">
+                    <input type="text" class="inputtext" value="" placeholder="Enter your email here">
+                    <img src="{{url_for('static',filename='images/SendIcon.svg')}}" class="inputimg" alt="" srcset="">
+                </div>
+                <div class="name">
+
+                    Stay informed<br>
+                    <h1><u>HealthGO</u></h1>
+                </div>
+
+                <div class="icon">
+                    <img class="face" src="{{url_for('static',filename='images/facebook.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/twitter2.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/instagram.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/linkedin.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/youtube.png')}}" alt="" srcset="">
+
+                </div>
+                <div class="last">
+                    © 2023 HealthGO DM Healthcare. All rights reserved.<br>
+                    Designed and Developed by HealthGO-service
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="{{url_for('static',filename='js/demo.js')}}"></script>
+</body>
+</html>

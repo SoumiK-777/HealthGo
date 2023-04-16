@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGo | Result | Stroke Predictor</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/strokeresults.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='images/icon.jpeg')}}">
+</head>
+<body>
+
+    <div id="container">
+        <div class="div1">
+            <img src="{{url_for('static',filename='images/3.jpg')}}" alt="image">
+        </div>
+        <div class="div2">
+            <div class="heading">
+                <h1>YOUR CHANCES OF STROKE IS {{prediction}}% !</h1>
+            <a href="{{url_for('strokepredict')}}"><div class="button">
+                <button class="back">
+                    <img src="{{url_for('static',filename='images/back.png')}}" alt="back">
+                    Back
+                </button>
+            </div></a>
+            <div class="new">
+                <p>
+                <div class="box">
+                    <b>
+                        <h2>The Types Of Stroke Disease:-</h2>
+                    </b>
+                    <div class="con">
+            
+                        There are two types of stroke:
+            
+                        1. Ischemic stroke.
+                        2. Hemorrhagic stroke
+                    </div>
+                    <ul>
+                        <li><b>Ischemic stroke:-</b> Most strokes are ischemic strokes.2 An ischemic stroke occurs when blood clots
+                            or other particles block the blood vessels to the brain.
+            
+                            Fatty deposits called plaque can also cause blockages by building up in the blood vessels.
+                        </li>
+                        <li><b>Hemorrhagic stroke:-</b>
+                            A hemorrhagic stroke happens when an artery in the brain leaks blood or ruptures (breaks open).
+                            The leaked blood puts too much pressure on brain cells, which damages them.
+            
+                        </li>
+            
+                    </ul>
+                    <b>
+                        <h2>The symptoms of Stroke disease:-</h2>
+                    </b>
+                    <div class="con">
+            
+            
+                        If you or someone you're with may be having a stroke, pay particular attention to the time the symptoms
+                        began. Some treatment options are most effective when given soon after a stroke begins.
+            
+                        Signs and symptoms of stroke include:-
+                    </div>
+                    <ul>
+                        <li>Trouble speaking and understanding what others are saying. You may experience confusion, slur words or
+                            have difficulty understanding speech.
+            
+            
+                        </li>
+                        <li> Paralysis or numbness of the face, arm or leg. You may develop sudden numbness, weakness or paralysis
+                            in the face, arm or leg. This often affects just one side of the body. Try to raise both your arms over
+                            your head at the same time. If one arm begins to fall, you may be having a stroke. Also, one side of
+                            your mouth may droop when you try to smile.
+                        </li>
+                        <li>Problems seeing in one or both eyes. You may suddenly have blurred or blackened vision in one or both
+                            eyes, or you may see double.
+                        </li>
+                        <li>Headache. A sudden, severe headache, which may be accompanied by vomiting, dizziness or altered
+                            consciousness, may indicate that you're having a stroke.
+                        </li>
+                        <li>Trouble walking. You may stumble or lose your balance. You may also have sudden dizziness or a loss of
+                            coordination.
+                        </li>
+                    </ul>
+                    <b>
+                        <h2>
+                            The risk factors for Stroke disease:-</h2>
+                    </b>
+                    <div class="con">
+            
+                        Many factors can increase the risk of stroke. Potentially treatable stroke risk factors include:
+                    </div>
+                    <b> 1. Lifestyle risk factors:-</b>
+                    <ul>
+                        <li><b>Being overweight or obese</b>
+            
+            
+                        </li>
+                        <li> <b>Physical inactivity</b> </li>
+                        <li><b> Heavy or binge drinking</b></li>
+                        <li><b>Use of illegal drugs such as cocaine and methamphetamine</b></li>
+            
+                    </ul>
+                    <b> 2. Medical risk factors:-</b>
+                    <ul>
+            
+                        <li><b>Diabetes</b>
+            
+            
+                        </li>
+                        <li> <b>Physical inactivity</b> </li>
+                        <li><b> Obstructive sleep apnea</b></li>
+                        <li><b>Cardiovascular disease, including heart failure, heart defects, heart infection or irregular heart
+                                rhythm, such as atrial fibrillation
+                            </b></li>
+            
+                    </ul>
+            
+            
+            
+                    <b>
+                        <h2>
+                            Prevention:-</h2>
+                    </b>
+                    <div class="con">
+            
+                        Cardiac rehabilitation (rehab) is an important program for anyone recovering from a heart attack, heart
+                        failure, or some types of heart surgery. Cardiac rehab is a supervised program that includes
+            
+                    </div>
+                    <ul>
+                        <li>Controlling high blood pressure (hypertension). This is one of the most important things you can do to
+                            reduce your stroke risk. If you've had a stroke, lowering your blood pressure can help prevent a
+                            subsequent TIA or stroke. Healthy lifestyle changes and medications are often used to treat high blood
+                            pressure.
+            
+            
+            
+                        </li>
+                        <li>Lowering the amount of cholesterol and saturated fat in your diet. Eating less cholesterol and fat,
+                            especially saturated fat and trans fats, may reduce buildup in the arteries. If you can't control your
+                            cholesterol through dietary changes alone, your doctor may prescribe a cholesterol-lowering medication.
+                        </li>
+                        <li>Quitting tobacco use. Smoking raises the risk of stroke for smokers and nonsmokers exposed to secondhand
+                            smoke. Quitting tobacco use reduces the risk of stroke.
+                        </li>
+                        <li>Managing diabetes. Diet, exercise and losing weight can help you keep your blood sugar in a healthy
+                            range. If lifestyle factors don't seem to be enough to control your diabetes, your doctor may prescribe
+                            diabetes medication.
+                        </li>
+            
+                    </ul>
+                    <b>
+                        <h2>
+                            Types of Preventive medications:-
+                        </h2>
+                    </b>
+                    <div class="con">
+            
+                        Anti-platelet drugs. Platelets are cells in the blood that form clots. Anti-platelet drugs make these cells
+                        less sticky and less likely to clot. The most commonly used anti-platelet medication is aspirin. Your doctor
+                        can help you determine the right dose of aspirin for you.
+            
+                        After a TIA or minor stroke, your doctor may give you aspirin and an anti-platelet drug such as clopidogrel
+                        (Plavix) for a period of time to reduce the risk of another stroke. If you can't take aspirin, your doctor
+                        may prescribe clopidogrel alone.
+            
+                        Anticoagulants. These drugs reduce blood clotting. Heparin is fast acting and may be used short-term in the
+                        hospital.
+            
+                        Slower-acting warfarin (Jantoven) may be used over a longer term. Warfarin is a powerful blood-thinning
+                        drug, so you'll need to take it exactly as directed and watch for side effects. You'll also need to have
+                        regular blood tests to monitor warfarin's effects.
+            
+                    </div>
+            
+                    <ul>
+                        <li><b>Calcium Channel Blockers</b>
+            
+            
+                        </li>
+                        <li><b> ACE Inhibitors</b></li>
+                        <li><b> ACE Inhibitors</b></li>
+                        <li><b> Beta Blockers</b></li>
+                        <li><b> Antiplatelet Agents and Dual Antiplatelet Therapy</b></li>
+                        <li> <b>Anticoagulants</b> </li>
+                        <li> <b>Angiotensin II Receptor Blockers</b> </li>
+            
+                    </ul>
+            
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

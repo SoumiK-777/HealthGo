@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGO | Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='images/icon.jpeg')}}">
+</head>
+<body>
+    
+    <div id="main">
+
+        <div class="heading">
+            <h1>LOGIN</h1>
+        </div>
+        <form action="{{url_for('login')}}" method="POST">
+            <div class="username">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="username" value="" required>
+            </div>
+
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="password" value="" required>
+            </div>
+
+            <div class="forgot-password">
+                <p><a href="#">forgot your password</a></p>
+            </div>
+
+            <div class="login">
+                <button type="submit">LOGIN</button>
+            </div>
+        </form>
+        <div class="other-options">
+            <p>Or Sign Up Using</p>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/login/" target="_blank"><img src="{{url_for('static',filename='images/facebook.png')}}" alt="facebook-image" class="facebook"></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><img src="{{url_for('static',filename='images/twitter.png')}}" alt="twitter-image" class="twitter"></a>
+            <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1157960368%3A1681529705872157&ifkv=AQMjQ7TFxbFRE_zU6O8La1A1tgUlcHWK6Bv2qBjEoWhN2eCTSZ3zdsuuQ4pHMfcEUrwofKDAfzxfdQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><img src="{{url_for('static',filename='images/google-plus.png')}}" alt="google-image" class="google"></a>
+        </div>
+
+    </div>
+
+</body>
+</html>

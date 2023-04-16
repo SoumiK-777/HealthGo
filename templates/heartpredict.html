@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/heart.css')}}">
+    <title>HealthGO | Heart Failure Predictor</title>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="container3">
+        <div class="box img">
+
+        </div>
+        <div class="box img2">
+            <div class="head">
+                <div class="form sub"><h1>Form</h1></div>
+                <div class="form"><h1>Submitted Form</h1></div>
+
+            </div>
+            <div class="fromfill">
+                <div class="formbox">
+                   <h1><center><u>HEART PREDICTOR</u></center></h1>
+                   <div class="finalresult">
+             <div class="form">
+                <form action="{{url_for('heartpredict')}}" method="POST">
+
+                    <div class="age">
+                        <h3>Age : </h3>
+                        <input type="number" id="number" name="number" value="" min="5" max="122">
+                    </div>
+                    <div class="gender">
+                        <h3>Gender : </h3>
+                        <input type="radio" id="male" name="gender" value="1"><label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="0"><label for="female">Female</label>
+                    </div>
+                    <div class="gender chestPain">
+                        <h3>ChestPain : </h3>
+                        <input type="checkbox" id="male" name="ChestPain" value="3"><label for="male">TA(Typical Angina)</label>
+                        <input type="checkbox" id="female" name="ChestPain" value="1"><label for="female">ATA(Atypical Angina)</label>
+                        <input type="checkbox" id="other" name="ChestPain" value="2"><label for="other">NAP(Non-Anginal Pain)</label>
+                        <input type="checkbox" id="other" name="ChestPain" value="0"><label for="other">ASY(Asymptomatic)</label>
+                    </div>
+
+
+                    <div class="hypertension glucoseLevel">
+                        <h3>Hypertension status : </h3>
+                        <input type="radio" id="yes" name="hypertensionStatus" value="1"><label for="yes">Yes</label>
+                        <input type="radio" id="no" name="hypertensionStatus" value="0"><label for="yes">No</label>
+                    </div>
+
+                    <div class="heartDisease">
+                        <h3>ExericseAngina : </h3>
+                        <input type="radio" id="yes" name="ExericseAngina" value="1"><label for="yes">Yes</label>
+                        <input type="radio" id="no" name="ExericseAngina" value="0"><label for="yes">No</label>
+                    </div>
+
+                    
+                    <div class="glucoseLevel">
+                        <h3>Oldpeak : </h3>
+                        <input type="number" id="number" name="oldPeak" value="" min="0" step="any">
+                    </div>
+                    <div class="glucoseLevel">
+                        <h3>Max Heart Rate : </h3>
+                        <input type="number" id="number" name="maxHR" value="" min="0">
+                    </div>
+                    <div class="maritalStatus">
+                        <h3>ST_Slope : </h3>
+                        <input type="radio" id="yes" name="ST_Slope" value="2"><label for="yes">Upsloping</label>
+                        <input type="radio" id="yes" name="ST_Slope" value="1"><label for="yes">Flat</label>
+                        <input type="radio" id="no" name="ST_Slope" value="0"><label for="yes">Downsloping</label>
+                    </div>
+
+                    <div class="button">
+                        <input class="submit" type="submit" alt="submit" value="Submit">
+                        <button class="back">
+                            <img src="{{url_for('static',filename='images/reset.png')}}" alt="back">
+                           <a href="from.html">Refesh</a>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+
+                   </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    
+    
+        
+
+
+
+</body>
+</html>

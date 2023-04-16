@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGo | Common Disease</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/disease.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/icon.jpeg')}}" type="image/x-icon">
+</head>
+<body>
+
+    <!-- naigation bar -->
+    <div id="main">
+    
+        <!-- navbar -->
+        <div id="navbar">
+    
+            <div class="div1">
+                <div class="logo">
+                    <a href="{{url_for('index')}}"><img src="{{url_for('static',filename='images/healthgologo2.png')}}" alt="logo"></a>
+                </div>
+            </div>
+    
+            <div class="div2">
+                <ul class="list">
+                    <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}" class="l1img1"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia1">Home</a></li>
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a href="#"
+                            target="_blank" class="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia4">Patient Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a
+                            href="{{url_for('index')}}" target="_blank" class="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
+                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions" target="_blank"
+                            class="lia7">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <div class="div3">
+                <a href="#"><img src="{{url_for('static',filename='images/menu.png')}}" alt="menu" class="menu" id="menuid" onclick="toggleMenu()"></a>
+            </div>
+    
+        </div>
+    
+        <div id="nav2">
+    
+            <div class="search">
+                <form action="https://www.google.com/search?q" class="form" target="_blank">
+                    <input name="q" type="text" placeholder="Search for Medicines and Health Products" class="search-bar">
+                    <button type="submit" class="submit-button"><img src="{{url_for('static',filename='images/search.png')}}" alt="search-icon" class="submit-image"></button>
+                    <!-- <button type="reset" class="reset-button"><img src="/images/close.png" alt="close-icon" class="reset-image"></button> -->
+                </form>
+            </div>
+    
+            <div class="login-signup">
+                <button type="login" class="login-button">Login</button>
+                <button type="signup" class="signup-button">Sign Up</button>
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <!-- common disease -->
+
+    <div id="common-disease-container">
+
+        <div class="common-disease-container-head">
+            <h1>COMMON DISEASE</h1>
+        </div>
+
+        <!-- first -->
+
+        <div class="common-disease-one">
+
+            <div class="img1">
+                <img src="{{url_for('static',filename='images/pexels-anna-shvets-3902881.jpg')}}" alt="img">
+            </div>
+            <div class="content1"> 
+                <div class="content1-head">
+                    <h2>Cold And Flu</h2>
+                </div>
+                <div class="symptoms1">
+                    <h3>Symptoms</h3>
+                    <ul>
+                        <li>fever</li>
+                        <li>headache</li>
+                        <li>more intense pain and fatigue</li>
+                        <li>dry cough</li>
+                    </ul>
+                </div>
+                <div class="treatment1">
+                    <h3>Treatment</h3>
+                    <ul>
+                        <li>more and more rest.</li>
+                        <li>drink lots of fluids.</li>
+                        <li>stay away from cigrette smoke.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- second -->
+
+        <div class="common-disease-two">
+
+            <div class="content2"> 
+                <div class="content2-head">
+                    <h2>Allergies</h2>
+                </div>
+                <div class="symptoms2">
+                    <h3>Symptoms</h3>
+                    <ul>
+                        <li>eye irritation</li>
+                        <li>runny nose</li>
+                        <li>hives/skin rashes</li>
+                        <li>itchiness</li>
+                    </ul>
+                </div>
+                <div class="treatment2">
+                    <h3>Treatment</h3>
+                    <ul>
+                        <li>antihistamines</li>
+                        <li>decongestants</li>
+                        <li>anti-inflammatory agents</li>
+                        <li>allergy shots</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img2">
+                <img src="{{url_for('static',filename='images/pexels-cottonbro-studio-6865182.jpg')}}" alt="img">
+            </div>
+
+        </div>
+
+        <!-- third -->
+
+        <div class="common-disease-three">
+
+            <div class="img3">
+                <img src="{{url_for('static',filename='images/woman-having-stomach-ache-bending-with-hands-belly-discomfort-from-menstrual-cramps.jpg')}}" alt="img">
+            </div>
+            <div class="content3"> 
+                <div class="content3-head">
+                    <h2>Diarrhea</h2>
+                </div>
+                <div class="symptoms3">
+                    <h3>Symptoms</h3>
+                    <ul>
+                        <li>abdominal Cramps</li>
+                        <li>bloating</li>
+                        <li>nausea</li>
+                        <li>vomiting</li>
+                        <li>fever</li>
+                    </ul>
+                </div>
+                <div class="treatment3">
+                    <h3>Treatment</h3>
+                    <ul>
+                        <li>stay hydrated</li>
+                        <li>maintain good hygiene</li>
+                        <li>Try probiotics</li>
+                        <li>rest</li>
+                        <li>Seek medical attention</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- four -->
+
+        <div class="common-disease-four">
+
+            <div class="content4"> 
+                <div class="content4-head">
+                    <h2>Stomach Aches</h2>
+                </div>
+                <div class="symptoms4">
+                    <h3>Symptoms</h3>
+                    <ul>
+                        <li>pain or discomfort</li>
+                        <li>Nausea and vomiting</li>
+                        <li>bloating and gas</li>
+                        <li>constipation</li>
+                        <li>loss of apetite</li>
+                    </ul>
+                </div>
+                <div class="treatment4">
+                    <h3>Treatment</h3>
+                    <ul>
+                        <li>bowel rest</li>
+                        <li>hydration</li>
+                        <li>heat therapy</li>
+                        <li>home remedies</li>
+                        <li>exercise</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img4">
+                <img src="{{url_for('static',filename='images/pexels-andrea-piacquadio-3807733.jpg')}}" alt="img">
+            </div>
+
+        </div>
+
+        <!-- five -->
+
+        <div class="common-disease-five">
+
+            <div class="img4">
+                <img src="{{url_for('static',filename='images/_236bf310-694c-4c11-8002-65e3439ded5d.jpeg')}}" alt="img">
+            </div>
+            <div class="content4"> 
+                <div class="content5-head">
+                    <h2>Conjunctivitis ("pink eye“)</h2>
+                </div>
+                <div class="symptoms5">
+                    <h3>Symptoms</h3>
+                    <ul>
+                        <li>redness</li>
+                        <li>itchinig and burning senasation</li>
+                        <li>watery discharge</li>
+                        <li>crustiness</li>
+                        <li>sensitivity to light</li>
+                    </ul>
+                </div>
+                <div class="treatment5">
+                    <h3>Treatment</h3>
+                    <ul>
+                        <li>for bacterial conjunctivitis, antibiotic eye drops or ointments</li>
+                        <li>for viral conjunctivitis, warm compresses and artificial tears can help</li>
+                        <li>for llergic conjunctivitis, antihistamine eye drops or oral antihistamines can help</li>
+                        <li>for Irritant conjunctivitis,  flushing the eyes with water or saline solution</li>
+                        <li>consult doctor for adverse conditions</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- six -->
+
+        <div class="common-disease-six">
+
+            <div class="content6"> 
+                <div class="content4-head">
+                    <h2>Mononucleosis</h2>
+                </div>
+                <div class="symptoms6">
+                    <h3>Symptoms</h3>
+                    <ul>
+                        <li>fatigue</li>
+                        <li>sore throat</li>
+                        <li>fever</li>
+                        <li>swollen lymph nodes</li>
+                        <li>headache</li>
+                    </ul>
+                </div>
+                <div class="treatment6">
+                    <h3>Treatment</h3>
+                    <ul>
+                        <li>rest</li>
+                        <li>over-the-counter pain relievers such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) can help relieve fever, sore throat, and muscle and joint pain</li>
+                        <li>hydration</li>
+                        <li>corticosteroids</li>
+                        <li>antiviral medication</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img6">
+                <img src="{{url_for('static',filename='images/sad-ill-asian-girl-staying-self-quarantine-during-covid-catching-flu-sitting-home-with-cup.jpg')}}" alt="img">
+            </div>
+
+        </div>
+
+        <!-- seven -->
+
+        <div class="common-disease-seven">
+
+            <div class="img7">
+                <img src="{{url_for('static',filename='images/portrait-young-woman-having-problem-skin-pimple-her-cheek-wearing-towel-her-head-having-sad-expression-pointing.jpg')}}" alt="img">
+            </div>
+            <div class="content7"> 
+                <div class="content7-head">
+                    <h2>Chickenpox</h2>
+                </div>
+                <div class="symptoms7">
+                    <h3>Symptoms</h3>
+                    <ul>
+                        <li>rash</li>
+                        <li>fever</li>
+                        <li>fatigue</li>
+                        <li>headache</li>
+                        <li>loss of apetite</li>
+                    </ul>
+                </div>
+                <div class="treatment7">
+                    <h3>Treatment</h3>
+                    <ul>
+                        <li>Antihistamines</li>
+                        <li>Acetaminophen or ibuprofen</li>
+                        <li>cool baths</li>
+                        <li>calamine lotion</li>
+                        <li>antiviral medications</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- eight -->
+
+        <div class="common-disease-eight">
+
+            <div class="content8"> 
+                <div class="content8-head">
+                    <h2>Malaria</h2>
+                </div>
+                <div class="symptoms8">
+                    <h3>Symptoms</h3>
+                    <ul>
+                        <li>fever</li>
+                        <li>chills</li>
+                        <li>headache</li>
+                        <li>muscle and joint pain</li>
+                        <li>headache</li>
+                    </ul>
+                </div>
+                <div class="treatment8">
+                    <h3>Treatment</h3>
+                    <ul>
+                        <li>antimalarial drugs</li>
+                        <li>supportive care</li>
+                        <li>hospitalization</li>
+                        <li>prevention of complications such as anemia, cerebral malaria, etc.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img8">
+                <img src="{{url_for('static',filename='images/pexels-skyler-ewing-5507066 (1).jpg')}}" alt="img">
+            </div>
+
+        </div>
+
+        <!-- nine -->
+       
+        <div class="common-disease-nine">
+
+            <div class="img9">
+                <img src="{{url_for('static',filename='images/12468784_Wavy_Med-04_Single-03 (1).jpg')}}" alt="img">
+            </div>
+            <div class="content9"> 
+                <div class="content9-head">
+                    <h2>Tetanus</h2>
+                </div>
+                <div class="symptoms9">
+                    <h3>Symptoms</h3>
+                    <ul>
+                        <li>stiffness in jaw muscles</li>
+                        <li>stiffness in the neck and back muscles</li>
+                        <li>spasms and rigidity in other muscles</li>
+                        <li>high blood pressure and rapid heart rate</li>
+                        <li>fever and sweating</li>
+                    </ul>
+                </div>
+                <div class="treatment9">
+                    <h3>Treatment</h3>
+                    <ul>
+                        <li>antitoxin</li>
+                        <li>antibiotics</li>
+                        <li>wound care</li>
+                        <li>tetanus vaccine</li>
+                        <li>supportive therapy</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ten -->
+
+        <div class="common-disease-ten">
+
+            <div class="content10"> 
+                <div class="content10-head">
+                    <h2>Tuberculosis</h2>
+                </div>
+                <div class="symptoms10">
+                    <h3>Symptoms</h3>
+                    <ul>
+                        <li>cough</li>
+                        <li>fever</li>
+                        <li>fatigue</li>
+                        <li>loss of appetite</li>
+                        <li>chest pain</li>
+                    </ul>
+                </div>
+                <div class="treatment10">
+                    <h3>Treatment</h3>
+                    <ul>
+                        <li>antibiotics</li>
+                        <li>directly observed therapy (DOT)</li>
+                        <li>supportive care</li>
+                        <li>surgery</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img10">
+                <img src="{{url_for('static',filename='images/young-man-suffering-from-cough-shirt-looking-ill.jpg')}}" alt="img">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="footerbox">
+            <div class="footerad">
+                <div class="ad ad1"><img class="location" src="{{url_for('static',filename='images/pin.png')}}" srcset="">
+                    <div class="address">Corporate HQ
+                        33rd Floor, Aspect Towers,
+                        Business Bay, Dubai, UAE</div>
+                </div>
+                <div class="ad ad2"><img class="location" src="{{url_for('static',filename='images/mail.png')}}" srcset="">
+                    <div class="address">chq@asterdmhealthcare.com</div>
+                </div>
+                <div class="ad ad3"><img class="location" src="{{url_for('static',filename='images/telephone.png')}}" srcset="">
+                    <div class="address">+91 256548952/5555
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footerinfo">
+            <div class="infobox about1">
+                <div class="about">
+
+                    About Us<br>
+
+                    Our Journey<br>
+                    Our Services<br>
+                    Corporate Governance<br>
+                    Leadership<br>
+                    Board of Directors<br>
+                    Quality Policy<br>
+                    Data Privacy and Cookie Policy
+
+
+
+                </div>
+                <div class="about">
+
+
+                    Global Network<br>
+                    Investors<br>
+                    Aster Volunteers<br>
+                    Newsroom<br>
+
+                    Health Library<br>
+                    Resources<br>
+                    Videos<br>
+
+
+
+                </div>
+                <div class="about">
+                    <h1><u>HealthGO</u></h1>
+
+                </div>
+
+            </div>
+            <div class="infobox thought">
+                “Time and health are two precious assets that we don't recognize and appreciate until they have been
+                depleted."
+                <div class="tag">
+                    <h3><b><u>HealthGO</u></b></h3>
+                </div>
+                <h6>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</h6>
+            </div>
+            <div class="infobox">
+                Subscribe to our Newsletter<br>
+                <div class="emailsearch">
+                    <input type="text" class="inputtext" value="" placeholder="Enter your email here">
+                    <img src="{{url_for('static',filename='images/SendIcon.svg')}}" class="inputimg" alt="" srcset="">
+
+                </div>
+                <div class="name">
+
+                    Stay informed<br>
+                    <h1><u>HealthGO</u></h1>
+                </div>
+
+                <div class="icon">
+                    <img class="face" src="{{url_for('static',filename='images/facebook.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/twitter2.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/instagram.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/linkedin.png')}}" alt="" srcset="">
+                    <img class="face" src="{{url_for('static',filename='images/youtube.png')}}" alt="" srcset="">
+                
+                </div>
+                <div class="last">
+                    © 2023 HealthGO DM Healthcare. All rights reserved.<br>
+                    Designed and Developed by HealthGO-service
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- javascript -->
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>
