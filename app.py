@@ -1,7 +1,10 @@
 from flask import Flask,render_template, url_for, request, redirect, flash
+from flask_login import login_required
 import numpy as np
 import pickle
 import os
+import json
+import base64
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
@@ -14,7 +17,10 @@ app = Flask(__name__)
 
 load_dotenv()
 
-cred = credentials.Certificate(os.getenv('serviceAccountKey'))
+encoded_key = os.getenv('serviceAccountKey')
+cred= json.loads(base64.b64decode(encoded_key).decode('utf-8'))
+cred=credentials.Certificate(cred)
+
 firebase_admin.initialize_app(cred)
 db=firestore.client()
 
