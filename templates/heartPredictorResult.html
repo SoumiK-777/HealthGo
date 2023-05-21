@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title" id="title">Health GO | Heart Predictor</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/heartPredictorResult.css')}}">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/4850/4850909.png" type="image/x-icon" id="icon">
+</head>
+<body>
+
+    <!-- nav-bar -->
+
+    <div id="title-bar">
+
+        <div class="div1" id="div1">
+        
+            <div class="div1-1">
+        
+                <div class="div1-1-1">
+        
+                </div>
+        
+                <div class="div1-1-2" id="div1-1-2">
+                    <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="img">
+                </div>
+        
+                <div class="div1-1-3">
+        
+                </div>
+        
+            </div>
+        
+            <div class="div1-2">
+        
+                <ul class="list" id="list">
+                    <div class="cont1">
+                        <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}"
+                                class="l1img1"><a href="{{url_for('index')}}" class="lia1" id="lia1">Home</a></li>
+                        <div class="line1" id="line1"></div>
+                    </div>
+        
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a href="#"
+                            target="_blank" class="lia2" id="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia3" id="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia4" id="lia4">Patient
+                            Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia5" id="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia6" id="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
+                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions" target="_blank"
+                            class="lia7" id="lia7">FAQs</a></li>
+                </ul>
+        
+            </div>
+        
+        </div>
+
+        <!-- heart predictor result -->
+
+        <div class="stroke-main">
+            <div class="left" id="left">
+                <div class="result-box">
+                    <div class="result-head">
+                        <h1>HEART PREDICTOR RESULT</h1>
+                    </div>
+                    <div class="result-show">
+                        <p>The chances of heart problem is {{prediction}} %</p>
+                    </div>
+                    <div class="result-btn">
+                        <button type="submit" onclick="history.back()">Back</button>
+                    </div>
+                    <div class="types">
+                        <h3>The Types of Heart Disease :</h3>
+                        <p class="types-1"> 
+                            There are many different types of heart disease. Some you may be born with, called congenital heart disease. Other types develop during your lifetime. Coronary artery disease (also called coronary heart disease) is the most common type of heart disease. It happens slowly over time when a sticky substance called plaque builds up in the arteries that supply your heart muscle with blood. The plaque narrows or blocks blood flow to the heart muscle and can lead to other heart problems:
+                        </p>
+                        <ul class="lists">
+                            <li><span class="lis">Angina :</span>&nbspchest pain from lack of blood flow.</li>
+                            <li><span class="lis">Heart Attacks :</span>&nbspwhen part of the heart muscle dies from loss of blood flow.</li>
+                            <li><span class="lis">Heart Failure :</span>&nbspwhen you heart can't pump enough blood to meet your body's needs.</li>
+                            <li><span class="lis">Arrhythmia :</span>&nbspa problem with the rate or rhythm of your heartbeat.</li>
+                        </ul>
+                    </div>
+                    <div class="symptoms">
+                        <h3>The Symptoms of Heart Predictor</h3>
+                        <p>Sometimes heart disease may be “silent” and not diagnosed until a person experiences signs or symptoms of a heart attack, heart failure, or an arrhythmia. When these events happen, symptoms may include</p>
+                        <ul>
+                            <li><span class="lis">Heart Attack :</span>&nbsp Chest pain or discomfort, upper back or neck pain, indigestion, heartburn, nausea or vomiting, extreme fatigue, upper body discomfort, dizziness, and shortness of breath.</li>
+                            <li><span class="lis">Arrhythmia :</span>&nbsp Fluttering feelings in the chest (palpitations).</li>
+                            <li><span class="lis">Heart Failure :</span>&nbsp Shortness of breath, fatigue, or swelling of the feet, ankles, legs, abdomen, or neck veins.</li>
+                        </ul>
+                    </div>
+                    <div class="factors">
+                        <h3>The Risk Factors For Heart Disease : </h3>
+                        <p>High blood pressure, high blood cholesterol, and smoking are key risk factors for heart disease. About half of people in the United States (47%) have at least one of these three risk factors.2 Several other medical conditions and lifestyle choices can also put people at a higher risk for heart disease, including</p>
+                        <!-- <ol>
+                            <li>
+                                Lifestyle isk factors :
+                                <ul>
+                                    <li>Being overweight or obese</li>
+                                    <li>Physical inactivity</li>
+                                    <li>Heavy or binge drinking</li>
+                                    <li>Use of illegal drugs such as cocaine and methamphetamine</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Medical risk factors :
+                                <ul>
+                                    <li>Diabetes</li>
+                                    <li>Physical inactivity</li>
+                                    <li>Obstructive sleep apnea</li>
+                                    <li>Cardiovascular disease, including heart failure, heart defects, heart infection or irregular heart rhythm, such as atrial fibrillation</li>
+                                </ul>
+                            </li>
+                        </ol> -->
+                        <ul>
+                            <li>diabetes</li>
+                            <li>overweight and obesity</li>
+                            <li>unhealthy diet</li>
+                            <li>physical inactivity</li>
+                        </ul>
+                    </div>
+                    <div class="prevent">
+                        <h3>Cardiac Rehabilition :</h3>
+                        <p>Cardiac rehabilitation (rehab) is an important program for anyone recovering from a heart attack, heart failure, or some types of heart surgery. Cardiac rehab is a supervised program that includes</p>
+                        <ul>
+                            <li>Controlling high blood pressure (hypertension). This is one of the most important things you can do to reduce your stroke risk. If you've had a stroke, lowering your blood pressure can help prevent a subsequent TIA or stroke. Healthy lifestyle changes and medications are often used to treat high blood pressure.</li>
+                            <li>Lowering the amount of cholesterol and saturated fat in your diet. Eating less cholesterol and fat, especially saturated fat and trans fats, may reduce buildup in the arteries. If you can't control your cholesterol through dietary changes alone, your doctor may prescribe a cholesterol-lowering medication.</li>
+                            <li>Quitting tobacco use. Smoking raises the risk of stroke for smokers and nonsmokers exposed to secondhand smoke. Quitting tobacco use reduces the risk of stroke.</li>
+                            <li>Managing diabetes. Diet, exercise and losing weight can help you keep your blood sugar in a healthy range. If lifestyle factors don't seem to be enough to control your diabetes, your doctor may prescribe diabetes medication.</li>
+                        </ul>
+                    </div>
+                    <div class="medic">
+                        <h3>Types of Heart Medications :</h3>
+                        <p>If you've had a heart attack, you will most likely be prescribed medication that you will take for the rest of your life. There are many types and combinations of drugs used to treat coronary artery disease (CAD), and your doctor or other health care provider will decide the best treatment combination for your situation.</p>
+                        <ul>
+                            <li>Calcium Channel Blockers</li>
+                            <li>ACE Inhibitors</li>
+                            <li>ACE Inhibitors</li>
+                            <li>Beta Blockers</li>
+                            <li>Antiplatelet Agents and Dual Antiplatelet Therapy</li>
+                            <li>Anticoagulants</li>
+                            <li>Angiotensin II Receptor Blockers</li>
+                        </ul>
+                    </div>
+                    <div class="thanks">
+                        <p>Thank You For Reading</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="right" id="right">
+                <img src="https://img.freepik.com/free-vector/doctors-couple-with-apron-documents_24877-62740.jpg?t=st=1684564291~exp=1684564891~hmac=bea9601c87bffb875ce3066938409b5296133d275c6456a9ebabac672b24ac23" alt="image" class="right-image">
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- footer -->
+
+    <div class="footer" id="footer">
+
+        <div class="f-img">
+            <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="footer-image" class="f-image" id="f-image">
+        </div>
+
+        <div class="f-mid" id="f-mid">
+             <div class="f-contents" id="f-contents">
+                <div class="f-cont-para" id="f-cont-para">
+                    <p>KEY FEATURES :- </p><br>
+                </div>
+                <div class="f-cont-list"> 
+                    <ul>
+                        <li><a href="#">STROKE PREDICTOR</a></li>
+                        <li><a href="#">HEART PREDICTOR</a></li>
+                        <li><a href="#">BED BOOKING</a></li>
+                        <li><a href="#">APPOINT A DOCTER</a></li>
+                    </ul>
+                </div>
+                <div class="policy">
+                    <ul>
+                        <li>PRIVACY POLICY</li>
+                        <li>TERMS AND CONDITIONS</li>
+                    </ul>
+                </div>
+             </div>
+             <div class="f-app" id="f-app">
+                <div class="app1">
+                    <p>LET'S GO <span class="android"> &nbsp ANDROID</span></p>
+                </div>
+                <div class="app2">
+                    <button type="button" for="" value="" onclick="getMyLink()" class="button">Download</button>
+                </div>
+                <div class="app3">
+                    <p>for best user experience</p>
+                </div>
+             </div>
+             <div class="f-social" id="f-social">
+                <div class="follow-us">
+                    <p>FOLLOW US</p>
+                </div>
+                <div class="social-icons">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6033/6033716.png" alt="meta" onclick="gotometa()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="twitter" onclick="gototwitter()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111499.png" alt="google" onclick="gotogoogle()">
+                </div>
+                <div class="mail">
+                    <br>
+                    <p><span class="chat">LET's CHAT</span><br>
+                    healthgo123@gmail.com <br>
+                    +91 1234567890 <br>
+                    +91 1234567890</p>
+                </div>
+             </div>
+        </div>
+
+        <div class="copyright" id="copyright">
+            <!-- <div class="f-c-1"> 
+                <p>© 2023 HealthGO | All rights are reserved.| India</p>
+            </div> -->
+            <div class="made">
+                <p>made with <span class="love"> &nbsp♥&nbsp</span> by <span class="rt"> &nbsp RUNTIME TERROR</span></p>
+            </div>
+            <div class="consi">
+                <div class="contributors">
+                    <p> Contributors : <span class="auto-type"></span></p>
+                </div>
+                <div class="rights">
+                    <p>© 2023 HealthGO | All rights are reserved.| India</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="{{url_for('static',filename='js/heartPredictorResult.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title" id="title">Health GO | Stroke Predictor</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/strokePredictorResult.css')}}">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/4850/4850909.png" type="image/x-icon" id="icon">
+</head>
+<body>
+
+    <!-- nav-bar -->
+
+    <div id="title-bar">
+
+        <div class="div1" id="div1">
+        
+            <div class="div1-1">
+        
+                <div class="div1-1-1">
+        
+                </div>
+        
+                <div class="div1-1-2" id="div1-1-2">
+                    <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="img">
+                </div>
+        
+                <div class="div1-1-3">
+        
+                </div>
+        
+            </div>
+        
+            <div class="div1-2">
+        
+                <ul class="list" id="list">
+                    <div class="cont1">
+                        <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}"
+                                class="l1img1"><a href="http://127.0.0.1:5501/index.html" target="_blank" class="lia1"
+                                id="lia1">Home</a></li>
+                        <div class="line1" id="line1"></div>
+                    </div>
+        
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a href="#"
+                            target="_blank" class="lia2" id="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia3" id="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia4" id="lia4">Patient
+                            Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia5" id="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia6" id="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
+                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions" target="_blank"
+                            class="lia7" id="lia7">FAQs</a></li>
+                </ul>
+        
+            </div>
+        
+        </div>
+
+        <!-- stroke predictor -->
+
+        <div class="stroke-main">
+            <div class="left" id="left">
+                <div class="result-box">
+                    <div class="result-head">
+                        <h1>STROKE PREDICTOR RESULT</h1>
+                    </div>
+                    <div class="result-show">
+                        <p>The chances of stroke problem is {{prediction}} %</p>
+                    </div>
+                    <div class="result-btn">
+                        <button type="submit" onclick="history.back()">Back</button>
+                    </div>
+                    <div class="types">
+                        <h3>The Types of Stroke Disease</h3>
+                        <p class="types-1"> 
+                            There are two types of stroke: <br>1. Ischemic stroke. <br>2. Hemorrhagic stroke
+                        </p>
+                        <ul class="lists">
+                            <li><span class="lis">Ischemic stroke :</span>&nbspMost strokes are ischemic strokes. An ischemic stroke occurs when blood clots or other particles block the blood vessels to the brain. Fatty deposits called plaque can also cause blockages by building up in the blood vessels.</li>
+                            <li><span class="lis">Hemorrhagic stroke :</span>&nbspA hemorrhagic stroke happens when an artery in the brain leaks blood or ruptures (breaks open). The leaked blood puts too much pressure on brain cells, which damages them.</li>
+                        </ul>
+                    </div>
+                    <div class="symptoms">
+                        <h3>The Symptoms of Stroke Predictor</h3>
+                        <p>If you or someone you're with may be having a stroke, pay particular attention to the time the symptoms began. Some treatment options are most effective when given soon after a stroke begins. Signs and symptoms of stroke include :</p>
+                        <ul>
+                            <li>Trouble speaking and understanding what others are saying. You may experience confusion, slur words or have difficulty understanding speech.</li>
+                            <li>Paralysis or numbness of the face, arm or leg. You may develop sudden numbness, weakness or paralysis in the face, arm or leg. This often affects just one side of the body. Try to raise both your arms over your head at the same time. If one arm begins to fall, you may be having a stroke. Also, one side of your mouth may droop when you try to smile.</li>
+                            <li>Problems seeing in one or both eyes. You may suddenly have blurred or blackened vision in one or both eyes, or you may see double.</li>
+                            <li>Headache. A sudden, severe headache, which may be accompanied by vomiting, dizziness or altered consciousness, may indicate that you're having a stroke</li>
+                            <li>Trouble walking. You may stumble or lose your balance. You may also have sudden dizziness or a loss of coordination.</li>
+                        </ul>
+                    </div>
+                    <div class="factors">
+                        <h3>The Risk Factors For Stroke Disease : </h3>
+                        <p>Many factors can increase the risk of stroke. Potentially treatable stroke risk factors include : </p>
+                        <ol>
+                            <li>
+                                Lifestyle isk factors :
+                                <ul>
+                                    <li>Being overweight or obese</li>
+                                    <li>Physical inactivity</li>
+                                    <li>Heavy or binge drinking</li>
+                                    <li>Use of illegal drugs such as cocaine and methamphetamine</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Medical risk factors :
+                                <ul>
+                                    <li>Diabetes</li>
+                                    <li>Physical inactivity</li>
+                                    <li>Obstructive sleep apnea</li>
+                                    <li>Cardiovascular disease, including heart failure, heart defects, heart infection or irregular heart rhythm, such as atrial fibrillation</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="prevent">
+                        <h3>Prevention :</h3>
+                        <p>Cardiac rehabilitation (rehab) is an important program for anyone recovering from a heart attack, heart failure, or some types of heart surgery. Cardiac rehab is a supervised program that includes</p>
+                        <ul>
+                            <li>Controlling high blood pressure (hypertension). This is one of the most important things you can do to reduce your stroke risk. If you've had a stroke, lowering your blood pressure can help prevent a subsequent TIA or stroke. Healthy lifestyle changes and medications are often used to treat high blood pressure.</li>
+                            <li>Lowering the amount of cholesterol and saturated fat in your diet. Eating less cholesterol and fat, especially saturated fat and trans fats, may reduce buildup in the arteries. If you can't control your cholesterol through dietary changes alone, your doctor may prescribe a cholesterol-lowering medication.</li>
+                            <li>Quitting tobacco use. Smoking raises the risk of stroke for smokers and nonsmokers exposed to secondhand smoke. Quitting tobacco use reduces the risk of stroke.</li>
+                            <li>Managing diabetes. Diet, exercise and losing weight can help you keep your blood sugar in a healthy range. If lifestyle factors don't seem to be enough to control your diabetes, your doctor may prescribe diabetes medication.</li>
+                        </ul>
+                    </div>
+                    <div class="medic">
+                        <h3>Types of Preventive medications:</h3>
+                        <p>Anti-platelet drugs. Platelets are cells in the blood that form clots. Anti-platelet drugs make these cells less sticky and less likely to clot. The most commonly used anti-platelet medication is aspirin. Your doctor can help you determine the right dose of aspirin for you. After a TIA or minor stroke, your doctor may give you aspirin and an anti-platelet drug such as clopidogrel (Plavix) for a period of time to reduce the risk of another stroke. If you can't take aspirin, your doctor may prescribe clopidogrel alone. Anticoagulants. These drugs reduce blood clotting. Heparin is fast acting and may be used short-term in the hospital. Slower-acting warfarin (Jantoven) may be used over a longer term. Warfarin is a powerful blood-thinning drug, so you'll need to take it exactly as directed and watch for side effects. You'll also need to have regular blood tests to monitor warfarin's effects.</p>
+                        <ul>
+                            <li>Calcium Channel Blockers</li>
+                            <li>ACE Inhibitors</li>
+                            <li>ACE Inhibitors</li>
+                            <li>Beta Blockers</li>
+                            <li>Antiplatelet Agents and Dual Antiplatelet Therapy</li>
+                            <li>Anticoagulants</li>
+                            <li>Angiotensin II Receptor Blockers</li>
+                        </ul>
+                    </div>
+                    <div class="thanks">
+                        <p>Thank You For Reading</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="right" id="right">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-iranian-women-illustration_23-2149855996.jpg?w=740&t=st=1684516392~exp=1684516992~hmac=f0f19e7805c702b2bb819f83a66c78f60b9cfa1db579b8342792c13b0625da68" alt="image" class="right-image">
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- footer -->
+
+    <div class="footer" id="footer">
+
+        <div class="f-img">
+            <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="footer-image" class="f-image" id="f-image">
+        </div>
+
+        <div class="f-mid" id="f-mid">
+             <div class="f-contents" id="f-contents">
+                <div class="f-cont-para" id="f-cont-para">
+                    <p>KEY FEATURES :- </p><br>
+                </div>
+                <div class="f-cont-list"> 
+                    <ul>
+                        <li><a href="#">STROKE PREDICTOR</a></li>
+                        <li><a href="#">HEART PREDICTOR</a></li>
+                        <li><a href="#">BED BOOKING</a></li>
+                        <li><a href="#">APPOINT A DOCTER</a></li>
+                    </ul>
+                </div>
+                <div class="policy">
+                    <ul>
+                        <li>PRIVACY POLICY</li>
+                        <li>TERMS AND CONDITIONS</li>
+                    </ul>
+                </div>
+             </div>
+             <div class="f-app" id="f-app">
+                <div class="app1">
+                    <p>LET'S GO <span class="android"> &nbsp ANDROID</span></p>
+                </div>
+                <div class="app2">
+                    <button type="button" for="" value="" onclick="getMyLink()" class="button">Download</button>
+                </div>
+                <div class="app3">
+                    <p>for best user experience</p>
+                </div>
+             </div>
+             <div class="f-social" id="f-social">
+                <div class="follow-us">
+                    <p>FOLLOW US</p>
+                </div>
+                <div class="social-icons">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6033/6033716.png" alt="meta" onclick="gotometa()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="twitter" onclick="gototwitter()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111499.png" alt="google" onclick="gotogoogle()">
+                </div>
+                <div class="mail">
+                    <br>
+                    <p><span class="chat">LET's CHAT</span><br>
+                    healthgo123@gmail.com <br>
+                    +91 1234567890 <br>
+                    +91 1234567890</p>
+                </div>
+             </div>
+        </div>
+
+        <div class="copyright" id="copyright">
+            <!-- <div class="f-c-1"> 
+                <p>© 2023 HealthGO | All rights are reserved.| India</p>
+            </div> -->
+            <div class="made">
+                <p>made with <span class="love"> &nbsp♥&nbsp</span> by <span class="rt"> &nbsp RUNTIME TERROR</span></p>
+            </div>
+            <div class="consi">
+                <div class="contributors">
+                    <p> Contributors : <span class="auto-type"></span></p>
+                </div>
+                <div class="rights">
+                    <p>© 2023 HealthGO | All rights are reserved.| India</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="{{url_for('static',filename='js/strokePredictorResult.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Health GO | Login</title>
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/medical.png')}}" type="image/x-icon" id="icon">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/loginfinal.css')}}">
+</head>
+<body>
+
+    <!-- menu-bar -->
+    <div class="menu-bar">
+        
+            <!-- title-bar -->
+
+    <div id="title-bar">
+
+        <div class="div1" id="div1">
+
+            <div class="div1-1">
+
+                <div class="div1-1-1">
+
+                </div>
+
+                <div class="div1-1-2" id="div1-1-2">
+                    <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="img">
+                </div>
+
+                <div class="div1-1-3">
+                    
+                </div>
+
+            </div>
+
+            <div class="div1-2">
+
+                <ul class="list" id="list">
+                    <div class="cont1">
+                        <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}" class="l1img1"><a href="http://127.0.0.1:5501/index.html" target="_blank" class="lia1" id="lia1">Home</a></li>
+                        <div class="line1" id="line1"></div>
+                    </div>
+                    
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a href="#" target="_blank" class="lia2" id="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia3" id="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia4" id="lia4">Patient Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a href="http://127.0.0.1:5500/index.html" target="_blank" class="lia5" id="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a href="http://127.0.0.1:5500/index.html" target="_blank" class="lia6" id="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions" target="_blank" class="lia7" id="lia7">FAQs</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <!-- login -->
+    <div class="login-main" id="login-main">
+
+        <img src="https://images.pexels.com/photos/10035858/pexels-photo-10035858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img" class="image1" id="image1">
+
+        <div class="login-head" id="login-head">
+
+            <p id="para1">
+
+                <a href="#" id="p1">LOGIN &nbsp <span class="auto-type"></span></a>
+
+            </p>
+
+        </div>
+
+        <!-- <div class="allot" id="allot"> -->
+        <div class="docter-card" id="docter-card">
+            <div class="doc-card-para" id="doc-card-para">
+                {% if d_status %}
+                <p><a href="{{url_for('ddashboard')}}" id="href2">DOCTOR</a></p>
+                {% else %}
+                <p><a href="#" id="href2">DOCTOR</a></p>
+                {% endif %}
+            </div>
+            <div id="doc-img-1">
+                <img src="https://images.pexels.com/photos/6749778/pexels-photo-6749778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="docter-image" id="img-1">
+                <!-- <a href="#"><p id="doc-card-para">DOCTER</p></a> -->
+            </div>
+        </div>
+
+        <div class="patient-card" id="patient-card">
+            <div class="pat-card-para" id="pat-card-para">
+                {% if p_status %}
+                <p><a href="{{url_for('pdashboard')}}" id="href2">PATIENT</a></p>
+                {% else %}
+                <p><a href="#" id="href2">PATIENT</a></p>
+                {% endif %}
+            </div>
+            <div id="pat-img-1">
+                <img src="https://images.pexels.com/photos/4266947/pexels-photo-4266947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="patient-image" id="img-2">
+                <!-- <a href="#"><p id="doc-card-para">DOCTER</p></a> -->
+            </div>
+        </div>
+
+        <!-- hospital -->
+        <div class="hospital-card" id="hospital-card">
+            <div class="hosp-card-para" id="hosp-card-para">
+                {% if h_status %}
+                <p><a href="{{url_for('hdashboard')}}" id="href2">HOSPITAL</a></p>
+                {% else %}
+                <p><a href="#" id="href2">HOSPITAL</a></p>
+                {% endif %}
+            </div>
+            <div id="hosp-img-1">
+                <img src="https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80" alt="hospital-image" id="img-3">
+            </div>
+        </div>
+        <!-- </div> -->
+
+
+
+    </div>
+
+    <!-- docter proper form starts here -->
+
+    <div id="doc-main-form" class="doc-main-form">
+
+        <div class=form-1 id="form-1"> 
+            <img src="https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg" alt="img" id="form-1-img">
+        </div>
+
+        <div class="form-2" id="form-2">
+            <div class="form-2-1" id="form-2-1">
+                <div class="r1" id="r1"></div>
+                <div class="r2" id="r2"></div>
+                <div class="login-jr" id="login-jr">
+                    <form action="{{url_for('dlogin')}}" method="POST">
+                    <div class="form" id="form">
+
+                        <div class="username" id="username">
+                            <label for="username" class="username-label">Username</label><br>
+                            <img src="https://cdn-icons-png.flaticon.com/256/1077/1077114.png" alt="img" class="user-img" id="user-img">
+                            <input type="text" placeholder="enter your username" class="username-text" id="username-text" name="username">
+                        </div>
+                        <div class="password" id="password">
+                            <label for="password" class="password-label">Password</label><br>
+                            <img src="https://cdn-icons-png.flaticon.com/512/807/807292.png" alt="img" class="pass-img">
+                            <input type="password" placeholder="enter your password" class="password-text" name="password">
+                        </div>
+                        <div class="forgot-password" id="forgot-password">
+                            <p><a href="#">forgot password ?</a></p>
+                        </div>
+                        <div class="login-button" id="login-button">
+                            <button type="submit" class="log-but">Login</button>
+                        </div>
+                        <div class="other-signin-opt">
+                            <div class="oso-para">
+                                <p>or sign in using</p>
+                            </div>
+                            <div class="oso-icons">
+                                <div class="facebook">
+                                    <a href="https://www.facebook.com/login/"><img src="https://cdn-icons-png.flaticon.com/512/2335/2335286.png" alt="facebook-image" class="face-img" id="face-img"></a>
+                                </div>
+                                <div class="twitter">
+                                    <a href="https://twitter.com/i/flow/login"><img src="https://cdn-icons-png.flaticon.com/512/2335/2335289.png" alt="twitter-image" class="twit-img"></a>
+                                </div>
+                                <div class="google">
+                                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S420397538%3A1684224706816383&ifkv=Af_xneG_328Kzma1qdSeYrtIfpOyVgea8g34VZuC5BtI579lrSqNxJRXqFzOCIUGEiWZV_q2A-JcTw&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="https://cdn-icons-png.flaticon.com/512/356/356049.png" alt="google-image" class="goog-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="not-reg">
+                            <p>not registered yet? &nbsp <a href="#" class="create-acc" id="create-acc">Create account</a></p>
+                        </div>
+
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="back" id="back">
+                <input type="button" value="Go back!" onclick="location.reload()" class="back-but" id="back-but">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- hospital form -->
+
+    <div id="hosp-main-form" class="hosp-main-form">
+
+        <div class=hosp-form-1 id="hosp-form-1"> 
+            <img src="https://images.pexels.com/photos/2959588/pexels-photo-2959588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img" id="hosp-form-1-img">
+        </div>
+
+        <div class="hosp-form-2" id="hosp-form-2">
+            <div class="hosp-form-2-1">
+                <div class="hosp-r1"></div>
+                <div class="hosp-r2"></div>
+                <div class="hosp-login-jr">
+                    <form action="{{url_for('hlogin')}}" method="POST">
+                    <div class="hosp-form" id="hosp-form">
+
+                        <div class="hosp-username" id="hosp-username">
+                            <label for="username" class="hosp-username-label">Username</label><br>
+                            <img src="https://cdn-icons-png.flaticon.com/256/1077/1077114.png" alt="img" class="hosp-user-img">
+                            <input type="text" placeholder="enter your username" class="hosp-username-text" name="username">
+                        </div>
+                        <div class="hosp-password" id="hosp-password">
+                            <label for="password" class="hosp-password-label">Password</label><br>
+                            <img src="https://cdn-icons-png.flaticon.com/512/807/807292.png" alt="img" class="hosp-pass-img">
+                            <input type="password" placeholder="enter your password" class="hosp-password-text" name="password">
+                        </div>
+                        <div class="hosp-forgot-password" id="hosp-forgot-password">
+                            <p><a href="#">forgot password ?</a></p>
+                        </div>
+                        <div class="hosp-login-button" id="hosp-login-button">
+                            <button type="submit" class="hosp-log-but">Login</button>
+                        </div>
+                        <div class="hosp-other-signin-opt">
+                            <div class="hosp-oso-para">
+                                <p>or sign in using</p>
+                            </div>
+                            <div class="hosp-oso-icons">
+                                <div class="hosp-facebook">
+                                    <a href="https://www.facebook.com/login/"><img src="https://cdn-icons-png.flaticon.com/512/2335/2335286.png" alt="facebook-image" class="hosp-face-img" id="hosp-face-img"></a>
+                                </div>
+                                <div class="hosp-twitter">
+                                    <a href="https://twitter.com/i/flow/login"><img src="https://cdn-icons-png.flaticon.com/512/2335/2335289.png" alt="twitter-image" class="hosp-twit-img"></a>
+                                </div>
+                                <div class="hosp-google">
+                                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S420397538%3A1684224706816383&ifkv=Af_xneG_328Kzma1qdSeYrtIfpOyVgea8g34VZuC5BtI579lrSqNxJRXqFzOCIUGEiWZV_q2A-JcTw&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="https://cdn-icons-png.flaticon.com/512/356/356049.png" alt="google-image" class="hosp-goog-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosp-not-reg">
+                            not registered yet? &nbsp <a href="#" class="hosp-create-acc" id="hosp-create-acc">Create account</a>
+                        </div>
+
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="hosp-back" id="hosp-back">
+                <input type="button" value="Go back!" onclick="location.reload()" class="hosp-back-but" id="hosp-back-but">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- patient form -->
+    
+        <div id="pat-main-form" class="pat-main-form">
+
+            <div class=pat-form-1 id="pat-form-1"> 
+                <img src="https://images.pexels.com/photos/6436253/pexels-photo-6436253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img" id="pat-form-1-img">
+            </div>
+
+            <div class="pat-form-2" id="pat-form-2">
+                <div class="pat-form-2-1">
+                    <div class="pat-r1"></div>
+                    <div class="pat-r2"></div>
+                    <div class="pat-login-jr">
+                        <form action="{{url_for('plogin')}}" method="POST">
+                        <div class="pat-form" id="pat-form">
+
+                            <div class="pat-username" id="pat-username">
+                                <label for="username" class="pat-username-label">Username</label><br>
+                                <img src="https://cdn-icons-png.flaticon.com/256/1077/1077114.png" alt="img" class="pat-user-img">
+                                <input type="text" placeholder="enter your username" class="pat-username-text" name="username" id="username">
+                            </div>
+                            <div class="pat-password" id="pat-password">
+                                <label for="password" class="pat-password-label">Password</label><br>
+                                <img src="https://cdn-icons-png.flaticon.com/512/807/807292.png" alt="img" class="pat-pass-img">
+                                <input type="password" placeholder="enter your password" class="pat-password-text" name="password" id="password">
+                            </div>
+                            <div class="pat-forgot-password" id="pat-forgot-password">
+                                <p><a href="#">forgot password ?</a></p>
+                            </div>
+                            <div class="pat-login-button" id="pat-login-button">
+                                <button type="submit" class="pat-log-but">Login</button>
+                            </div>
+                            <div class="pat-other-signin-opt">
+                                <div class="pat-oso-para">
+                                    <p>or sign in using</p>
+                                </div>
+                                <div class="pat-oso-icons">
+                                    <div class="pat-facebook">
+                                        <a href="https://www.facebook.com/login/"><img src="https://cdn-icons-png.flaticon.com/512/2335/2335286.png" alt="facebook-image" class="pat-face-img" id="pat-face-img"></a>
+                                    </div>
+                                    <div class="pat-twitter">
+                                        <a href="https://twitter.com/i/flow/login"><img src="https://cdn-icons-png.flaticon.com/512/2335/2335289.png" alt="twitter-image" class="pat-twit-img"></a>
+                                    </div>
+                                    <div class="pat-google">
+                                        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S420397538%3A1684224706816383&ifkv=Af_xneG_328Kzma1qdSeYrtIfpOyVgea8g34VZuC5BtI579lrSqNxJRXqFzOCIUGEiWZV_q2A-JcTw&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="https://cdn-icons-png.flaticon.com/512/356/356049.png" alt="google-image" class="pat-goog-img"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pat-not-reg">
+                                not registered yet? &nbsp <a href="#" class="pat-create-acc" id="pat-create-acc">Create account</a>
+                            </div>
+
+                        </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="pat-back" id="pat-back">
+                    <input type="button" value="Go back!" onclick="location.reload()" class="pat-back-but" id="pat-back-but">
+                </div>
+
+            </div>
+
+        </div>
+    
+
+    <!-- <div id="myContent">
+        This is the content that will be inside the new popup window
+    </div> -->
+    
+    <!-- javascript -->
+    <script src="{{url_for('static',filename='js/loginfinal.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>

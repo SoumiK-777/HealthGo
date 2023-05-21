@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title" id="title">Health GO | Stroke Predictor</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/heartPredictor.css')}}">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/4850/4850909.png" type="image/x-icon" id="icon">
+</head>
+<body>
+
+    <!-- nav-bar -->
+
+    <div id="title-bar">
+
+        <div class="div1" id="div1">
+        
+            <div class="div1-1">
+        
+                <div class="div1-1-1">
+        
+                </div>
+        
+                <div class="div1-1-2" id="div1-1-2">
+                    <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="img">
+                </div>
+        
+                <div class="div1-1-3">
+        
+                </div>
+        
+            </div>
+        
+            <div class="div1-2">
+        
+                <ul class="list" id="list">
+                    <div class="cont1">
+                        <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}"
+                                class="l1img1"><a href="{{url_for('index')}}" class="lia1" id="lia1">Home</a></li>
+                        <div class="line1" id="line1"></div>
+                    </div>
+        
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a href="#"
+                            target="_blank" class="lia2" id="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia3" id="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia4" id="lia4">Patient
+                            Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia5" id="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia6" id="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
+                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions" target="_blank"
+                            class="lia7" id="lia7">FAQs</a></li>
+                </ul>
+        
+            </div>
+        
+        </div>
+
+        <!-- heart predictor -->
+
+        <div class="stroke-main">
+            <div class="left" id="left">
+                <img src="https://img.freepik.com/free-vector/group-doctors-avatar-characters_24877-62364.jpg?w=740&t=st=1684560750~exp=1684561350~hmac=405b8e409874a19b1a4bdded24a8b3b21fb085132128a223415b0dd0984d719a"
+                    alt="image" class="left-image">
+            </div>
+            <div class="right" id="right">
+                <div class="form-outer">
+                    <div class="head">
+                        <h1>HEART PREDICTOR</h1>
+                    </div>
+                    <div class="form">
+                        <form action="{{url_for('heartpredict')}}" method="POST" class="main-form">
+        
+                            <div class="gender">
+                                <div class="g-1">
+                                    <h3>Gender : </h3>
+                                </div>
+                                <div class="g-2">
+                                    <input type="radio" class="male" name="gender" value="1" required><label
+                                        for="male">Male</label>
+                                    <input type="radio" class="female" name="gender" value="0"><label
+                                        for="female">Female</label>
+                                </div>
+                            </div>
+        
+                            <div class="age">
+                                <div class="a-1">
+                                    <h3>Age : </h3>
+                                </div>
+                                <div class="a-2">
+                                    <input type="number" class="number" name="age" value="number" min="5" max="122" required>
+                                </div>
+                            </div>
+        
+                            <div class="hypertension">
+                                <div class="h-1">
+                                    <h3>Hypertension status : </h3>
+                                </div>
+                                <div class="h-2">
+                                    <input type="radio" id="yes" name="hypertensionStatus" value="1" required><label for="yes">Yes</label>
+                                        <input type="radio" id="no" name="hypertensionStatus" value="0" required><label for="yes">No</label>
+                                    <!-- <input type="number" class="number" name="number" value="number" min="5" max="122" required> -->
+                                </div>
+                            </div>
+        
+                            <div class="heartDisease">
+                                <div class="hd-1">
+                                    <h3>Chest Pain : </h3>
+                                </div>
+                                <div class="hd-2">
+                                    <input type="radio" id="male" name="ChestPain" value="3" required><label
+                                        for="male">TA</label>
+                                    <input type="radio" id="female" name="ChestPain" value="1"><label
+                                        for="female">ATA</label>
+                                    <input type="radio" id="other" name="ChestPain" value="2"><label for="other">NAP</label>
+                                    <input type="radio" id="other" name="ChestPain" value="0"><label for="other">ASY</label>
+                                </div>
+                                <a href="https://www.nhlbi.nih.gov/health/angina/types" class="link" target="_blank">Details</a>
+                            </div>
+        
+                            <div class="maritalStatus">
+                                <div class="m-1">
+                                    <h3>Exercise Angina : </h3>
+                                </div>
+                                <div class="m-2">
+                                    <input type="radio" id="yes" name="ExerciseAngina" value="1" required><label
+                                        for="yes">Yes</label>
+                                    <input type="radio" id="no" name="ExerciseAngina" value="0"><label for="yes">No</label>
+                                </div>
+                            </div>
+        
+                            <!-- <div class="glucoseLevel">
+                                        <div class="gl-1">
+                                        <h3>Glucose Lev : </h3>
+                                        </div>
+                                        <div class="gl-2">
+                                        <input type="number" id="number" name="number" value="number" min="80" max="130" required>
+                                        </div>
+                                    </div> -->
+                            <div class="glucoseLevel">
+                                <div class="g1-l">
+                                    <h3>Oldpeak : </h3>
+                                </div>
+                                <div class="a-2">
+                                    <input type="number" id="oldPeak" step="any" class="number" name="oldPeak" placeholder="<2 (Low Risk) & >2.5(High Risk)" required>
+                                </div>
+                                <a href="https://www.researchgate.net/figure/CLASSIFICATION-OF-OLD-PEAK_tbl2_44260568" class="link" target="_blank">Details</a>
+                            </div>
+        
+                            <div class="slope">
+                                <div class="s-1">
+                                    <h3>ST_Slope : </h3>
+                                </div>
+                                <div class="s-2">
+                                    <input type="radio" class="male" name="ST_Slope" value="2" required><label
+                                        for="male">Up</label>
+                                    <input type="radio" class="female" name="ST_Slope" value="0"><label
+                                        for="female">Down</label>
+                                    <input type="radio" class="other" name="ST_Slope" value="1"><label
+                                        for="other">Flat</label>
+                                </div>
+                                <a href="https://pubmed.ncbi.nlm.nih.gov/3739881/" class="link" target="_blank">Details</a>
+                            </div>
+                            <div class="max-hr">
+                                <div class="mx-1">
+                                    <h3>Max HR : </h3>
+                                </div>
+                                <div class="mx-2">
+                                    <input type="number" step="any" class="number" name="maxHR" min="100" max="250" placeholder="Normal maxHR is 220-Age" required>
+                                </div>
+                            </div>
+                            <div class="button-s">
+                                <button type="submit" class="submit" id="submitid">
+                                    <!-- <img src="/images/upload.png" alt="submit"> -->
+                                    Submit
+                                    <!-- <a href="/indexx.html">Submit</a> -->
+                                </button>
+                                <button class="reset" type="reset">
+                                    <!-- <img src="/images/reset.png" alt="back"> -->
+                                    Reset
+                                </button>
+                            </div>
+        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    <!-- footer -->
+
+    <div class="footer" id="footer">
+
+        <div class="f-img">
+            <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="footer-image" class="f-image" id="f-image">
+        </div>
+
+        <div class="f-mid" id="f-mid">
+             <div class="f-contents" id="f-contents">
+                <div class="f-cont-para" id="f-cont-para">
+                    <p>KEY FEATURES :- </p><br>
+                </div>
+                <div class="f-cont-list"> 
+                    <ul>
+                        <li><a href="#">STROKE PREDICTOR</a></li>
+                        <li><a href="#">HEART PREDICTOR</a></li>
+                        <li><a href="#">BED BOOKING</a></li>
+                        <li><a href="#">APPOINT A DOCTER</a></li>
+                    </ul>
+                </div>
+                <div class="policy">
+                    <ul>
+                        <li>PRIVACY POLICY</li>
+                        <li>TERMS AND CONDITIONS</li>
+                    </ul>
+                </div>
+             </div>
+             <div class="f-app" id="f-app">
+                <div class="app1">
+                    <p>LET'S GO <span class="android"> &nbsp ANDROID</span></p>
+                </div>
+                <div class="app2">
+                    <button type="button" for="" value="" onclick="getMyLink()" class="button">Download</button>
+                </div>
+                <div class="app3">
+                    <p>for best user experience</p>
+                </div>
+             </div>
+             <div class="f-social" id="f-social">
+                <div class="follow-us">
+                    <p>FOLLOW US</p>
+                </div>
+                <div class="social-icons">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6033/6033716.png" alt="meta" onclick="gotometa()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="twitter" onclick="gototwitter()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111499.png" alt="google" onclick="gotogoogle()">
+                </div>
+                <div class="mail">
+                    <br>
+                    <p><span class="chat">LET's CHAT</span><br>
+                    healthgo123@gmail.com <br>
+                    +91 1234567890 <br>
+                    +91 1234567890</p>
+                </div>
+             </div>
+        </div>
+
+        <div class="copyright" id="copyright">
+            <!-- <div class="f-c-1"> 
+                <p>© 2023 HealthGO | All rights are reserved.| India</p>
+            </div> -->
+            <div class="made">
+                <p>made with <span class="love"> &nbsp♥&nbsp</span> by <span class="rt"> &nbsp RUNTIME TERROR</span></p>
+            </div>
+            <div class="consi">
+                <div class="contributors">
+                    <p> Contributors : <span class="auto-type"></span></p>
+                </div>
+                <div class="rights">
+                    <p>© 2023 HealthGO | All rights are reserved.| India</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="{{url_for('static',filename='js/heartPredictor.js')}}"></script>
+</body>
+</html>
