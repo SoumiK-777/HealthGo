@@ -6,49 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static',filename='css/medicine.css')}}">
-    <link rel="shortcut icon" href="{{url_for('static',filename='images/icon.jpeg')}}" type="image/x-icon">
-    <title>HealthGO | Medicine
+    <link rel="shortcut icon" href="/images/icon.jpeg" type="image/x-icon">
+    <title>medicine
     </title>
 </head>
 
 <body>
 
-    <!-- naigation bar -->
-    <div id="main">
+    <!-- navigation bar -->
+
+    <!-- <div id="main">
     
-        <!-- navbar -->
-        <div id="navbar">
+         navbar -->
+        <!-- <div id="navbar">
     
             <div class="div1">
                 <div class="logo">
-                    <a href="{{url_for('index')}}"><img src="{{url_for('static',filename='images/healthgologo2.png')}}"
-                            alt="logo"></a>
+                    <a href="/index.html"><img src="/images/healthgologo2.png" alt="logo"></a>
                 </div>
             </div>
     
             <div class="div2">
                 <ul class="list">
-                    <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}"
-                            class="l1img1"><a href="{{url_for('index')}}" target="_blank" class="lia1">Home</a></li>
-                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a
-                            href="#" target="_blank" class="lia2">About us</a></li>
-                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
-                            href="{{url_for('index')}}" target="_blank" class="lia3">Services</a></li>
-                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
-                            href="{{url_for('index')}}" target="_blank" class="lia4">Patient Resources</a></li>
-                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
-                            href="{{url_for('index')}}" target="_blank" class="lia5">Appointment</a></li>
-                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}"
-                            class="l6img6"><a href="{{url_for('index')}}" target="_blank" class="lia6">Contact us</a></li>
-                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
-                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions"
-                            target="_blank" class="lia7">FAQs</a></li>
+                    <li class="l1"><img src="/images/home-icon-silhouette.png" class="l1img1"><a href="#" class="lia1">Home</a></li>
+                    <li class="l2"><img src="/images/information.png" class="l2img2"><a href="#" class="lia2">About us</a></li>
+                    <li class="l3"><img src="/images/customer-support.png" class="l3img3"><a href="#" class="lia3">Services</a></li>
+                    <li class="l4"><img src="/images/support.png" class="l4img4"><a href="#" class="lia4">Patient Resources</a></li>
+                    <li class="l5"><img src="/images/appointment.png" class="l5img5"><a href="#" class="lia5">Appointment</a></li>
+                    <li class="l6"><img src="/images/notebook-of-contacts.png" class="l6img6"><a href="#" class="lia6">Contact us</a></li>
+                    <li class="l7"><img src="/images/faq.png" class="l7img7"><a href="#" class="lia7">FAQs</a></li>
                 </ul>
             </div>
     
             <div class="div3">
-                <a href="#"><img src="{{url_for('static',filename='images/menu.png')}}" alt="menu" class="menu" id="menuid"
-                        onclick="toggleMenu()"></a>
+                <a href="#"><img src="/images/menu.png" alt="menu" class="menu" id="menuid" onclick="toggleMenu()"></a>
             </div>
     
         </div>
@@ -58,11 +49,9 @@
             <div class="search">
                 <form action="https://www.google.com/search?q" class="form" target="_blank">
                     <input name="q" type="text" placeholder="Search for Medicines and Health Products" class="search-bar">
-                    <button type="submit" class="submit-button"><img
-                            src="{{url_for('static',filename='images/search.png')}}" alt="search-icon"
-                            class="submit-image"></button>
-                    <!-- <button type="reset" class="reset-button"><img src="/images/close.png" alt="close-icon" class="reset-image"></button> -->
-                </form>
+                    <button type="submit" class="submit-button"><img src="/images/search.png" alt="search-icon" class="submit-image"></button>
+                    <button type="reset" class="reset-button"><img src="/images/close.png" alt="close-icon" class="reset-image"></button> -->
+                <!-- </form>
             </div>
     
             <div class="login-signup">
@@ -72,7 +61,7 @@
     
         </div>
     
-    </div>
+    </div> --> 
 
     <!-- *************** -->
     <div class="medicine">
@@ -88,10 +77,10 @@
 
 
     <div class="container">
-        <a href="{{url_for('stomach')}}">
-        <div class="card" >
+        <a href="stomach.html">
+        <div class="cardindex" >
             <div class="img">
-                <img src="{{url_for('static',filename='images/stomach.webp')}}" alt="">
+                <img src="img/stomach.webp" alt="">
             </div>
             <div class="content">
                 <h1>Stomach Care</h1>
@@ -102,9 +91,9 @@
             </div>
         </div></a>
         <a href="diabetes.html">
-        <div class="card">
+        <div class="cardindex">
             <div class="img">
-                <img src="{{url_for('static',filename='images/diabetes.webp')}}" alt="">
+                <img src="img/diabetes.webp" alt="">
             </div>
             <div class="content">
                 <h1>Diabetes Care</h1>
@@ -115,9 +104,9 @@
             </div>
         </div></a>
         <a href="cardiac.html">
-        <div class="card">
+        <div class="cardindex">
             <div class="img">
-                <img src="{{url_for('static',filename='images/cardiac care.webp')}}" alt="">
+                <img src="img/cardiac care.webp" alt="">
             </div>
             <div class="content">
                 <h1>Cardiac Care</h1>
@@ -128,9 +117,9 @@
             </div>
         </div></a>
         <a href="liver.html">
-        <div class="card">
+        <div class="cardindex">
             <div class="img">
-                <img src="{{url_for('static',filename='images/liver.webp')}}" alt="">
+                <img src="img/liver.webp" alt="">
             </div>
             <div class="content">
                 <h1>Liver Care</h1>
@@ -139,9 +128,9 @@
             </div>
         </div></a>
         <a href="bone.html">
-        <div class="card">
+        <div class="cardindex">
             <div class="img">
-                <img src="{{url_for('static',filename='images/bone.webp')}}" alt="">
+                <img src="img/bone.webp" alt="">
             </div>
             <div class="content">
                 <h1>Muscle & Joint</h1>
@@ -151,9 +140,9 @@
             </div>
         </div></a>
         <a href="kidneny.html">
-        <div class="card">
+        <div class="cardindex">
             <div class="img">
-                <img src="{{url_for('static',filename='images/kidneny.webp')}}" alt="">
+                <img src="img/kidneny.webp" alt="">
             </div>
             <div class="content">
                 <h1>kidney Care</h1>
@@ -164,9 +153,9 @@
             </div>
         </div></a>
         <a href="respiratory.html">
-        <div class="card">
+        <div class="cardindex">
             <div class="img">
-                <img src="{{url_for('static',filename='images/respiratory.webp')}}" alt="">
+                <img src="img/respiratory.webp" alt="">
             </div>
             <div class="content">
                 <h1>Respiratory Care</h1>
@@ -176,9 +165,9 @@
             </div>
         </div></a>
         <a href="eye.html">
-        <div class="card">
+        <div class="cardindex">
             <div class="img">
-                <img src="{{url_for('static',filename='images/eye.webp')}}" alt="">
+                <img src="img/eye.webp" alt="">
             </div>
             <div class="content">
                 <h1>Eye Care</h1>
@@ -212,11 +201,11 @@
     <div class="info" id="info">
         <a href="Ensure.html">
         <div class="itmes itme1 minibox1" id="itme1">
-            <div class="card1">
+            <div class="card1"> 
                 <div class="innercard">
 
                     <div class="titlebox">
-                        <h1>Ensure</h1>
+                        <!-- <h1>Ensure</h1> -->
 
                     </div>
                     <!-- <div class="contantbox1">
@@ -241,7 +230,7 @@
                 <div class="innercard">
 
                     <div class="titlebox">
-                        <h1>Sri Sri </h1>
+                        <!-- <h1>Sri Sri </h1> -->
                     </div>
                 </div>
             </div>
@@ -252,7 +241,7 @@
                 <div class="innercard">
 
                     <div class="titlebox">
-                        <h1>Dabur</h1>
+                        <!-- <h1>Dabur</h1> -->
                     </div>
                 </div>
             </div>
@@ -264,7 +253,7 @@
                 <div class="innercard">
 
                     <div class="titlebox">
-                        <h1>Nivea</h1>
+                        <!-- <h1>Nivea</h1> -->
                     </div>
                 </div>
             </div>
@@ -275,7 +264,7 @@
                 <div class="innercard">
 
                     <div class="titlebox">
-                        <h1>zandu</h1>
+                        <!-- <h1>zandu</h1> -->
                     </div>
                 </div>
             </div>
@@ -286,374 +275,585 @@
                 <div class="innercard">
 
                     <div class="titlebox">
-                        <h1>Kapiva</h1>
+                        <!-- <h1>Kapiva</h1> -->
                     </div>
                 </div>
             </div>
         </div></a>
     </div>
+
+
     <div class="heading">
         <h1> Common medicine</h1>
 
     </div>
-    <!-- <div class="container">
-        <div class="card">
-            <div class="img">
-                <img src="img/ensure.webp" alt="">
-            </div>
-            <div class="content">
-                <h1>Stomach Care</h1>
-                <p>Get 20% discount <br>
-                    Get All relife<br>
-                </p>
-
-            </div>
-        </div>
-    </div> -->
-
-    <div class="cardbox">
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/softovac-sf-bowel-regulator-for-effective-relief-from-constipation.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>softovac-sf-bowel Regulator</h1>
-                <p>
-                    jar of 250 gm powder<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    2047 rating<br>
-
-                <div class="price">
-                    <h2>MRP:300.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/eno-fruit-salt-sachet-5gm-each-lemon.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>Eno Fruit Salt Sachet(5gm Each)</h1>
-                <p>
-                    strip of 15 tablets<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    2047 rating<br>
-
-                <div class="price">
-                    <h2>MRP:50.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
-
-        </div>
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/dabur-pudin-hara-pearls.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>Dabur dabur pudin hara pearls</h1>
-                <p>
-                    strip of 10 soft gelatin<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    5047 rating<br>
-
-                <div class="price">
-                    <h2>MRP:300.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
-        </div>
+ 
+    <div class="gin" id="gin">
         
-
-    </div>
+    
+    
+          <div id="card-1" class="card">
+            <div class="icontent "><img src="https://media.istockphoto.com/id/1173392930/photo/various-types-of-pills-such-as-antibiotics-anti-inflammatory-drugs-on-a-dark-background.jpg?s=612x612&w=0&k=20&c=sJ4zMquYehA8c7M4jjvbU1KB8E6DIZFItGWafUgaYuA="></div>
+            <div class="tcontent">
+              <div class="content1">Ibuprofen</div>
+              <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+              <!-- <div class="content42"></div> -->
+    
+              <div class="upperboxprice">
+    
+    
+                <div class="addcartupper">
+    
+                  <div class="addcart">Add to cart</div>
+    
+                </div>
+               
+              </div>
+    
+    
+            </div>
+          </div>
+          <div id="card-1" class="card">
+            <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/body-pain-relief/g/x/p/10-effective-relief-from-headache-body-pain-and-cold-quick-pain-original-imagjmkxsctxwkt3.jpeg?q=70"></div>
+            <div class="tcontent">
+              <div class="content1">Dabur Hajmola</div>
+              <div class="content2"> 15 tablets<br><b> MRP:300.only</b></div>
+              <!-- <div class="content42"></div> -->
+    
+              <div class="upperboxprice">
+    
+    
+                <div class="addcartupper">
+    
+                  <div class="addcart">Add to cart</div>
+    
+                </div>
+               
+              </div>
+    
+    
+            </div>
+          </div>
+          <div id="card-1" class="card">
+            <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/body-pain-relief/b/4/p/4-migraine-cooling-headache-pads-4ct-1-box-wellpatch-original-imaghn8pzeyhe2bh.jpeg?q=70"></div>
+            <div class="tcontent">
+              <div class="content1">Pudin hara pearls</div>
+              <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+              <!-- <div class="content42"></div> -->
+    
+              <div class="upperboxprice">
+    
+    
+                <div class="addcartupper">
+    
+                  <div class="addcart">Add to cart</div>
+    
+                </div>
+               
+              </div>
+    
+    
+            </div>
+          </div>
+          <div id="card-1" class="card">
+            <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/l1ch4sw0/body-pain-relief/9/n/a/50-pack-of-5-effective-relief-from-headache-body-pain-and-cold-original-imagcxm4hywqfbrd.jpeg?q=70"></div>
+            <div class="tcontent">
+              <div class="content1">Icarbamide</div>
+              <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+              <!-- <div class="content42"></div> -->
+    
+              <div class="upperboxprice">
+    
+    
+                <div class="addcartupper">
+    
+                  <div class="addcart">Add to cart</div>
+    
+                </div>
+               
+              </div>
+    
+    
+            </div>
+          </div>
+          <div id="card-1" class="card">
+            <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/kr2e3680/body-pain-relief/q/z/v/72-5-herbale-double-action-relief-inhaler-roll-on-for-headache-original-imag4xy8fzxkqhcx.jpeg?q=70"></div>
+            <div class="tcontent">
+              <div class="content1">silver line</div>
+              <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+              <!-- <div class="content42"></div> -->
+    
+              <div class="upperboxprice">
+    
+    
+                <div class="addcartupper">
+    
+                  <div class="addcart">Add to cart</div>
+    
+                </div>
+               
+              </div>
+    
+    
+            </div>
+          </div>
+          <div id="card-1" class="card">
+            <div class="icontent "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3W0lGJzgHgiLthXRfDwcdLo9qyEn_yITUCDdjFnfjjw&usqp=CAU&ec=48665701"></div>
+            <div class="tcontent">
+              <div class="content1">gstatic durgs</div>
+              <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+              <!-- <div class="content42"></div> -->
+    
+              <div class="upperboxprice">
+    
+    
+                <div class="addcartupper">
+    
+                  <div class="addcart">Add to cart</div>
+    
+                </div>
+               
+              </div>
+    
+    
+            </div>
+          </div>
+          
+      
+        
+        
+        
+        
+        
+      </div>
     <div class="heading">
         <h1> Eye Care</h1>
    </div>
-    <div class="cardbox">
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/zeroharm-sciences-holo-eyeris-holistic-eye-care-tablet.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>Zeoharm Sciences Holo Eyeris</h1>
-                <p>
-                    bottle of 90ml tablets<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    2047 rating<br>
-
-                <div class="price">
-                    <h2>MRP:700.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/jagat-pharma-advance-isoamrit-eye-drop-10ml-each.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>Jagat Pharma Advance</h1>
-                <p>
-                    combo pack of bottles<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    2047 rating<br>
-
-                <div class="price">
-                    <h2>MRP:270.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
-
-        </div>
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/hiral-health-viz-9-tablet-60-each.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>Hiral Health viz 9 tablet </h1>
-                <p>
-                    combo pack of bottles<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    5047 rating<br>
-
-                <div class="price">
-                    <h2>MRP:300.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
-        </div>
-
-    </div>
+    <!-- <div class="cardbox"> -->
+        <div class="gin">
+        
     
-
+    
+            <div id="card-1" class="card">
+              <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/eye-drops/j/x/7/60-4-aloe-jyoti-2-jyoti-plus-imc-original-imagkfpneffxjaye.jpeg?q=70"></div>
+              <div class="tcontent">
+                <div class="content1">Ibuprofen</div>
+                <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+                <!-- <div class="content42"></div> -->
+      
+                <div class="upperboxprice">
+      
+      
+                  <div class="addcartupper">
+      
+                    <div class="addcart">Add to cart</div>
+      
+                  </div>
+                 
+                </div>
+      
+      
+              </div>
+            </div>
+            <div id="card-1" class="card">
+              <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/body-pain-relief/k/p/f/50-pain-relieving-oil-50-ml-pack-of-1-1-bottle-kwik-original-imaghqbmuukyu2ek.jpeg?q=70"></div>
+              <div class="tcontent">
+                <div class="content1">Dabur Hajmola</div>
+                <div class="content2"> 15 tablets<br><b> MRP:300.only</b></div>
+                <!-- <div class="content42"></div> -->
+      
+                <div class="upperboxprice">
+      
+      
+                  <div class="addcartupper">
+      
+                    <div class="addcart">Add to cart</div>
+      
+                  </div>
+                 
+                </div>
+      
+      
+              </div>
+            </div>
+            <div id="card-1" class="card">
+              <div class="icontent "><img src="https://rukminim1.flixcart.com/image/832/832/j9d3bm80/bottle/r/t/m/600-medicine-bottle-2-bry-attractive-original-imaez3mt6vqmz2gx.jpeg?q=70"></div>
+              <div class="tcontent">
+                <div class="content1">Pudin hara pearls</div>
+                <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+                <!-- <div class="content42"></div> -->
+      
+                <div class="upperboxprice">
+      
+      
+                  <div class="addcartupper">
+      
+                    <div class="addcart">Add to cart</div>
+      
+                  </div>
+                 
+                </div>
+      
+      
+              </div>
+            </div>
+            <div id="card-1" class="card">
+              <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/kjabs7k0-0/ayurvedic/k/6/d/ashvagandha-general-wellness-60-tablets-rejuvenates-mind-and-original-imafyw3qkg6fqhxc.jpeg?q=70"></div>
+              <div class="tcontent">
+                <div class="content1">Icarbamide</div>
+                <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+                <!-- <div class="content42"></div> -->
+      
+                <div class="upperboxprice">
+      
+      
+                  <div class="addcartupper">
+      
+                    <div class="addcart">Add to cart</div>
+      
+                  </div>
+                 
+                </div>
+      
+      
+              </div>
+            </div>
+            <div id="card-1" class="card">
+              <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/ayurvedic/x/e/i/-original-imaghyxugzr5xz4t.jpeg?q=70"></div>
+              <div class="tcontent">
+                <div class="content1">silver line</div>
+                <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+                <!-- <div class="content42"></div> -->
+      
+                <div class="upperboxprice">
+      
+      
+                  <div class="addcartupper">
+      
+                    <div class="addcart">Add to cart</div>
+      
+                  </div>
+                 
+                </div>
+      
+      
+              </div>
+            </div>
+            <div id="card-1" class="card">
+              <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/l02r1jk0/ayurvedic/u/4/5/tentex-royal-capsules-1-himalaya-original-imagbxzfywk6qhuy.jpeg?q=70"></div>
+              <div class="tcontent">
+                <div class="content1">gstatic durgs</div>
+                <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+                <!-- <div class="content42"></div> -->
+      
+                <div class="upperboxprice">
+      
+      
+                  <div class="addcartupper">
+      
+                    <div class="addcart">Add to cart</div>
+      
+                  </div>
+                 
+                </div>
+      
+      
+              </div>
+            </div>
+            
+        
+          
+          
+          
+          
+          
+        </div>
+    <!-- </div> -->
     <div class="heading">
         <h1> Stomach Care</h1>
    </div>
-    <div class="cardbox">
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/digene.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>Digene Acidity & Gas Relief Gel Mint</h1>
-                <p>
-                    bottle of 450ml oral gel<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    2047 rating<br>
+   <div class="gin">
+        
+    
+    
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/kiow6fk0-0/ayurvedic/j/o/0/120-avipattikar-churna-baidyanath-original-imafyfftygfkvprv.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">Ibuprofen</div>
+        <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
 
-                <div class="price">
-                    <h2>MRP:300.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/unienzyme-tablet.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>unienzyme-tablet</h1>
-                <p>
-                    strip of 15 tablets<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    2047 rating<br>
+        <div class="upperboxprice">
 
-                <div class="price">
-                    <h2>MRP:350.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
 
-        </div>
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/electral-powder.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>electral-powder</h1>
-                <p>
-                    sachet of 21.8g po.<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    5047 rating<br>
+          <div class="addcartupper">
 
-                <div class="price">
-                    <h2>MRP:300.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
         </div>
 
+
+      </div>
     </div>
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/kikluvk0-0/ayurvedic/k/i/9/200-isabbael-h-baidyanath-original-imafyc9uhufzzshg.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">Dabur Hajmola</div>
+        <div class="content2"> 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
+
+        <div class="upperboxprice">
+
+
+          <div class="addcartupper">
+
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
+        </div>
+
+
+      </div>
+    </div>
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/kn3i1zk0/body-pain-relief/u/e/z/3-axe-brand-universal-oil-3ml-imported-from-singapore-bottle-original-imagfugypu5vfyhv.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">Pudin hara pearls</div>
+        <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
+
+        <div class="upperboxprice">
+
+
+          <div class="addcartupper">
+
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
+        </div>
+
+
+      </div>
+    </div>
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/kgpg5u80/drinks-juice/p/f/g/500-nirgundi-ras-plastic-bottle-basic-ayurveda-original-imafwvtnxhznxp3c.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">Icarbamide</div>
+        <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
+
+        <div class="upperboxprice">
+
+
+          <div class="addcartupper">
+
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
+        </div>
+
+
+      </div>
+    </div>
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/ayurvedic/y/h/l/ulcer-care-60-capsules-relieve-peptic-stomach-symptons-pains-original-imagnjsqpjgdzyth.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">silver line</div>
+        <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
+
+        <div class="upperboxprice">
+
+
+          <div class="addcartupper">
+
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
+        </div>
+
+
+      </div>
+    </div>
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/kh9gbrk0/ayurvedic/b/c/k/40-belkut-tablet-basic-ayurveda-original-imafxbdfvjryrwwh.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">gstatic durgs</div>
+        <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
+
+        <div class="upperboxprice">
+
+
+          <div class="addcartupper">
+
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
+        </div>
+
+
+      </div>
+    </div>
+    
+
+  
+  
+  
+  
+  
+</div>
     <div class="heading">
         <h1> Diabetes Care</h1>
    </div>
-    <div class="cardbox">
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/digene.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>Digene Acidity & Gas Relief Gel Mint</h1>
-                <p>
-                    bottle of 450ml oral gel<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    2047 rating<br>
+   <div class="gin" id="gin">
+    
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/ayurvedic/y/g/z/-original-imagpfdhyyyfwzr2.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">Ibuprofen</div>
+        <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
 
-                <div class="price">
-                    <h2>MRP:300.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
+        <div class="upperboxprice">
+
+
+          <div class="addcartupper">
+
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
         </div>
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/unienzyme-tablet.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>unienzyme-tablet</h1>
-                <p>
-                    strip of 15 tablets<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    2047 rating<br>
 
-                <div class="price">
-                    <h2>MRP:350.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
 
-        </div>
-        <div class="card2">
-            <div class="img1">
-                <img src="{{url_for('static',filename='images/electral-powder.webp')}}" alt="">
-            </div>
-            <div class="content">
-                <h1>electral-powder</h1>
-                <p>
-                    sachet of 21.8g po.<br>
-                    <span>4.5 <img src="{{url_for('static',filename='images/star.png')}}" alt="" srcset=""></span>
-                    5047 rating<br>
-
-                <div class="price">
-                    <h2>MRP:300.</h2>only
-                    <div class="add">ADD</div>
-                </div>
-                </p>
-            </div>
-        </div>
-    </div>    
-
-<!-- footer -->
-
-<div class="footer">
-    <div class="footerbox">
-        <div class="footerad">
-            <div class="ad ad1"><img class="location" src="{{url_for('static',filename='images/pin.png')}}" srcset="">
-                <div class="address">Corporate HQ
-                    33rd Floor, Aspect Towers,
-                    Business Bay, Dubai, UAE</div>
-            </div>
-            <div class="ad ad2"><img class="location" src="{{url_for('static',filename='images/mail.png')}}" srcset="">
-                <div class="address">chq@asterdmhealthcare.com</div>
-            </div>
-            <div class="ad ad3"><img class="location" src="{{url_for('static',filename='images/telephone.png')}}"
-                    srcset="">
-                <div class="address">+91 256548952/5555
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <div class="line"></div>
-    <div class="footerinfo">
-        <div class="infobox about1">
-            <div class="about">
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/kpvivm80/ayurvedic/8/o/1/karela-jamun-juice-natural-juice-made-from-fresh-karela-and-original-imag4ykyxbn9hmfn.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">Dabur Hajmola</div>
+        <div class="content2"> 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
 
-                About Us<br>
-
-                Our Journey<br>
-                Our Services<br>
-                Corporate Governance<br>
-                Leadership<br>
-                Board of Directors<br>
-                Quality Policy<br>
-                Data Privacy and Cookie Policy
+        <div class="upperboxprice">
 
 
+          <div class="addcartupper">
 
-            </div>
-            <div class="about">
+            <div class="addcart">Add to cart</div>
 
-
-                Global Network<br>
-                Investors<br>
-                Aster Volunteers<br>
-                Newsroom<br>
-
-                Health Library<br>
-                Resources<br>
-                Videos<br>
-
-
-
-            </div>
-            <div class="about">
-                <h1><u>HealthGO</u></h1>
-
-            </div>
-
+          </div>
+         
         </div>
-        <div class="infobox thought">
-            “Time and health are two precious assets that we don't recognize and appreciate until they have been
-            depleted."
-            <div class="tag">
-                <h3><b><u>HealthGO</u></b></h3>
-            </div>
-            <h6>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</h6>
-        </div>
-        <div class="infobox">
-            Subscribe to our Newsletter<br>
-            <div class="emailsearch">
-                <input type="text" class="inputtext" value="" placeholder="Enter your email here">
-                <img src="{{url_for('static',filename='images/SendIcon.svg')}}" class="inputimg" alt="" srcset="">
 
-            </div>
-            <div class="name">
 
-                Stay informed<br>
-                <h1><u>HealthGO</u></h1>
-            </div>
-
-            <div class="icon">
-                <img class="face" src="{{url_for('static',filename='images/facebook.png')}}" alt="" srcset="">
-                <img class="face" src="{{url_for('static',filename='images/twitter2.png')}}" alt="" srcset="">
-                <img class="face" src="{{url_for('static',filename='images/instagram.png')}}" alt="" srcset="">
-                <img class="face" src="{{url_for('static',filename='images/linkedin.png')}}" alt="" srcset="">
-                <img class="face" src="{{url_for('static',filename='images/youtube.png')}}" alt="" srcset="">
-
-            </div>
-            <div class="last">
-                © 2023 HealthGO DM Healthcare. All rights reserved.<br>
-                Designed and Developed by HealthGO-service
-
-            </div>
-        </div>
+      </div>
     </div>
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/ayurvedic/3/9/f/-original-imagn9z7pfqfn6zu.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">Pudin hara pearls</div>
+        <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
+
+        <div class="upperboxprice">
+
+
+          <div class="addcartupper">
+
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
+        </div>
+
+
+      </div>
+    </div>
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/kxp0mfk0/ayurvedic/n/a/t/diabic-care-juice-helps-manage-blood-sugar-boosts-metabolism-and-original-imaga3ce35mzygzy.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">Icarbamide</div>
+        <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
+
+        <div class="upperboxprice">
+
+
+          <div class="addcartupper">
+
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
+        </div>
+
+
+      </div>
+    </div>
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/l02r1jk0/ayurvedic/3/t/u/diabecon-tabs-ds-1-himalaya-original-imagbxzjgbedyzry.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">silver line</div>
+        <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
+
+        <div class="upperboxprice">
+
+
+          <div class="addcartupper">
+
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
+        </div>
+
+
+      </div>
+    </div>
+    <div id="card-1" class="card">
+      <div class="icontent "><img src="https://rukminim1.flixcart.com/image/612/612/jyj0how0/vitamin-supplement/t/2/2/100-madhumehari-granules-baidyanath-original-imafgqugwbmd7bcr.jpeg?q=70"></div>
+      <div class="tcontent">
+        <div class="content1">gstatic durgs</div>
+        <div class="content2">strip of 15 tablets<br><b> MRP:300.only</b></div>
+        <!-- <div class="content42"></div> -->
+
+        <div class="upperboxprice">
+
+
+          <div class="addcartupper">
+
+            <div class="addcart">Add to cart</div>
+
+          </div>
+         
+        </div>
+
+
+      </div>
+    </div>
+    
+
+  
+  
+  
+  
+  
 </div>
 
+
+
 <!-- javascript -->
-<script src="{{url_for('static',filename='js/medicine.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static',filename='js/medicine.js')}}"></script>
 </body>
 
 </html>

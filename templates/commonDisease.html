@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Health GO | Common Disease</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/commonDisease.css')}}">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/4850/4850909.png" type="image/x-icon" id="icon">
+</head>
+<body>
+
+    <!-- nav-bar -->
+
+    <div id="title-bar">
+
+        <div class="div1" id="div1">
+        
+            <div class="div1-1">
+        
+                <div class="div1-1-1">
+        
+                </div>
+        
+                <div class="div1-1-2" id="div1-1-2">
+                    <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="img">
+                </div>
+        
+                <div class="div1-1-3">
+        
+                </div>
+        
+            </div>
+        
+            <div class="div1-2">
+        
+                <ul class="list" id="list">
+                    <div class="cont1">
+                        <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}"
+                                class="l1img1"><a href="http://127.0.0.1:5501/index.html" target="_blank" class="lia1"
+                                id="lia1">Home</a></li>
+                        <div class="line1" id="line1"></div>
+                    </div>
+        
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a href="#"
+                            target="_blank" class="lia2" id="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia3" id="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia4" id="lia4">Patient
+                            Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia5" id="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia6" id="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
+                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions" target="_blank"
+                            class="lia7" id="lia7">FAQs</a></li>
+                </ul>
+        
+            </div>
+        
+        </div>
+
+        <!-- common disease main -->
+
+        <div class="cd">
+
+            <div class="cd-head">
+                <h1>COMMON DISEASE</h1>
+            </div>
+
+            <div class="null">
+
+            </div>
+
+            <!-- first -->
+ 
+            <div class="cd-1">
+                <div class="cd-1-1">
+                    <div class="cd-1-1-img" id="cd-1-1-img">
+                        <img src="https://img.freepik.com/free-photo/sick-woman-sitting-bed-blowing-nose-with-napkin_1262-18654.jpg?size=626&ext=jpg&ga=GA1.1.1267236848.1681593192&semt=ais" alt="cold-and-flu" id="img1">
+                    </div>
+                </div>
+                <div class="cd-1-2">
+                    <div class="cd-1-2-cnt">
+                        <div class="head1" id="head1">
+                            <h1 id="head1-h1">COLD AND FLU</h1>
+                        </div>
+                        <div class="symptoms1">
+                            <h3>Symptoms</h3>
+                            <ul>
+                                <li>fever</li>
+                                <li>headache</li>
+                                <li>more intense pain and fatigue</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="treatment1">
+                            <h3>Treatment</h3>
+                            <ul>
+                                <li>more and more rest.</li>
+                                <li>drink lots of fluids.</li>
+                                <li>stay away from cigrette smoke.</li>
+                            </ul>
+                        </div>
+                        <div class="need1">
+                            <h3>When to see a docter</h3>
+                            <ul>
+                                <li>
+                                    <span>For Adults -</span>
+                                    <p>generally, you don't need medical attention for a common cold. However, seek medical attention if you have:</p>
+                                    <ul>
+                                        <li>symptoms that worsen or fail to improve</li>
+                                        <li>fever greater than 101.3F (38.5C) lasting more than 3 days</li>
+                                        <li>fever returning after a fever-free period</li>
+                                        <li>shortness of breath</li>
+                                        <li>wheezing</li>
+                                        <li>severe sore throat, headache or sinus pain</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span>For Children -</span>
+                                    <p>in general, your child doesn't need to see his or her doctor for a common cold. But seek medical attention right away if your child has any of the following:</p>
+                                    <ul>
+                                        <li>fever of 100.4F (38C) in newborns up to 12 weeks</li>
+                                        <li>rising fever or fever lasting more than two days in a child of any age</li>
+                                        <li>sever symptoms, such as headache, throat pain or cough</li>
+                                        <li>difficulty breathing or wheezing</li>
+                                        <li>ear pain</li>
+                                        <li>extreme fussiness</li>
+                                        <li>unusual drowsiness</li>
+                                        <li>lack of appetite</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <!-- second -->
+
+            <div class="cd-2">
+                
+                <div class="cd-2-1">
+                    <div class="cd-2-2-cnt">
+                        <div class="head2" id="head2">
+                            <h1 id="head2-h1">COLD AND FLU</h1>
+                        </div>
+                        <div class="symptoms2">
+                            <h3>Symptoms</h3>
+                            <ul>
+                                <li>fever</li>
+                                <li>headache</li>
+                                <li>more intense pain and fatigue</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="treatment2">
+                            <h3>Treatment</h3>
+                            <ul>
+                                <li>more and more rest.</li>
+                                <li>drink lots of fluids.</li>
+                                <li>stay away from cigrette smoke.</li>
+                            </ul>
+                        </div>
+                        <div class="need2">
+                            <h3>When to see a docter</h3>
+                            <ul>
+                                <li>
+                                    <span>For Adults -</span>
+                                    <p>generally, you don't need medical attention for a common cold. However, seek medical attention if you have:</p>
+                                    <ul>
+                                        <li>symptoms that worsen or fail to improve</li>
+                                        <li>fever greater than 101.3F (38.5C) lasting more than 3 days</li>
+                                        <li>fever returning after a fever-free period</li>
+                                        <li>shortness of breath</li>
+                                        <li>wheezing</li>
+                                        <li>severe sore throat, headache or sinus pain</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span>For Children -</span>
+                                    <p>in general, your child doesn't need to see his or her doctor for a common cold. But seek medical attention right away if your child has any of the following:</p>
+                                    <ul>
+                                        <li>fever of 100.4F (38C) in newborns up to 12 weeks</li>
+                                        <li>rising fever or fever lasting more than two days in a child of any age</li>
+                                        <li>sever symptoms, such as headache, throat pain or cough</li>
+                                        <li>difficulty breathing or wheezing</li>
+                                        <li>ear pain</li>
+                                        <li>extreme fussiness</li>
+                                        <li>unusual drowsiness</li>
+                                        <li>lack of appetite</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cd-2-2">
+                    <div class="cd-2-1-img" id="cd-2-1-img">
+                        <img src="https://img.freepik.com/free-photo/young-woman-with-allergy-sneezing-girl-feeling-sick-having-runny-nose_1258-19089.jpg?w=1060&t=st=1684582831~exp=1684583431~hmac=54d56e16aa8c8c1a1ab7905500c7ab376b17d7a9767a67a70d3d08bc953aeb99" alt="cold-and-flu" id="img2">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- third -->
+            <div class="cd-3">
+
+                <div class="cd-3-2">
+                    <div class="cd-3-1-img" id="cd-3-1-img">
+                        <img src="https://img.freepik.com/free-photo/woman-painful-expression-holding-hands-against-belly-suffering-menstrual-period-painsitting-sad-home-bed-having-tummy-cramp-female-health-concept_657921-1291.jpg?w=1060&t=st=1684584307~exp=1684584907~hmac=7f17fa444756397538382eb935f70f039873cba7cd819e8e735aa7a992e01120" alt="cold-and-flu" id="img3">
+                    </div>
+                </div>
+                
+                <div class="cd-3-1">
+                    <div class="cd-3-2-cnt">
+                        <div class="head3" id="head3">
+                            <h1 id="head3-h1">COLD AND FLU</h1>
+                        </div>
+                        <div class="symptoms3">
+                            <h3>Symptoms</h3>
+                            <ul>
+                                <li>fever</li>
+                                <li>headache</li>
+                                <li>more intense pain and fatigue</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="treatment3">
+                            <h3>Treatment</h3>
+                            <ul>
+                                <li>more and more rest.</li>
+                                <li>drink lots of fluids.</li>
+                                <li>stay away from cigrette smoke.</li>
+                            </ul>
+                        </div>
+                        <div class="need3">
+                            <h3>When to see a docter</h3>
+                            <ul>
+                                <li>
+                                    <span>For Adults -</span>
+                                    <p>generally, you don't need medical attention for a common cold. However, seek medical attention if you have:</p>
+                                    <ul>
+                                        <li>symptoms that worsen or fail to improve</li>
+                                        <li>fever greater than 101.3F (38.5C) lasting more than 3 days</li>
+                                        <li>fever returning after a fever-free period</li>
+                                        <li>shortness of breath</li>
+                                        <li>wheezing</li>
+                                        <li>severe sore throat, headache or sinus pain</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span>For Children -</span>
+                                    <p>in general, your child doesn't need to see his or her doctor for a common cold. But seek medical attention right away if your child has any of the following:</p>
+                                    <ul>
+                                        <li>fever of 100.4F (38C) in newborns up to 12 weeks</li>
+                                        <li>rising fever or fever lasting more than two days in a child of any age</li>
+                                        <li>sever symptoms, such as headache, throat pain or cough</li>
+                                        <li>difficulty breathing or wheezing</li>
+                                        <li>ear pain</li>
+                                        <li>extreme fussiness</li>
+                                        <li>unusual drowsiness</li>
+                                        <li>lack of appetite</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <br>
+            <br>
+
+            <!-- fourth -->
+            <div class="cd-4">
+                
+                <div class="cd-4-1">
+                    <div class="cd-4-2-cnt">
+                        <div class="head4" id="head4">
+                            <h1 id="head4-h1">COLD AND FLU</h1>
+                        </div>
+                        <div class="symptoms4">
+                            <h3>Symptoms</h3>
+                            <ul>
+                                <li>fever</li>
+                                <li>headache</li>
+                                <li>more intense pain and fatigue</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="treatment4">
+                            <h3>Treatment</h3>
+                            <ul>
+                                <li>more and more rest.</li>
+                                <li>drink lots of fluids.</li>
+                                <li>stay away from cigrette smoke.</li>
+                            </ul>
+                        </div>
+                        <div class="need4">
+                            <h3>When to see a docter</h3>
+                            <ul>
+                                <li>
+                                    <span>For Adults -</span>
+                                    <p>generally, you don't need medical attention for a common cold. However, seek medical attention if you have:</p>
+                                    <ul>
+                                        <li>symptoms that worsen or fail to improve</li>
+                                        <li>fever greater than 101.3F (38.5C) lasting more than 3 days</li>
+                                        <li>fever returning after a fever-free period</li>
+                                        <li>shortness of breath</li>
+                                        <li>wheezing</li>
+                                        <li>severe sore throat, headache or sinus pain</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span>For Children -</span>
+                                    <p>in general, your child doesn't need to see his or her doctor for a common cold. But seek medical attention right away if your child has any of the following:</p>
+                                    <ul>
+                                        <li>fever of 100.4F (38C) in newborns up to 12 weeks</li>
+                                        <li>rising fever or fever lasting more than two days in a child of any age</li>
+                                        <li>sever symptoms, such as headache, throat pain or cough</li>
+                                        <li>difficulty breathing or wheezing</li>
+                                        <li>ear pain</li>
+                                        <li>extreme fussiness</li>
+                                        <li>unusual drowsiness</li>
+                                        <li>lack of appetite</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cd-4-2">
+                    <div class="cd-4-1-img" id="cd-4-1-img">
+                        <img src="https://img.freepik.com/free-photo/sick-woman-having-stomachache-living-room_231208-1228.jpg?w=1060&t=st=1684585044~exp=1684585644~hmac=35a70b79a50878638fd0a2f41fdeb325cc1e9eb5af467e602ac2765ae0770d38" alt="cold-and-flu" id="img4">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- fifth -->
+            <div class="cd-5">
+                <div class="cd-5-2">
+                    <div class="cd-5-1-img" id="cd-5-1-img">
+                        <img src="https://img.freepik.com/premium-photo/face-young-woman-with-subconjunctival-hemorrhage-eye_651462-1663.jpg?w=1060" alt="cold-and-flu" id="img5">
+                    </div>
+                </div>
+                
+                <div class="cd-5-1">
+                    <div class="cd-5-2-cnt">
+                        <div class="head5" id="head5">
+                            <h1 id="head5-h1">COLD AND FLU</h1>
+                        </div>
+                        <div class="symptoms5">
+                            <h3>Symptoms</h3>
+                            <ul>
+                                <li>fever</li>
+                                <li>headache</li>
+                                <li>more intense pain and fatigue</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="treatment5">
+                            <h3>Treatment</h3>
+                            <ul>
+                                <li>more and more rest.</li>
+                                <li>drink lots of fluids.</li>
+                                <li>stay away from cigrette smoke.</li>
+                            </ul>
+                        </div>
+                        <div class="need5">
+                            <h3>When to see a docter</h3>
+                            <ul>
+                                <li>
+                                    <span>For Adults -</span>
+                                    <p>generally, you don't need medical attention for a common cold. However, seek medical attention if you have:</p>
+                                    <ul>
+                                        <li>symptoms that worsen or fail to improve</li>
+                                        <li>fever greater than 101.3F (38.5C) lasting more than 3 days</li>
+                                        <li>fever returning after a fever-free period</li>
+                                        <li>shortness of breath</li>
+                                        <li>wheezing</li>
+                                        <li>severe sore throat, headache or sinus pain</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span>For Children -</span>
+                                    <p>in general, your child doesn't need to see his or her doctor for a common cold. But seek medical attention right away if your child has any of the following:</p>
+                                    <ul>
+                                        <li>fever of 100.4F (38C) in newborns up to 12 weeks</li>
+                                        <li>rising fever or fever lasting more than two days in a child of any age</li>
+                                        <li>sever symptoms, such as headache, throat pain or cough</li>
+                                        <li>difficulty breathing or wheezing</li>
+                                        <li>ear pain</li>
+                                        <li>extreme fussiness</li>
+                                        <li>unusual drowsiness</li>
+                                        <li>lack of appetite</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <br>
+            <br>
+
+            <!-- sixth -->
+            <div class="cd-6">
+                
+                <div class="cd-6-1">
+                    <div class="cd-6-2-cnt">
+                        <div class="head6" id="head6">
+                            <h1 id="head6-h1">COLD AND FLU</h1>
+                        </div>
+                        <div class="symptoms6">
+                            <h3>Symptoms</h3>
+                            <ul>
+                                <li>fever</li>
+                                <li>headache</li>
+                                <li>more intense pain and fatigue</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="treatment6">
+                            <h3>Treatment</h3>
+                            <ul>
+                                <li>more and more rest.</li>
+                                <li>drink lots of fluids.</li>
+                                <li>stay away from cigrette smoke.</li>
+                            </ul>
+                        </div>
+                        <div class="need6">
+                            <h3>When to see a docter</h3>
+                            <ul>
+                                <li>
+                                    <span>For Adults -</span>
+                                    <p>generally, you don't need medical attention for a common cold. However, seek medical attention if you have:</p>
+                                    <ul>
+                                        <li>symptoms that worsen or fail to improve</li>
+                                        <li>fever greater than 101.3F (38.5C) lasting more than 3 days</li>
+                                        <li>fever returning after a fever-free period</li>
+                                        <li>shortness of breath</li>
+                                        <li>wheezing</li>
+                                        <li>severe sore throat, headache or sinus pain</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span>For Children -</span>
+                                    <p>in general, your child doesn't need to see his or her doctor for a common cold. But seek medical attention right away if your child has any of the following:</p>
+                                    <ul>
+                                        <li>fever of 100.4F (38C) in newborns up to 12 weeks</li>
+                                        <li>rising fever or fever lasting more than two days in a child of any age</li>
+                                        <li>sever symptoms, such as headache, throat pain or cough</li>
+                                        <li>difficulty breathing or wheezing</li>
+                                        <li>ear pain</li>
+                                        <li>extreme fussiness</li>
+                                        <li>unusual drowsiness</li>
+                                        <li>lack of appetite</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cd-6-2">
+                    <div class="cd-6-1-img" id="cd-6-1-img">
+                        <img src="https://img.freepik.com/free-photo/sad-ill-asian-girl-staying-self-quarantine-during-covid-catching-flu-sitting-home-with-cup_1258-84322.jpg?w=1060&t=st=1684586668~exp=1684587268~hmac=badbd89272652ca526f4f303c5e0f8fb6d36a8d868c5ae8aa4130b62b4033f94" alt="cold-and-flu" id="img6">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- seven -->
+
+            <div class="cd-7">
+                <div class="cd-7-2">
+                    <div class="cd-7-1-img" id="cd-7-1-img">
+                        <img src="https://img.freepik.com/free-photo/skin-allergy-person-s-arm_23-2149140509.jpg?w=1060&t=st=1684602078~exp=1684602678~hmac=0361d5571f13ed8f13f646688f78d362aa351cb7bd2524c95b940e137c11f628" alt="cold-and-flu" id="img7">
+                    </div>
+                </div>
+                
+                <div class="cd-7-1">
+                    <div class="cd-7-2-cnt">
+                        <div class="head7" id="head7">
+                            <h1 id="head7-h1">COLD AND FLU</h1>
+                        </div>
+                        <div class="symptoms7">
+                            <h3>Symptoms</h3>
+                            <ul>
+                                <li>fever</li>
+                                <li>headache</li>
+                                <li>more intense pain and fatigue</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="treatment7">
+                            <h3>Treatment</h3>
+                            <ul>
+                                <li>more and more rest.</li>
+                                <li>drink lots of fluids.</li>
+                                <li>stay away from cigrette smoke.</li>
+                            </ul>
+                        </div>
+                        <div class="need7">
+                            <h3>When to see a docter</h3>
+                            <ul>
+                                <li>
+                                    <span>For Adults -</span>
+                                    <p>generally, you don't need medical attention for a common cold. However, seek medical attention if you have:</p>
+                                    <ul>
+                                        <li>symptoms that worsen or fail to improve</li>
+                                        <li>fever greater than 101.3F (38.5C) lasting more than 3 days</li>
+                                        <li>fever returning after a fever-free period</li>
+                                        <li>shortness of breath</li>
+                                        <li>wheezing</li>
+                                        <li>severe sore throat, headache or sinus pain</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span>For Children -</span>
+                                    <p>in general, your child doesn't need to see his or her doctor for a common cold. But seek medical attention right away if your child has any of the following:</p>
+                                    <ul>
+                                        <li>fever of 100.4F (38C) in newborns up to 12 weeks</li>
+                                        <li>rising fever or fever lasting more than two days in a child of any age</li>
+                                        <li>sever symptoms, such as headache, throat pain or cough</li>
+                                        <li>difficulty breathing or wheezing</li>
+                                        <li>ear pain</li>
+                                        <li>extreme fussiness</li>
+                                        <li>unusual drowsiness</li>
+                                        <li>lack of appetite</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <br>
+            <br>
+
+            <!-- eight -->
+
+            <div class="cd-8">
+                
+                <div class="cd-8-1">
+                    <div class="cd-8-2-cnt">
+                        <div class="head8" id="head8">
+                            <h1 id="head8-h1">COLD AND FLU</h1>
+                        </div>
+                        <div class="symptoms8">
+                            <h3>Symptoms</h3>
+                            <ul>
+                                <li>fever</li>
+                                <li>headache</li>
+                                <li>more intense pain and fatigue</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="treatment8">
+                            <h3>Treatment</h3>
+                            <ul>
+                                <li>more and more rest.</li>
+                                <li>drink lots of fluids.</li>
+                                <li>stay away from cigrette smoke.</li>
+                            </ul>
+                        </div>
+                        <div class="need8">
+                            <h3>When to see a docter</h3>
+                            <ul>
+                                <li>
+                                    <span>For Adults -</span>
+                                    <p>generally, you don't need medical attention for a common cold. However, seek medical attention if you have:</p>
+                                    <ul>
+                                        <li>symptoms that worsen or fail to improve</li>
+                                        <li>fever greater than 101.3F (38.5C) lasting more than 3 days</li>
+                                        <li>fever returning after a fever-free period</li>
+                                        <li>shortness of breath</li>
+                                        <li>wheezing</li>
+                                        <li>severe sore throat, headache or sinus pain</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span>For Children -</span>
+                                    <p>in general, your child doesn't need to see his or her doctor for a common cold. But seek medical attention right away if your child has any of the following:</p>
+                                    <ul>
+                                        <li>fever of 100.4F (38C) in newborns up to 12 weeks</li>
+                                        <li>rising fever or fever lasting more than two days in a child of any age</li>
+                                        <li>sever symptoms, such as headache, throat pain or cough</li>
+                                        <li>difficulty breathing or wheezing</li>
+                                        <li>ear pain</li>
+                                        <li>extreme fussiness</li>
+                                        <li>unusual drowsiness</li>
+                                        <li>lack of appetite</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cd-8-2">
+                    <div class="cd-8-1-img" id="cd-8-1-img">
+                        <img src="https://img.freepik.com/free-photo/mosquito_1150-7964.jpg?w=900&t=st=1684602314~exp=1684602914~hmac=58cb83024e37c83fc663c2f967f8e86a98b0e36c70efe597f30214c3bbc37865" alt="cold-and-flu" id="img8">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- nine -->
+
+            <div class="cd-9">
+                <div class="cd-9-2">
+                    <div class="cd-7-1-img" id="cd-9-1-img">
+                        <img src="https://img.freepik.com/free-photo/doctor-vaccinating-patient-clinic_23-2148880521.jpg?size=626&ext=jpg&ga=GA1.1.1267236848.1681593192&semt=sph" alt="cold-and-flu" id="img9">
+                    </div>
+                </div>
+                
+                <div class="cd-9-1">
+                    <div class="cd-9-2-cnt">
+                        <div class="head9" id="head9">
+                            <h1 id="head9-h1">COLD AND FLU</h1>
+                        </div>
+                        <div class="symptoms9">
+                            <h3>Symptoms</h3>
+                            <ul>
+                                <li>fever</li>
+                                <li>headache</li>
+                                <li>more intense pain and fatigue</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="treatment9">
+                            <h3>Treatment</h3>
+                            <ul>
+                                <li>more and more rest.</li>
+                                <li>drink lots of fluids.</li>
+                                <li>stay away from cigrette smoke.</li>
+                            </ul>
+                        </div>
+                        <div class="need9">
+                            <h3>When to see a docter</h3>
+                            <ul>
+                                <li>
+                                    <span>For Adults -</span>
+                                    <p>generally, you don't need medical attention for a common cold. However, seek medical attention if you have:</p>
+                                    <ul>
+                                        <li>symptoms that worsen or fail to improve</li>
+                                        <li>fever greater than 101.3F (38.5C) lasting more than 3 days</li>
+                                        <li>fever returning after a fever-free period</li>
+                                        <li>shortness of breath</li>
+                                        <li>wheezing</li>
+                                        <li>severe sore throat, headache or sinus pain</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span>For Children -</span>
+                                    <p>in general, your child doesn't need to see his or her doctor for a common cold. But seek medical attention right away if your child has any of the following:</p>
+                                    <ul>
+                                        <li>fever of 100.4F (38C) in newborns up to 12 weeks</li>
+                                        <li>rising fever or fever lasting more than two days in a child of any age</li>
+                                        <li>sever symptoms, such as headache, throat pain or cough</li>
+                                        <li>difficulty breathing or wheezing</li>
+                                        <li>ear pain</li>
+                                        <li>extreme fussiness</li>
+                                        <li>unusual drowsiness</li>
+                                        <li>lack of appetite</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <br>
+            <br>
+
+            <!-- ten -->
+
+            <div class="cd-10">
+                
+                <div class="cd-10-1">
+                    <div class="cd-10-2-cnt">
+                        <div class="head10" id="head10">
+                            <h1 id="head10-h1">COLD AND FLU</h1>
+                        </div>
+                        <div class="symptoms10">
+                            <h3>Symptoms</h3>
+                            <ul>
+                                <li>fever</li>
+                                <li>headache</li>
+                                <li>more intense pain and fatigue</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="treatment10">
+                            <h3>Treatment</h3>
+                            <ul>
+                                <li>more and more rest.</li>
+                                <li>drink lots of fluids.</li>
+                                <li>stay away from cigrette smoke.</li>
+                            </ul>
+                        </div>
+                        <div class="need10">
+                            <h3>When to see a docter</h3>
+                            <ul>
+                                <li>
+                                    <span>For Adults -</span>
+                                    <p>generally, you don't need medical attention for a common cold. However, seek medical attention if you have:</p>
+                                    <ul>
+                                        <li>symptoms that worsen or fail to improve</li>
+                                        <li>fever greater than 101.3F (38.5C) lasting more than 3 days</li>
+                                        <li>fever returning after a fever-free period</li>
+                                        <li>shortness of breath</li>
+                                        <li>wheezing</li>
+                                        <li>severe sore throat, headache or sinus pain</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span>For Children -</span>
+                                    <p>in general, your child doesn't need to see his or her doctor for a common cold. But seek medical attention right away if your child has any of the following:</p>
+                                    <ul>
+                                        <li>fever of 100.4F (38C) in newborns up to 12 weeks</li>
+                                        <li>rising fever or fever lasting more than two days in a child of any age</li>
+                                        <li>sever symptoms, such as headache, throat pain or cough</li>
+                                        <li>difficulty breathing or wheezing</li>
+                                        <li>ear pain</li>
+                                        <li>extreme fussiness</li>
+                                        <li>unusual drowsiness</li>
+                                        <li>lack of appetite</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cd-10-2">
+                    <div class="cd-10-1-img" id="cd-10-1-img">
+                        <img src="https://img.freepik.com/free-photo/medical-doctor-give-consultation-patient-with-xray-film_554837-566.jpg?w=1060&t=st=1684602659~exp=1684603259~hmac=225bd8639ceb95c432dd2f9c0718578cbdc93845d5a38d69708fdded4aaaa42e" alt="cold-and-flu" id="img10">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            <!-- footer -->
+
+            <div class="footer" id="footer">
+
+                <div class="f-img">
+                    <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="footer-image" class="f-image" id="f-image">
+                </div>
+        
+                <div class="f-mid" id="f-mid">
+                     <div class="f-contents" id="f-contents">
+                        <div class="f-cont-para" id="f-cont-para">
+                            <p>KEY FEATURES :- </p><br>
+                        </div>
+                        <div class="f-cont-list"> 
+                            <ul>
+                                <li><a href="#">STROKE PREDICTOR</a></li>
+                                <li><a href="#">HEART PREDICTOR</a></li>
+                                <li><a href="#">BED BOOKING</a></li>
+                                <li><a href="#">APPOINT A DOCTER</a></li>
+                            </ul>
+                        </div>
+                        <div class="policy">
+                            <ul>
+                                <li>PRIVACY POLICY</li>
+                                <li>TERMS AND CONDITIONS</li>
+                            </ul>
+                        </div>
+                     </div>
+                     <div class="f-app" id="f-app">
+                        <div class="app1">
+                            <p>LET'S GO <span class="android"> &nbsp ANDROID</span></p>
+                        </div>
+                        <div class="app2">
+                            <button type="button" for="" value="" onclick="getMyLink()" class="button">Download</button>
+                        </div>
+                        <div class="app3">
+                            <p>for best user experience</p>
+                        </div>
+                     </div>
+                     <div class="f-social" id="f-social">
+                        <div class="follow-us">
+                            <p>FOLLOW US</p>
+                        </div>
+                        <div class="social-icons">
+                                <img src="https://cdn-icons-png.flaticon.com/512/6033/6033716.png" alt="meta" onclick="gotometa()">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="twitter" onclick="gototwitter()">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111499.png" alt="google" onclick="gotogoogle()">
+                        </div>
+                        <div class="mail">
+                            <br>
+                            <p><span class="chat">LET's CHAT</span><br>
+                            healthgo123@gmail.com <br>
+                            +91 1234567890 <br>
+                            +91 1234567890</p>
+                        </div>
+                     </div>
+                </div>
+        
+                <div class="copyright" id="copyright">
+                    <!-- <div class="f-c-1"> 
+                        <p>© 2023 HealthGO | All rights are reserved.| India</p>
+                    </div> -->
+                    <div class="made">
+                        <p>made with <span class="love"> &nbsp♥&nbsp</span> by <span class="rt"> &nbsp RUNTIME TERROR</span></p>
+                    </div>
+                    <div class="consi">
+                        <div class="contributors">
+                            <p> Contributors : <span class="auto-type"></span></p>
+                        </div>
+                        <div class="rights">
+                            <p>© 2023 HealthGO | All rights are reserved.| India</p>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+            </div>
+
+        
+
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="{{url_for('static',filename='js/commonDisease.js')}}"></script>
+</body>
+</html>

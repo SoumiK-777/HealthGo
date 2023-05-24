@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    {{hospital['Name']}}
+    {{hospital}}
+    {% for booking in bookings %}
+    {{booking}}
+    {% endfor %}
 </body>
 
 </html>

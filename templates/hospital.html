@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/4850/4850909.png" type="image/x-icon" id="icon">
+    <title>HealthGO|Hospital</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/booking.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/hospital.css')}}">
+</head>
+<body>
+
+    
+
+    
+    <div id="title-bar">
+
+        <div class="div1" id="div1">
+        
+            <div class="div1-1">
+        
+                <div class="div1-1-1">
+        
+                </div>
+        
+                <div class="div1-1-2" id="div1-1-2">
+                    <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="img">
+                </div>
+        
+                <div class="div1-1-3">
+        
+                </div>
+        
+            </div>
+        
+            <div class="div1-2">
+        
+                <ul class="list" id="list">
+                    <div class="cont1">
+                        <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}"
+                                class="l1img1"><a href="{{url_for('index')}}" class="lia1" id="lia1">Home</a></li>
+                        <div class="line1" id="line1"></div>
+                    </div>
+        
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a href="#"
+                            target="_blank" class="lia2" id="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia3" id="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia4" id="lia4">Patient
+                            Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia5" id="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia6" id="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
+                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions" target="_blank"
+                            class="lia7" id="lia7">FAQs</a></li>
+                </ul>
+        
+            </div>
+        
+        </div>
+    <div class="hospitalbg"></div>
+     <div class="hosname">
+        <div class="hospitalbox ">
+            <div class="hospitalname"><b>{{hospital['Name']}}</b></div>
+            <div class="hosaddress"><b>{{hospital['Address']}}</b></div>
+            <div class="phone">
+                <div class="mobile"><b>Mobile No:</b> {{hospital['Number']}}</div>
+                <div class="mobile"><b>Ambulance No: </b>{{hospital['AmbulanceNumber']}}</div>
+            </div>
+            <div class="email">
+                <div class="emailid"><b>Email Id:</b>{{hospital['Email']}}</div>
+                
+            </div>
+          
+        </div>
+        <a href="{{url_for('hlogout')}}">
+            <button>
+                <div class="logoutbox">
+                    LogOut
+        
+                </div>
+            </button></a>
+     </div>
+
+     <div class="spaceline">
+        <div class="space2"></div>
+     </div>
+
+
+     <div class="hosinfobox">
+        <div class="bedinfobox">
+            <div class="doctorav">
+                <div class="avname">Doctor<br>Available</div>
+                <div class="avnumber">{{hospital['NumberOfDoctor']}}</div>
+            </div>
+            <div class="bedav">
+                <div class="avname">Bed<br>Available</div>
+                <div class="avnumber">{{hospital['Beds']}}</div>
+            </div>
+            <div class="ambulanceav">
+                <div class="avname">Ambulance<br>Avialable</div>
+                <div class="avnumber">{{hospital['Ambulance']}}</div>
+            </div>
+
+
+
+        </div>
+
+     </div>
+     <div class="docdel">
+        <div class="docbox">
+
+            <div class="tablebox none">
+
+            
+            <div class="heading">
+                <u> List of doctor</u>
+             </div >
+             <div class="table2">
+                     <table>
+                         <tr>
+                             <th class="name">Doctor Name</th>
+                             <th class="specialist">Specialist</th>
+                             <th class="timing">Timing</th>
+                             <!-- <th class="ambulance"<br> Ambulance</th> -->
+                             <th class="mobile">Mobile<br> Number</th>
+                             <th class="email-id">Email-id</th>
+                             <!-- <th class="feedback">Feedback</th> -->
+                             <!-- <th class="status">status</th> -->
+                         </tr>
+                         <!-- {% for booking in docs %} -->
+                         <tr>
+                             <td class="name" >DR. KUNAL HAZARI</td>
+                             <td class="specialist">Nephrology</td>
+                             <td class="timing">1PM To 3PM</td>
+                        
+                             <td class="mobile">+91 9868654720</td>
+                             <td class="email-id">kunalhazari@gmail.com</td>
+                            
+                         </tr>
+                         <tr>
+                             <td class="name" >DR. SANJAY KUMAR</td>
+                             <td class="specialist">Neuro Surgery</td>
+                             <td class="timing">9AM To 11AM</td>
+                        
+                             <td class="mobile">+91 9865327410</td>
+                             <td class="email-id">kumar@gmail.com</td>
+                            
+                         </tr>
+                         <tr>
+                             <td class="name" >DR.  RAMESH DAS</td>
+                             <td class="specialist">Orthopaedics</td>
+                             <td class="timing">4AM To 7AM</td>
+                        
+                             <td class="mobile">+91 9875627410</td>
+                             <td class="email-id">ramesh@gmail.com</td>
+                            
+                         </tr>
+                         <tr>
+                             <td class="name" >DR. DAS</td>
+                             <td class="specialist">Orthopaedics</td>
+                             <td class="timing">3AM To 7AM</td>
+                        
+                             <td class="mobile">+91 9878564410</td>
+                             <td class="email-id">das@gmail.com</td>
+                            
+                         </tr>
+                        
+                        
+                         
+                        
+                         
+          
+                         <!-- {% endfor %} -->
+                     </table>
+             </div>
+
+        </div>
+        </div>
+
+
+
+
+     </div>
+
+
+
+     <div class="spaceline">
+        <div class="space2"></div>
+     </div>
+
+     <div class="heading">
+        <u> List of Bed Booked</u>
+     </div >
+     <div class="table">
+             <table>
+                 <tr>
+                     <th class="name">Name</th>
+                     <th class="age">Age</th>
+                     <th class="problem">Problem</th>
+                     <th class="ambulance">Need<br> Ambulance</th>
+                     <th class="mobile">Mobile<br> Number</th>
+                     <th class="address">Address</th>
+                     <th class="feedback">Feedback</th>
+                     <!-- <th class="status">Status</th> -->
+                 </tr>
+                 {% for booking in bookings %}
+                 <tr>
+                     <td class="name" >{{ booking['Name'] }}</td>
+                     <td class="age">{{ booking['Age'] }}</td>
+                     <td class="problem">{{ booking['Problem'] }}</td>
+                     <td class="ambulance">{{ booking['Need_Ambulance'] }}</td>
+                     <td class="mobile">{{ booking['Mobile_Number'] }}</td>
+                     <td class="address">{{ booking['Address'] }}</td>
+                     <td class="feedback">{{ booking['Feedback'] }}</td>
+                     <!-- <td class="status">
+                         <div class="statusbtn">
+                             <button>
+                                 <span class="button_top"> Released
+                                 </span>
+                               </button>
+                             <button>
+                                 <span class="button_top">Ongoing
+                                 </span>
+                               </button>
+                         </div>
+ 
+                     </td> -->
+                 </tr>
+                
+                
+                 
+                
+                 
+  
+                 <!-- {% endfor %} -->
+             </table>
+     </div>
+
+
+
+
+
+
+     <div class="spaceline">
+        <div class="space2"></div>
+     </div>
+
+
+
+  <!-- footer -->
+
+            <div class="footer" id="footer">
+
+                <div class="f-img">
+                    <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="footer-image" class="f-image" id="f-image">
+                </div>
+        
+                <div class="f-mid" id="f-mid">
+                     <div class="f-contents" id="f-contents">
+                        <div class="f-cont-para" id="f-cont-para">
+                            <p>KEY FEATURES :- </p><br>
+                        </div>
+                        <div class="f-cont-list"> 
+                            <ul>
+                                <li><a href="#">STROKE PREDICTOR</a></li>
+                                <li><a href="#">HEART PREDICTOR</a></li>
+                                <li><a href="#">BED BOOKING</a></li>
+                                <li><a href="#">APPOINT A DOCTER</a></li>
+                            </ul>
+                        </div>
+                        <div class="policy">
+                            <ul>
+                                <li>PRIVACY POLICY</li>
+                                <li>TERMS AND CONDITIONS</li>
+                            </ul>
+                        </div>
+                     </div>
+                     <div class="f-app" id="f-app">
+                        <div class="app1">
+                            <p>LET'S GO <span class="android"> &nbsp ANDROID</span></p>
+                        </div>
+                        <div class="app2">
+                            <button type="button" for="" value="" onclick="getMyLink()" class="button">Download</button>
+                        </div>
+                        <div class="app3">
+                            <p>for best user experience</p>
+                        </div>
+                     </div>
+                     <div class="f-social" id="f-social">
+                        <div class="follow-us">
+                            <p>FOLLOW US</p>
+                        </div>
+                        <div class="social-icons">
+                                <img src="https://cdn-icons-png.flaticon.com/512/6033/6033716.png" alt="meta" onclick="gotometa()">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="twitter" onclick="gototwitter()">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111499.png" alt="google" onclick="gotogoogle()">
+                        </div>
+                        <div class="mail">
+                            <br>
+                            <p><span class="chat">LET's CHAT</span><br>
+                            healthgo123@gmail.com <br>
+                            +91 1234567890 <br>
+                            +91 1234567890</p>
+                        </div>
+                     </div>
+                </div>
+        
+                <div class="copyright" id="copyright">
+                    <!-- <div class="f-c-1"> 
+                        <p>© 2023 HealthGO | All rights are reserved.| India</p>
+                    </div> -->
+                    <div class="made">
+                        <p>made with <span class="love"> &nbsp♥&nbsp</span> by <span class="rt"> &nbsp RUNTIME TERROR</span></p>
+                    </div>
+                    <div class="consi">
+                        <div class="contributors">
+                            <p> Contributors : <span class="auto-type"></span></p>
+                        </div>
+                        <div class="rights">
+                            <p>© 2023 HealthGO | All rights are reserved.| India</p>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+            </div>
+    
+
+</body>
+<script src="{{url_for('static',filename='js/hospital.js')}}"></script>
+</html>

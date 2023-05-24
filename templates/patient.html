@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGO | Bed book</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/patient.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='images/icon.jpeg')}}">
+</head>
+
+<body>
+
+    <!-- nav-bar -->
+
+    <div id="title-bar">
+
+        <div class="div1" id="div1">
+        
+            <div class="div1-1">
+        
+                <div class="div1-1-1">
+        
+                </div>
+        
+                <div class="div1-1-2" id="div1-1-2">
+                    <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="img">
+                </div>
+        
+                <div class="div1-1-3">
+        
+                </div>
+        
+            </div>
+        
+            <div class="div1-2">
+        
+                <ul class="list" id="list">
+                    <div class="cont1">
+                        <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}"
+                                class="l1img1"><a href="http://127.0.0.1:5501/index.html" target="_blank" class="lia1"
+                                id="lia1">Home</a></li>
+                        <div class="line1" id="line1"></div>
+                    </div>
+        
+                    <li class="l2"><img src="{{url_for('static',filename='images/information.png')}}" class="l2img2"><a href="#"
+                            target="_blank" class="lia2" id="lia2">About us</a></li>
+                    <li class="l3"><img src="{{url_for('static',filename='images/customer-support.png')}}" class="l3img3"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia3" id="lia3">Services</a></li>
+                    <li class="l4"><img src="{{url_for('static',filename='images/support.png')}}" class="l4img4"><a
+                            href="http://127.0.0.1:5502/medicine.html" target="_blank" class="lia4" id="lia4">Patient
+                            Resources</a></li>
+                    <li class="l5"><img src="{{url_for('static',filename='images/appointment.png')}}" class="l5img5"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia5" id="lia5">Appointment</a></li>
+                    <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a
+                            href="http://127.0.0.1:5500/index.html" target="_blank" class="lia6" id="lia6">Contact us</a></li>
+                    <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
+                            href="https://www.healthline.com/health/bezzy-psoriasis-frequently-asked-questions" target="_blank"
+                            class="lia7" id="lia7">FAQs</a></li>
+                </ul>
+        
+            </div>
+        
+        </div>
+
+        <!-- main -->
+
+    <div class="outerform">
+
+
+        <div class="innerform ">
+            <div class="formhead">Patient Profile</div>
+            <div class="formbox">
+                <form action="" method="post">
+
+                    <div class="personal ">
+                        <div class="pername">Personal Information</div>
+
+                        <div class="inputbox">
+                            <div class="infoinput">
+                                <b> Name :-</b>
+                                {{patient['Name']}}
+                                <!-- <span class="text">First name</span> -->
+                                <!-- <input type="text" name="" placeholder="First Name" id=""> -->
+                                <!-- <span class="line"></span> -->
+
+                            </div>
+                            <div class="infoinput ">
+
+                                <!-- <span class="text">Last name</span> -->
+                                <!-- <input type="text" name="" placeholder="Last Name" id=""> -->
+                                <!-- <span class="line"></span> -->
+
+
+                            </div>
+
+                            <div class="infoinput block">
+                                <span class="text "><b>DOB :-</b> </span>
+                                {{patient['DOB']}}
+                                <!-- <input type="date" id="dob" name="number" value="number" min="5" max="122" placeholder="" required> -->
+                            </div>
+                            <div class="infoinput block radio">
+                                <span class="text "><b>Gender :-</b> </span>
+                                {{patient['gender']}}
+                                <!-- <input type="radio"  name="gender"   value="1" required><label for="yes">Male</label>
+                                <input type="radio" name="gender" value="0" required><label for="no">Female</label> -->
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="personal general">
+                        <div class="pername">General Information</div>
+                        <!-- <div class="input">
+                        <input type="text" name="" id="">
+                        <span class="text">first name</span>
+                        <span class="line"></span>
+                    </div> -->
+                        <div class="inputbox">
+                            <div class="infoinput block select">
+                                <span class="text "><b>Blood Group :-</b></span>
+
+                                {{patient['BloodGroup']}}
+                                <!-- <select name="hospital-name-select" id="hospital-name-select" required>
+                                    <option value="Medanta-The-Medicity">Medanta The Medicity</option>
+                                    <option value="Fortis-Memorial-Research-Institute">Fortis Memorial Research Institute</option>
+                                    <option value="Artemis-Hospital">Artemis Hospital</option>
+                                    <option value="Apollo-Hospitals">Apollo Hospitals</option>
+                                    <option value="Manipal-Hospitals">Manipal Hospitals</option>
+                                </select> -->
+                                <!-- <input type="text" name="" id="Blood-Group"> -->
+                            </div>
+                            <div class="infoinput block radio">
+                                <span class="text "><b>Diabetes:- </b></span>
+                                {{patient['Diabetes']}}
+
+
+                                <!-- <input type="radio"  id="" name="diabetes" value="1" required><label for="yes">Yes</label>
+                                <input type="radio" id="" name="diabetes" value="0" required><label for="no">No</label> -->
+                            </div>
+                            <div class="infoinput incre">
+                                <b>Medical History :-</b>
+
+                                <!-- <span class="text"> -->
+                                
+                                <!-- </span>  -->
+                                {{patient['History']}}
+                                <!-- <input type="text" name="" placeholder="Medical History (if any)" id=""> -->
+                                <!-- <span class="line"></span> -->
+
+                            </div>
+                            <div class="infoinput"></div>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="personal communication">
+                        <div class="pername">Communication details</div>
+                        <!-- <div class="input">
+                        <input type="text" name="" id="">
+                        <span class="text">first name</span>
+                        <span class="line"></span>
+                    </div> -->
+                        <div class="inputbox">
+                            <div class="infoinput block mob ">
+                                <span class="text "><b>Mobile Number:-</b></span> {{patient['Mobile']}}
+                                <!-- <input type="tel" id="mob-number" name="mob-number" value="+91" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required> -->
+                            </div>
+                            <div class="infoinput">
+                                <!-- <span class="text ">Address </span> -->
+
+                                <!-- <textarea id="" name="" rows="4" cols="50" placeholder="Address"></textarea> -->
+                            </div>
+                            <div class="infoinput">
+                                <!-- <span class="text ">Address </span> --> <b>Address :-</b>
+                                {{patient['Address']}}
+                                <!-- <textarea id="" name="" rows="4" cols="50" placeholder="Address"></textarea> -->
+                            </div>
+                            <div class="infoinput">
+                                <!-- <span class="text ">Address </span> -->
+
+                                <!-- <textarea id="" name="" rows="4" cols="50" placeholder="Address"></textarea> -->
+                            </div>
+                            <div class="infoinput "><b>    Email:- </b>
+                            {{patient['email']}}
+
+                                <!-- <span class="text">Last name</span> -->
+                                <!-- <input type="text" name="your_email" id="your_email" class="input-text" required
+                            pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
+                                <span class="line"></span> -->
+
+
+                            </div>
+
+                            <div class="infoinput ">
+                                <!-- <span class="text ">Feedback</span> -->
+                                <!-- <input type="password" id="password" placeholder="Password" class="number"  required> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+
+            </div>
+
+
+
+            <div class="lastsub">
+                <!-- <div class="subbtn">
+                    <input type="submit" value="" >
+                    <h4>Submit</h4>
+                </div> -->
+                <a href="{{url_for('plogout')}}"><div class="subbtn">
+                    <!-- <input type="reset" value="" > -->
+                    <h4>LogOut</h4>
+                </div></a>
+                <!-- <div class="subbtn">
+                    <h4>Back</h4>
+                </div> -->
+            </div>
+
+            </form>
+
+
+
+        </div>
+
+
+        <div class="leftimg cardremove"></div>
+        <div class="leftimg cardshift ">
+            <div class="formhead ourser">Our Services</div>
+            <a href="{{url_for('bookbed')}}" target="_blank">
+            <div class="serinfo ">
+                    Book Bed
+                </div>
+            </a> 
+            <a href="{{url_for('appoint')}}" target="_blank"></a>
+            <div class="serinfo ">Appoint A Doctor</div>
+            <a href="{{url_for('heartpredict')}}" target="_blank"><div class="serinfo ">Heart Predictor</div></a>
+            <a href="{{url_for('strokepredict')}}" target="_blank">
+                <div class="serinfo left ">Stroke Predictor</div>
+            </a>
+            <a href="{{url_for('medicine')}}" target="_blank"><div class="serinfo ">Take Medicine</div></a>
+            
+        </div>
+    </div>
+
+    <div class="arrow"></div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer" id="footer">
+
+        <div class="f-img">
+            <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="footer-image" class="f-image"
+                id="f-image">
+        </div>
+
+        <div class="f-mid" id="f-mid">
+             <div class="f-contents" id="f-contents">
+                <div class="f-cont-para" id="f-cont-para">
+                    <p>KEY FEATURES :- </p><br>
+                </div>
+                <div class="f-cont-list"> 
+                    <ul>
+                        <li><a href="#">STROKE PREDICTOR</a></li>
+                        <li><a href="#">HEART PREDICTOR</a></li>
+                        <li><a href="#">BED BOOKING</a></li>
+                        <li><a href="#">APPOINT A DOCTER</a></li>
+                    </ul>
+                </div>
+                <div class="policy">
+                    <ul>
+                        <li>PRIVACY POLICY</li>
+                        <li>TERMS AND CONDITIONS</li>
+                    </ul>
+                </div>
+             </div>
+             <div class="f-app" id="f-app">
+                <div class="app1">
+                    <p>LET'S GO <span class="android"> &nbsp ANDROID</span></p>
+                </div>
+                <div class="app2">
+                    <button type="button" for="" value="" onclick="getMyLink()" class="button">Download</button>
+                </div>
+                <div class="app3">
+                    <p>for best user experience</p>
+                </div>
+             </div>
+             <div class="f-social" id="f-social">
+                <div class="follow-us">
+                    <p>FOLLOW US</p>
+                </div>
+                <div class="social-icons">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6033/6033716.png" alt="meta" onclick="gotometa()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="twitter" onclick="gototwitter()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111499.png" alt="google" onclick="gotogoogle()">
+                </div>
+                <div class="mail">
+                    <br>
+                    <p><span class="chat">LET's CHAT</span><br>
+                    healthgo123@gmail.com <br>
+                    +91 1234567890 <br>
+                    +91 1234567890</p>
+                </div>
+             </div>
+        </div>
+
+        <div class="copyright" id="copyright">
+            <!-- <div class="f-c-1"> 
+                <p>© 2023 HealthGO | All rights are reserved.| India</p>
+            </div> -->
+            <div class="made">
+                <p>made with <span class="love"> &nbsp♥&nbsp</span> by <span class="rt"> &nbsp RUNTIME TERROR</span></p>
+            </div>
+            <div class="consi">
+                <div class="contributors">
+                    <p> Contributors : <span class="auto-type"></span></p>
+                </div>
+                <div class="rights">
+                    <p>© 2023 HealthGO | All rights are reserved.| India</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='js/patient.js')}}"></script>
+</body>
+
+</html>
