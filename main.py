@@ -274,7 +274,7 @@ def appoint():
     return render_template('appoint.html')
 
 @app.route('/faqs',methods=["GET","POST"])
-def stomach():
+def faqs():
     return render_template('faqs.html')
 
 if __name__ == '__main__':

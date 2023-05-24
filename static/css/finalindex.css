@@ -138,6 +138,7 @@ body{
     color: black;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    z-index: 1;
 }
 .div1-1-3 button:hover{
     background-color: crimson;
@@ -154,7 +155,8 @@ body{
     height: 600px;
     width: 100%;
     background-color: aqua;
-    margin-top: -580px;
+    /* margin-top: -580px; */
+    margin-top: -650px;
     transition: all 0.5s ease-in-out;
     opacity: 0;
     /* change */
@@ -171,7 +173,10 @@ body{
 }
 .app-cnt{
     /* border: 1px solid red; */
+    /* position: relative; */
+    /* top: -20px; */
     display: flex;
+
     flex-direction: row;
 }
 .app-1{
@@ -335,6 +340,14 @@ border-radius: 10px; */
     color: rgb(0, 0, 0);
     /* border: 1px solid yellow; */
 }
+#div1-1-3{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+#div1-1-3:hover{
+    scale: 1.2;
+}
 
 .l1 img, .l2 img, .l3 img, .l4 img, .l5 img, .l6 img, .l7 img{
     height: 25px;
@@ -428,6 +441,25 @@ border-radius: 10px; */
         filter: invert(65%) sepia(52%) saturate(2702%) hue-rotate(103deg) brightness(99%) contrast(91%);
     } */
 /* } */
+
+.space1{
+    background-color: white;
+    height:95vh;
+    
+    z-index: -1;
+    position: absolute;
+    /* bottom: 50px; */
+    width: 100%;;
+}
+
+
+
+
+
+
+
+
+
 
 /* underline list elements */
 .cont1{
@@ -603,7 +635,7 @@ border-radius: 10px; */
     position: relative;
     overflow: hidden;
     /* border-radius: 30px; */
-    margin-top: -20px;
+    margin-top: -70px;
 }
 .slider{
     /* border: 1px solid red; */
@@ -675,8 +707,8 @@ border-radius: 10px; */
 
 }
 
-.itme1:hover {
-    background-image: url("img/hospital1.jpg");
+#itme1:hover {
+    background-image: url("https: //images.pexels.com/photos/6129676/pexels-photo-6129676.jpeg?auto=compress&cs=tinysrgb&w=1600");
     background-size: cover;
 
 }
@@ -977,6 +1009,8 @@ border-radius: 10px; */
 }
 @keyframes bgchange {
     0%{
+        background-size: cover;
+        background-position: center;
         background: url('https://images.pexels.com/photos/1692693/pexels-photo-1692693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         transition: 0.8s;
         
@@ -985,18 +1019,24 @@ border-radius: 10px; */
         /* opacity: 0.5; */
         transition: 0.8s;
         background: url('https://images.pexels.com/photos/1692693/pexels-photo-1692693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-size: cover;
+        background-position: center;
         
     }
     70%{
         opacity: 1;
         background: url('https://img.freepik.com/free-photo/glass-designed-building-view_23-2148230382.jpg?size=626&ext=jpg&ga=GA1.1.433269929.1674957879&semt=ais');
         transition: 0.8s;
+        background-size: cover;
+        background-position: center;
         
     }
     100%{
         /* opacity: 0.5; */
         transition: 0.8s;
         background: url('https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661462.jpg?size=626&ext=jpg&ga=GA1.1.433269929.1674957879&semt=ais');
+        background-size: cover;
+        background-position: center;
 
     }
 

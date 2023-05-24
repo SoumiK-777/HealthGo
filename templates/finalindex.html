@@ -7,6 +7,27 @@
         <title id="title">Health GO | Home</title>
     <link rel="shortcut icon" href="{{url_for('static',filename='images/medical.png')}}" type="image/x-icon" id="icon">
     <link rel="stylesheet" href="{{url_for('static',filename='css/finalindex.css')}}">
+    <style>
+        
+
+        a{
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+            
+        }
+        /* #info:hover{
+            z-index: 2;
+
+        } */
+        #itme1:hover + #info{
+            background: url('https://images.pexels.com/photos/6129676/pexels-photo-6129676.jpeg?auto=compress&cs=tinysrgb&w=1600');
+
+        }
+
+
+
+    </style>
 </head>
 <body>
 
@@ -32,7 +53,7 @@
                     <img src="{{url_for('static',filename='images/logo-no-background.png')}}" alt="img">
                 </div>
         
-                <div class="div1-1-3">
+                <div class="">
         
                 </div>
         
@@ -43,7 +64,7 @@
                 <ul class="list" id="list">
                     <div class="cont1">
                         <li class="l1"><img src="{{url_for('static',filename='images/home-icon-silhouette.png')}}"
-                                class="l1img1"><a href="http://127.0.0.1:5501/index.html" target="_blank" class="lia1"
+                                class="l1img1"><a href="{{url_for('index')}}" target="_blank" class="lia1"
                                 id="lia1">Home</a></li>
                         <div class="line1" id="line1"></div>
                     </div>
@@ -60,8 +81,8 @@
                     <li class="l6"><img src="{{url_for('static',filename='images/notebook-of-contacts.png')}}" class="l6img6"><a
                             href="http://127.0.0.1:5500/index.html" target="_blank" class="lia6" id="lia6">Contact us</a></li>
                     <li class="l7"><img src="{{url_for('static',filename='images/faq.png')}}" class="l7img7"><a
-                            href="https://drive.google.com/drive/folders/1u87ajq6Aqof6Q_3S-kv_LH4x-jd0fupo" target="_blank"
-                            class="lia7" id="lia7">Our App</a></li>
+                            href="{{url_for('faqs')}}" target="_blank"
+                            class="lia7" id="lia7">FAQs</a></li>
                 </ul>
         
             </div>
@@ -81,7 +102,7 @@
         <div class="sb2" id="sb2">
 
             <div class="sb2-1">
-                <p>search for anything you want to explore ...</p>
+                <p>Search for anything you want to explore ...</p>
             </div>
 
             <div class="sb2-2">
@@ -98,11 +119,13 @@
 
         </div>
 
-        <div class="sb3">
+        <div class="div1-1-3" >
+            <button type="submit" id="div1-1-3" onclick="ourApp()">Our App</button>
 
         </div>
 
     </div>
+    
     
 
     <!-- app space -->
@@ -169,18 +192,19 @@
         </div> -->
     </div>
 
+    <div class="space1"></div>
 
     <!-- on hover change background -->
 
     <!-- information box -->
     <div class="info" id="info">
+        <a id="a" href="{{url_for('bookbed')}}" target="_blank">
         <div class="itmes itme1" id="itme1">
             <div class="nametext">
                 <h1>Book Your Bed</h1>
             </div>
             <div class="card">
 
-                <a id="a" href="{{url_for('bookbed')}}" target="_blank">
                 <div class="innercard">
 
                     <div class="titlebox">
@@ -200,10 +224,10 @@
 
 
                 </div>
-                </a>
                 
             </div>
         </div>
+    </a>
 
        
 
@@ -238,7 +262,7 @@
     <!-- </div> -->
 
 
-        <a href="{{url_for('strokepredict')}}" target="_blank">
+        <a href="{{url_for('strokepredict')}}"  target="_blank">
         <div class="itmes itme2" id="itme2">
             <div class="nametext">
                 <h1>Stroke Predictor</h1>
@@ -401,7 +425,7 @@
         <div class="cont-1">
 
             <div class="cont-1-left scroll">
-                <h3>book bed at just your fingertip</h3>  
+                <h3>Book bed at just your fingertip</h3>  
                 <p>Today, up to 70% of website visits take place on smartphones. Most sales and bookings are also made from mobile devices. Therefore, guided by the greatest benefit for you, we designed the BedBooking reservation system based on the best practices for online stores, while ensuring convenient service on phones.</p>    
 
             </div>
@@ -419,7 +443,7 @@
             </div>
 
             <div class="cont-2-right scroll">
-                <h3>book an appointment anytime, anywhere</h3>
+                <h3>Book an appointment anytime, anywhere</h3>
                 <p>Booking Doctor Appointment Online have resulted in certain benefits that work in the synergy with this contemporary world. The solutions are instant and also authentic. But to what extent, can you consider them authentic? This shall always remain a matter of concern for us as we are getting used to our digital habits.</p>
             </div>
 
@@ -445,7 +469,7 @@
             </div>
 
             <div class="cont-4-right scroll">
-                <h3>know how healthy your heart is</h3>
+                <h3>Know how healthy your heart is</h3>
                 <p>Heart disease is the major cause of deaths worldwide. To give treatment for heart disease, a lot of advanced technologies are used. In medical center it is the most common problem because many medical persons do not have equal knowledge and expertise to treat their patient so they deduce their own decision and as a result it shows poor outcome and sometimes lead to death. To overcome these problems ,prediction of heart disease is being done by using machine learning algorithms and data mining techniques, it has become easy to perform automatic diagnosis in hospitals as they are playing vital role in this regard.</p>            </div>
 
         </div>
@@ -485,9 +509,10 @@
                         <div class="app1">
                             <p>LET'S GO <span class="android"> &nbsp ANDROID</span></p>
                         </div>
-                        <div class="app2">
-                            <button type="button" for="" value="" onclick="getMyLink()" class="button">Download</button>
-                        </div>
+                        <a href="www.google.com"><div class="app2">
+                            
+                            <button type="button" for="" value="" class="button" onclick="grt()">Download</button>
+                        </div></a>
                         <div class="app3">
                             <p>for best user experience</p>
                         </div>

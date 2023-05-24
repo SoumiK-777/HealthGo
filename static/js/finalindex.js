@@ -379,7 +379,7 @@ function toggleMenu(){
 
 //////////////////////////////////////////////////////////////////////
 
-document.addEventListener("DOMContentLoaded",function(){
+// document.addEventListener("DOMContentLoaded",function(){
 // var slide=document.getElementById("sliderone");
 // var btn1=document.getElementById("btn1");
 // var btn2=document.getElementById("btn2");
@@ -496,74 +496,74 @@ document.addEventListener("DOMContentLoaded",function(){
 // }
 
 
-var info =document.getElementById("info");
-var itme1 =document.getElementById("itme1");
-var itme2 =document.getElementById("itme2");
-var itme3 =document.getElementById("itme3");
-var itme4 =document.getElementById("itme4");
-var itme5 =document.getElementById("itme5");
-var itme6 =document.getElementById("itme6");
-//.......................
+// var info =document.getElementById("info");
+// var itme1 =document.getElementById("itme1");
+// var itme2 =document.getElementById("itme2");
+// var itme3 =document.getElementById("itme3");
+// var itme4 =document.getElementById("itme4");
+// var itme5 =document.getElementById("itme5");
+// var itme6 =document.getElementById("itme6");
+// //.......................
 
 
 
 
-// .......................
-itme1.addEventListener("mouseover",function(){
+// // .......................
+// itme1.addEventListener("mouseover",function(){
   
-  info.style.backgroundImage = `url("https://img.freepik.com/free-photo/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools_482257-40043.jpg?size=626&ext=jpg&ga=GA1.1.433269929.1674957879&semt=ais")`;
-  info.style.backgroundSize = "cover";
-  
-
-  
-})
-itme2.addEventListener("mouseover",function(){
-  
-  info.style.backgroundImage = `url("https://img.freepik.com/free-photo/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools_482257-40043.jpg?size=626&ext=jpg&ga=GA1.1.433269929.1674957879&semt=ais")`;
-  
-  info.style.backgroundSize = "cover";
+//   info.style.backgroundImage = `url("https://img.freepik.com/free-photo/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools_482257-40043.jpg?size=626&ext=jpg&ga=GA1.1.433269929.1674957879&semt=ais")`;
+//   info.style.backgroundSize = "cover";
   
 
   
-})
-itme3.addEventListener("mouseover",function(){
+// })
+// itme2.addEventListener("mouseover",function(){
   
-  info.style.backgroundImage = `url("https://img.freepik.com/free-photo/interior-view-operating-room_1170-2254.jpg?size=626&ext=jpg&ga=GA1.1.433269929.1674957879&semt=sph")`;
-  info.style.backgroundSize = "cover";
+//   info.style.backgroundImage = `url("https://img.freepik.com/free-photo/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools_482257-40043.jpg?size=626&ext=jpg&ga=GA1.1.433269929.1674957879&semt=ais")`;
   
-
-  
-})
-itme4.addEventListener("mouseover",function(){
-  
-  info.style.backgroundImage = `url("img/hospital2.jpg")`;
-  info.style.backgroundSize = "cover";
+//   info.style.backgroundSize = "cover";
   
 
   
-})
-itme5.addEventListener("mouseover",function(){
+// })
+// itme3.addEventListener("mouseover",function(){
   
-  info.style.backgroundImage = `url("img/shop.jpg")`;
-  info.style.backgroundSize = "cover";
-  
-
-  
-})
-itme6.addEventListener("mouseover",function(){
-  
-  info.style.backgroundImage = `url("img/disease1.jpg")`;
-  info.style.backgroundSize = "cover";
+//   info.style.backgroundImage = `url("https://img.freepik.com/free-photo/interior-view-operating-room_1170-2254.jpg?size=626&ext=jpg&ga=GA1.1.433269929.1674957879&semt=sph")`;
+//   info.style.backgroundSize = "cover";
   
 
   
-})
-info.addEventListener("mouseleave",function(){
-  info.style.backgroundImage = `url("img/cover4.jpg")`;
-  info.style.backgroundSize = "cover";
+// })
+// itme4.addEventListener("mouseover",function(){
+  
+//   info.style.backgroundImage = `url("img/hospital2.jpg")`;
+//   info.style.backgroundSize = "cover";
+  
 
-})
-})
+  
+// })
+// itme5.addEventListener("mouseover",function(){
+  
+//   info.style.backgroundImage = `url("img/shop.jpg")`;
+//   info.style.backgroundSize = "cover";
+  
+
+  
+// })
+// itme6.addEventListener("mouseover",function(){
+  
+//   info.style.backgroundImage = `url("img/disease1.jpg")`;
+//   info.style.backgroundSize = "cover";
+  
+
+  
+// })
+// info.addEventListener("mouseleave",function(){
+//   info.style.backgroundImage = `url("img/cover4.jpg")`;
+//   info.style.backgroundSize = "cover";
+
+// })
+// })
 
 // footer
 function getMyLink(){
@@ -588,3 +588,8 @@ var typed = new Typed(".auto-type", {
   backSpeed: 100,
   loop: true
 })
+
+
+function grt(){
+  alert("KINDLY LOGIN FIRST");
+}
