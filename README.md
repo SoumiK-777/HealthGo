@@ -5,7 +5,7 @@ HealthGo is built in accordance to provide users a wide range of services at the
 The main motto of our website is to provide complex healthcare services with very ease and efficiency, the bed booking service permits you to book a bed whenever required.
 
 
-## Features
+## Our Features
 
 Our chief services are heart failure and stroke predictor which works very fine with our ml model. It displays the result, soon after you entered all your details. The bed booking service permits you to book a bed whenever required. This reduces our time and energy by availing of these services.
 Genres are classified as shown below:
